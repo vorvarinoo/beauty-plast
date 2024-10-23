@@ -1,0 +1,29 @@
+.feedback {
+  padding: 48px 0;
+
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #fff 100%),
+    url("../img/bg-feedback.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include media-min ($lg) {
+    padding: 64px 0;
+  }
+
+  @include media-min ($xxl) {
+    padding: 96px 0;
+  }
+
+  &__text {
+    color: var(--gray-70-color);
+
+    @include media-min ($lg) {
+      max-width: 255px;
+    }
+
+    @include media-min ($xxl) {
+      max-width: 375px;
+    }
+  }
+}

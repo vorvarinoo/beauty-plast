@@ -1,0 +1,70 @@
+.slider {
+  position: relative;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &:not(.swiper-initialized) {
+    opacity: 0;
+  }
+
+  &__wrapper {
+    box-sizing: border-box;
+  }
+}
+
+.slider-controls {
+  display: flex;
+  column-gap: 10px;
+  margin-left: auto;
+}
+
+.slider-control {
+  color: var(--gray-30-color);
+  background-color: var(--gray-15-color);
+  border-radius: 14px;
+  width: 50px;
+  height: 50px;
+  backdrop-filter: blur(10px);
+  pointer-events: auto;
+  cursor: pointer;
+
+  display: none;
+  flex-shrink: 0;
+  justify-content: center;
+  align-items: center;
+
+  transition: color .2s ease-in-out;
+
+  &.swiper-button-lock {
+    display: none;
+  }
+
+  & svg {
+    pointer-events: none;
+    transition: transform .3s ease-in-out;
+  }
+
+
+  @include media-min ($lg) {
+    display: flex;
+  }
+
+  @include media-min ($xl) {
+    transition: background-color .3s ease-in-out;
+  }
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--blue-color);
+
+      & svg {
+        transform: scale(1.5);
+      }
+    }
+  }
+
+  @media (hover: none) {
+    background-color: var(--blue-color);
+  }
+}

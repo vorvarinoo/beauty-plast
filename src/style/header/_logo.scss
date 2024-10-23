@@ -1,0 +1,23 @@
+.logo {
+  position: relative;
+  z-index: 3;
+  display: inline-flex;
+
+  &--background-color {
+    border-radius: 12px;
+    background-color: rgba(235, 235, 235, 0.8);
+    backdrop-filter: blur(4px);
+    padding: 6px;
+  }
+
+  & a {
+    display: inline-flex;
+  }
+
+  & svg {
+    @include media-min ($lg) {
+      width: 198px;
+      height: 43px;
+    }
+  }
+}

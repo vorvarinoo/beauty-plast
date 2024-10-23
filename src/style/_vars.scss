@@ -1,0 +1,26 @@
+:root {
+  --white-color: #FFFFFF;
+  --black-color: #000000;
+  --blue-color: #003a69;
+
+  --gray-70-color: #4d4d4d;
+  --gray-50-color: #808080;
+  --gray-30-color: #b3b3b3;
+  --gray-15-color: #e6e6e6;
+
+  --red-color: #BD0300;
+  --red-40-color: #F56C69;
+  --error-color: var(--red-color);
+
+  // other vars
+  --min-site-width: 375px;
+  --max-site-width: 1600px;
+}
+
+$sm: 540px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+$xxl: 1600px;
+$fhd: 1920px;
+$main-font: "Onest";

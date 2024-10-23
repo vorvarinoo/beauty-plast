@@ -1,0 +1,57 @@
+.header-modal {
+  pointer-events: none;
+
+  &[aria-hidden="false"] {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    pointer-events: auto;
+    background-color: rgba(235, 235, 235, 0.9);
+    backdrop-filter: blur(7px);
+    @include anim(fade, .4s);
+
+    & .header-modal__content {
+      display: block;
+    }
+  }
+
+  &__content {
+    position: fixed;
+    top: var(--offset-top, 0);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    display: none;
+    width: 100%;
+    color: var(--black);
+    background-color: var(--black);
+    overflow: auto;
+    padding-top: 75px;
+    padding-bottom: 50px;
+  }
+
+  & .container {
+    height: 100%;
+  }
+
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+  }
+
+  @include media-min ($xl) {
+    display: none;
+  }
+
+}

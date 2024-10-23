@@ -1,0 +1,61 @@
+.header {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+
+  &--fixed {
+    position: fixed;
+  }
+
+  &__cont {
+    max-width: 1920px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 15px;
+
+    @include media-min ($md) {
+      padding: 0 32px;
+    }
+  }
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 12px 0;
+
+    @include media-min ($xl) {
+      padding: 16px 0;
+    }
+  }
+
+  &__logo {
+    flex: 1 100%;
+  }
+
+  &__menu {
+    padding: 16px 48px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(235, 235, 235, 0.8);
+    border-radius: 14px;
+    flex-shrink: 0;
+  }
+
+  &__company {
+    text-transform: uppercase;
+    text-align: end;
+    margin-left: 30px;
+  }
+
+
+
+  &__btn {
+    display: none;
+    flex: 1 100%;
+    text-align: end;
+
+    @include media-min ($xl) {
+      display: block;
+    }
+  }
+}

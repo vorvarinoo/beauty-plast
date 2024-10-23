@@ -1,0 +1,97 @@
+.form-label {
+  display: flex;
+  flex-direction: column-reverse;
+
+  & > span {
+    font-size: 16px;
+    color: var(--gray-50-color);
+    margin-bottom: 4px;
+  }
+}
+
+.form-input {
+  font-size: 16px;
+  padding: var(--input-offset, var(--input-offset-vertical, 12px) var(--input-offset-horizontal, 32px));
+  width: 100%;
+  color: var(--input-text-color, inherit);
+  background-color: transparent;
+  border-radius: 14px;
+  border: 1px solid var(--input-border-color, currentColor);
+  appearance: none;
+
+  &::placeholder {
+    color: var(--gray-30-color);
+  }
+
+  &:-webkit-autofill,
+  &:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+  }
+
+  &:focus-visible {
+    caret-color: var(--blue-color);
+    outline: var(--blue-color) solid thin;
+    box-shadow: none;
+  }
+
+
+
+  &.is-invalid {
+    border-color: var(--error-color, #BD0300);
+  }
+
+  &--area {
+    resize: none;
+    height: var(--input-area-height, 6em);
+  }
+}
+
+
+.form-checkbox {
+  display: inline-flex;
+  gap: 1rem;
+  align-items: flex-start;
+  position: relative;
+  isolation: isolate;
+
+  & input {
+    cursor: pointer;
+    flex-shrink: 0;
+    appearance: none;
+    margin: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 6px;
+    background-color: var(--checkbox-background-color, var(--gray-15-color));
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    transition: background-color .1s ease-in-out;
+
+    &::before {
+      content: "";
+      opacity: 0;
+      position: absolute;
+      transform: scale(0);
+      transition: opacity .3s ease-in-out,
+        transform .3s ease-in-out;
+    }
+
+    &::before {
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='8' viewBox='0 0 9 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 4.0625L3.25926 6.5L8 1.5' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' /%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 9px;
+      height: 8px;
+    }
+
+    &:checked {
+      --checkbox-background-color: var(--blue-color);
+    }
+
+    &:checked::before {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.benefits {
+  padding: 48px 0;
+
+  @include media-min ($lg) {
+    padding: 64px 0;
+  }
+
+  @include media-min ($xxl) {
+    padding: 96px 0;
+  }
+}

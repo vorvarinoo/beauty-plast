@@ -1,0 +1,130 @@
+.header-menu {
+
+  &__list {
+    display: grid;
+    row-gap: 10px;
+    column-gap: 48px;
+
+    @include media-min ($xl) {
+      grid-template-columns: repeat(4, max-content);
+    }
+
+    & > li {
+
+      @include media-max ($xl) {
+        padding: 32px 0;
+      }
+
+      @media (hover: hover) {
+        &:hover {
+          --dropdown-row-height: 1fr;
+          --svg-rotate: 180deg;
+          --link-color: var(--blue-color);
+          --link-svg-color: var(--blue-color);
+        }
+      }
+
+      @media (hover: none) {
+        --link-color: var(--blue-color);
+
+        &.is-open {
+          --dropdown-row-height: 1fr;
+          --svg-rotate: 180deg;
+          --link-svg-color: var(--blue-color);
+        }
+      }
+    }
+
+    & > li + li {
+      @include media-max ($xl) {
+        border-top: 1px solid #d9d9d9;
+      }
+    }
+  }
+
+  &__link {
+    cursor: pointer;
+    color: var(--link-color, var(--gray-50-color));
+    font-size: 18px;
+    align-items: center;
+    transition: color .2s ease-in-out;
+    justify-content: space-between;
+    width: 100%;
+
+    @include media-min ($xl) {
+      font-size: 16px;
+    }
+
+    & svg {
+      color: var(--link-svg-color, #7f7f7f);
+      transform: rotateX(var(--svg-rotate, 0deg));
+      transition: transform .3s ease-in-out;
+    }
+
+    & a {
+      color: var(--link-color);
+      font-size: inherit;
+
+      transition: color .2s ease-in-out;
+    }
+  }
+
+  &__link-btn {
+    flex: 1 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    & span {
+      @include media-max ($xl) {
+        border-radius: 8px;
+        width: 31px;
+        height: 31px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--white-color);
+      }
+
+      @include media-min ($xl) {
+        margin-left: 12px;
+      }
+    }
+  }
+
+
+  &__dropdown {
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: var(--dropdown-row-height, 0fr);
+    transition: grid-template-rows .3s ease-in-out;
+
+    & ul {
+      overflow: hidden;
+      display: grid;
+      row-gap: 12px;
+
+      @include media-min ($xl) {
+        row-gap: 4px;
+      }
+    }
+
+    & li {
+      --link-color: var(--gray-50-color);
+
+      @media (hover: hover) {
+        &:hover {
+          --link-color: var(--blue-color);
+        }
+      }
+    }
+
+    & li:first-child {
+      margin-top: 32px;
+
+      @include media-min ($xl) {
+        margin-top: 8px;
+      }
+    }
+  }
+
+}

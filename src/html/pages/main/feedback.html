@@ -1,0 +1,51 @@
+<section class="feedback">
+  <div class="container">
+
+    <div class="row justify-content-between">
+      <div class="col-lg-5 col-2xl-6 mb-4 mb-lg-0 offset-lg-1">
+        <h2 class="title title-large mb-4">Оставьте заявку</h2>
+        <p class="text feedback__text">Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis. </p>
+      </div>
+
+      <div class="col-lg-4">
+        <form class="feedback-form">
+
+          <div class="feedback-form__top">
+            <div>
+              <label class="form-label text text-sm mb-1"
+                     for="">Имя</label>
+              <input class="form-input"
+                     type="text"
+                     name="Имя"
+                     placeholder="Имя">
+            </div>
+            <div>
+              <label class="form-label text text-sm mb-1"
+                     for="">Телефон</label>
+              <input class="form-input"
+                     type="tel"
+                     name="Контактный телефон"
+                     placeholder="+7 900 000 00 00">
+            </div>
+          </div>
+
+          <div class="feedback-form__bottom">
+            <button class="btn btn-secondary"
+                    type="submit">отправить</button>
+
+
+            <label class="form-checkbox">
+              <input type="checkbox">
+              <span>
+                @include('../../common/confirm-text.html')
+              </span>
+            </label>
+
+          </div>
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+</section>

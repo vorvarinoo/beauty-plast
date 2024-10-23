@@ -1,0 +1,14 @@
+.social-list {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+
+  & li {
+    display: inline-flex;
+  }
+
+  & a {
+    display: inline-flex;
+  }
+
+}

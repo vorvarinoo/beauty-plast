@@ -1,0 +1,92 @@
+body {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  font-family: $main-font, Arial, Helvetica, sans-serif;
+  color: #000000;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+b {
+  font-weight: 500;
+}
+
+a {
+  --link-linel: var(--blue-color);
+
+  color: var(--blue-color);
+  text-decoration-color: var(--link-line, transparent);
+}
+
+.title {
+  @include indent-reset;
+  line-height: 1.1;
+  color: var(--blue-color);
+}
+
+.title-large {
+  font-weight: 500;
+  font-size: 32px;
+
+  @include media-min ($xl) {
+    font-size: 48px;
+  }
+
+  @include media-min ($xxl) {
+    font-size: 64px;
+  }
+}
+
+.title-medium {
+  font-weight: 500;
+  font-size: 24px;
+
+  @include media-min ($xxl) {
+    font-size: 32px;
+  }
+}
+
+.title-small {
+  font-size: 18px;
+
+  @include media-min ($xxl) {
+    font-size: 24px;
+  }
+}
+
+.text {
+  @include indent-reset;
+
+  font-size: 16px;
+  color: var(--main-text-color, var(--gray-50-color));
+
+  @include media-min ($xxl) {
+    font-size: 18px;
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
+  }
+
+}
+
+.text-sm {
+  font-size: 16px;
+}
+
+.text-md {
+  @include media-min ($xxl) {
+    font-size: 18px;
+  }
+}
+
+.text-end {
+  text-align: end;
+}
