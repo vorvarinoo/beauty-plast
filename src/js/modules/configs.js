@@ -1,3 +1,7 @@
+import {
+  pauseVideos
+} from './utils.js';
+
 const sliderConfig = {
   default: {
     slidesPerView: 1,
@@ -51,6 +55,9 @@ const modalConfig = {
   catchFocus: true,
   closeOnEsc: true,
   backscroll: true,
+  afterClose: ( modalObj ) => {
+    pauseVideos( modalObj );
+  }
 };
 
 const validateConfig = {

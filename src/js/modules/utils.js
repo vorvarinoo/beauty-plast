@@ -111,6 +111,16 @@ const breakpointChecker = ( trueCb, falseCb, width = '1200' ) => {
 };
 
 
+const pauseVideos = ( modalObj ) => {
+  const modalElement = modalObj.openedWindow;
+  const nodeVideos = modalElement.querySelectorAll( 'video' );
+
+  if ( !nodeVideos ) return;
+  nodeVideos.forEach( video => {
+    video.pause();
+  } );
+};
+
 export {
   iosVhFix,
   isEscKey,
@@ -120,4 +130,5 @@ export {
   initModal,
   sendData,
   breakpointChecker,
+  pauseVideos,
 };

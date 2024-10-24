@@ -23,6 +23,18 @@
     min-width: auto;
   }
 
+  &--video {
+    padding: 0 15px;
+    background: none;
+    max-width: 1440px;
+
+    & .modal__close {
+      top: 10px;
+      right: 25px;
+      z-index: 1;
+    }
+  }
+
   &__close {
     @include btn-reset;
 
@@ -48,4 +60,8 @@
     }
   }
 
+}
+
+#video-modal {
+  background-color: var(--black-color);
 }
