@@ -1649,7 +1649,7 @@ a {
   background-color: var(--white-color);
   background-image: var(--producer-img);
   background-repeat: no-repeat;
-  background-size: content;
+  background-size: contain;
   border: 1px solid var(--gray-15-color);
   border-radius: 14px;
 }
