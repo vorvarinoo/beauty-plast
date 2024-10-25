@@ -1664,6 +1664,7 @@ a {
   transition:         transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 .categories-list__item svg {
+  flex-shrink: 0;
   margin-left: 64px;
 
   color: var(--category-icon-color, var(--gray-30-color));
