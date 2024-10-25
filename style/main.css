@@ -1337,21 +1337,12 @@ a {
 }
 
 .main {
-  padding: 24px 0 32px;
-}
-@media (min-width: 992px) {
-  .main {
-    padding-top: 12px;
-  }
-}
-@media (min-width: 1600px) {
-  .main {
-    padding-top: 16px;
-  }
+  padding-bottom: 32px;
 }
 .main__top {
   display: grid;
   margin-bottom: 54px;
+  padding-top: 24px;
 
   border-top: 1px solid var(--gray-30-color);
 
@@ -1362,6 +1353,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
+    padding-top: 12px;
   }
 }
 @media (min-width: 1600px) {
@@ -1369,6 +1361,7 @@ a {
     display: flex;
     justify-content: space-between;
     margin-bottom: 48px;
+    padding-top: 16px;
   }
 }
 @media (min-width: 992px) {
