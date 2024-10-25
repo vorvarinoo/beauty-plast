@@ -10,6 +10,9 @@
   --min-site-width: 375px;
   --red-40-color: #f56c69;
   --red-color: #bd0300;
+  --transition-speed-fast: 0.1s;
+  --transition-speed-medium: 0.2s;
+  --transition-speed-slow: 0.3s;
   --white-color: #ffffff;
 }
 
@@ -151,7 +154,7 @@ b {
 a {
   color: var(--link-color, var(--blue-color));
 
-  transition: color 0.2s ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out;
 
   --link-linel: var(--blue-color);
   text-decoration-color: var(--link-line, transparent);
@@ -922,7 +925,7 @@ a {
   border: 1px solid transparent;
   border-radius: 8px;
 
-  transition: border-color 0.2s ease-in-out;
+  transition: border-color var(--transition-speed-medium) ease-in-out;
 }
 @media (min-width: 768px) {
   .header-contacts__item {
@@ -1218,15 +1221,15 @@ a {
   -webkit-transform: rotateX(var(--svg-rotate, 0deg));
           transform: rotateX(var(--svg-rotate, 0deg));
 
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition:         transform 0.3s ease-in-out;
-  transition:         transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform var(--transition-speed-slow) ease-in-out;
+  transition:         transform var(--transition-speed-slow) ease-in-out;
+  transition:         transform var(--transition-speed-slow) ease-in-out, -webkit-transform var(--transition-speed-slow) ease-in-out;
 }
 .header-menu__link a {
   font-size: inherit;
   color: var(--link-color);
 
-  transition: color 0.2s ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out;
 }
 .header-menu__link-btn {
   display: flex;
@@ -1254,8 +1257,8 @@ a {
   display: grid;
   overflow: hidden;
 
-  transition: grid-template-rows 0.3s ease-in-out;
-  transition: grid-template-rows 0.3s ease-in-out, -ms-grid-rows 0.3s ease-in-out;
+  transition: grid-template-rows var(--transition-speed-slow) ease-in-out;
+  transition: grid-template-rows var(--transition-speed-slow) ease-in-out, -ms-grid-rows var(--transition-speed-slow) ease-in-out;
 
   grid-template-rows: var(--dropdown-row-height, 0fr);
 }
@@ -1455,7 +1458,7 @@ a {
 
   border-top: 1px solid var(--gray-30-color);
 
-  transition: color 0.2s ease-in-out, border-color 0.3s ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out, border-color var(--transition-speed-slow) ease-in-out;
 }
 @media (min-width: 992px) {
   .main-product__link {
@@ -1480,9 +1483,9 @@ a {
   flex-shrink: 0;
   margin-left: 24px;
 
-  transition: -webkit-transform 0.2s ease-in-out;
-  transition:         transform 0.2s ease-in-out;
-  transition:         transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: -webkit-transform var(--transition-speed-medium) ease-in-out;
+  transition:         transform var(--transition-speed-medium) ease-in-out;
+  transition:         transform var(--transition-speed-medium) ease-in-out, -webkit-transform var(--transition-speed-medium) ease-in-out;
 }
 @media (min-width: 992px) {
   .main-product__link svg {
@@ -1625,7 +1628,7 @@ a {
 
   border-top: 1px solid var(--category-border-color, var(--gray-30-color));
 
-  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out, border-color var(--transition-speed-medium) ease-in-out;
 }
 @media (min-width: 1200px) {
   .categories-list__item a {
@@ -1659,9 +1662,9 @@ a {
   -webkit-transform-origin: left;
           transform-origin: left;
 
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition:         transform 0.3s ease-in-out;
-  transition:         transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform var(--transition-speed-slow) ease-in-out;
+  transition:         transform var(--transition-speed-slow) ease-in-out;
+  transition:         transform var(--transition-speed-slow) ease-in-out, -webkit-transform var(--transition-speed-slow) ease-in-out;
 }
 .categories-list__item svg {
   flex-shrink: 0;
@@ -1674,9 +1677,9 @@ a {
   -webkit-transform-origin: right;
           transform-origin: right;
 
-  transition: color 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out, -webkit-transform var(--transition-speed-medium) ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out, transform var(--transition-speed-medium) ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out, transform var(--transition-speed-medium) ease-in-out, -webkit-transform var(--transition-speed-medium) ease-in-out;
 }
 @media (min-width: 1600px) {
   .categories-list__item svg {
@@ -1829,7 +1832,7 @@ a {
   border: 1px solid var(--gray-15-color);
   border-radius: 24px;
 
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color var(--transition-speed-slow) ease-in-out;
 
   row-gap: 30px;
 }
@@ -1877,9 +1880,9 @@ a {
   -webkit-transform: scale(var(--product-slide-img-scale, 1));
           transform: scale(var(--product-slide-img-scale, 1));
 
-  transition: -webkit-transform 0.3s ease-in-out;
-  transition:         transform 0.3s ease-in-out;
-  transition:         transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform var(--transition-speed-slow) ease-in-out;
+  transition:         transform var(--transition-speed-slow) ease-in-out;
+  transition:         transform var(--transition-speed-slow) ease-in-out, -webkit-transform var(--transition-speed-slow) ease-in-out;
 }
 .products-slider__slide-text {
   display: -webkit-box;
@@ -1888,7 +1891,7 @@ a {
   font-size: 16px;
   color: var(--product-slide-text-color, var(--gray-30-color));
 
-  transition: color 0.2s ease-in-out;
+  transition: color var(--transition-speed-medium) ease-in-out;
 
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 4;
@@ -1971,7 +1974,7 @@ a {
   background-size: 100%;
   opacity: var(--play-icon-opacity, 0.2);
 
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity var(--transition-speed-slow) ease-in-out;
 }
 .about__btn-play > span {
   position: relative;
@@ -1982,7 +1985,7 @@ a {
   text-align: start;
   color: var(--play-text-color, var(--white-color));
 
-  transition: color 0.3s ease-in-out;
+  transition: color var(--transition-speed-slow) ease-in-out;
 }
 @media (hover: hover) {
   .about__btn-play:hover {
@@ -2040,7 +2043,7 @@ a {
   background-size: 100%;
   opacity: var(--play-icon-opacity, 0.2);
 
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity var(--transition-speed-slow) ease-in-out;
 }
 .about__btn > span {
   position: relative;
@@ -2053,7 +2056,7 @@ a {
   text-align: start;
   color: var(--play-text-color, var(--white-color));
 
-  transition: color 0.3s ease-in-out;
+  transition: color var(--transition-speed-slow) ease-in-out;
 }
 @media (hover: hover) {
   .about__btn:hover {
@@ -2204,7 +2207,7 @@ a {
   border: 1px solid var(--gray-15-color);
   border-radius: 24px;
 
-  transition: background-color 0.3s ease-in-out;
+  transition: background-color var(--transition-speed-slow) ease-in-out;
 }
 @media (hover: hover) {
   .contact-card:hover {
