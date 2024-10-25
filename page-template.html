@@ -217,31 +217,29 @@
               </p>
             </div>
 
-            <form class="feedback-form feedback-form--modal">
+            <form id="feedback-form-modal" class="feedback-form feedback-form--modal" data-validate>
 
               <div class="feedback-form__top">
                 <div>
                   <label class="form-label text text-sm mb-1" for="">Имя</label>
-                  <input class="form-input" type="text" name="Имя" placeholder="Имя">
+                  <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
                 </div>
                 <div>
                   <label class="form-label text text-sm mb-1" for="">Телефон</label>
-                  <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00">
+                  <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
                 </div>
               </div>
 
               <div class="feedback-form__bottom">
                 <button class="btn btn-secondary" type="submit">отправить</button>
 
-                <div class="">
+                <label class="form-checkbox">
+                  <input type="checkbox" data-validate="confirm" required>
+                  <span class="text-sm">
+                    Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
+                  </span>
+                </label>
 
-                  <label class="form-checkbox">
-                    <input type="checkbox">
-                    <span class="text-sm">
-                      Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
-                    </span>
-                  </label>
-                </div>
               </div>
 
             </form>
