@@ -10,8 +10,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style/vendor-bundle.css">
-  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/vendor-bundle.css?v=2">
+  <link rel="stylesheet" href="style/main.css?v=2">
   <title>Главная</title>
 </head>
 
@@ -40,8 +40,8 @@
 
           <div class="header__logo">
             <div class="logo logo--background-color">
-              <a href="/">
-                <svg width="175" height="38">
+              <a href="/" aria-label="Перейти на главную страницу">
+                <svg width="175" height="38" aria-label="Логотип BEAUTY PLAST">
                   <use xlink:href="img/sprite.svg#logo"></use>
                 </svg>
               </a>
@@ -159,14 +159,98 @@
 
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide hero-slide" style="background-image: url(img/img-bg-hero-1.png);">
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-1.png);">
               <div class="container">
                 <div class="hero-slide__cont">
                   <div class="hero-slide__img">
-                    <img src="img/img-main-product-1.png" alt="Мностадийное пэт производство">
+                    <img src="img/img-main-product-1.png" alt="Экструзионно-выдувное и моностадийное ПЭТ производство" width="375" height="375">
                   </div>
                   <div class="hero-slide__info">
-                    <h2 class="title title-large hero-slide__title">Мностадийное пэт производство</h2>
+                    <h2 class="title-xl mb-5">Экструзионно-выдувное и моностадийное ПЭТ производство</h2>
+                    <div class="hero-slide__btns">
+                      <a class="btn btn-secondary" href="">Вся продукция</a>
+
+                      <div class="slider-controls">
+                        <div class="slider-button-prev slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                          </svg>
+                        </div>
+                        <div class="slider-button-next slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-2.jpg);">
+              <div class="container">
+                <div class="hero-slide__cont">
+                  <div class="hero-slide__img">
+                    <img src="img/img-main-product-1.png" alt="" width="375" height="375">
+                  </div>
+                  <div class="hero-slide__info">
+                    <h2 class="title-xl mb-5"></h2>
+                    <div class="hero-slide__btns">
+                      <a class="btn btn-secondary" href="">Вся продукция</a>
+
+                      <div class="slider-controls">
+                        <div class="slider-button-prev slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                          </svg>
+                        </div>
+                        <div class="slider-button-next slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-3.jpg);">
+              <div class="container">
+                <div class="hero-slide__cont">
+                  <div class="hero-slide__img">
+                    <img src="img/img-main-product-1.png" alt="Помповые дозаторы" width="375" height="375">
+                  </div>
+                  <div class="hero-slide__info">
+                    <h2 class="title-xl mb-5">Помповые дозаторы</h2>
+                    <div class="hero-slide__btns">
+                      <a class="btn btn-secondary" href="">Вся продукция</a>
+
+                      <div class="slider-controls">
+                        <div class="slider-button-prev slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                          </svg>
+                        </div>
+                        <div class="slider-button-next slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-4.jpg);">
+              <div class="container">
+                <div class="hero-slide__cont">
+                  <div class="hero-slide__img">
+                    <img src="img/img-main-product-1.png" alt="Укупорочные средства" width="375" height="375">
+                  </div>
+                  <div class="hero-slide__info">
+                    <h2 class="title-xl mb-5">Укупорочные средства</h2>
                     <div class="hero-slide__btns">
                       <a class="btn btn-secondary" href="">Вся продукция</a>
 
@@ -188,23 +272,31 @@
               </div>
             </div>
 
+
           </div>
 
         </div>
       </section>
+
       <section class="categories">
         <div class="container">
           <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
               <div class="categories__info">
-                <h2 class="title title-medium mb-3 ">Производство косметической продукции</h2>
-                <p class="text categories__descr">Компания ЭВИ Косметик Лаб&nbsp;&mdash; это один из&nbsp;лидеров в&nbsp;сфере разработки и&nbsp;производства высококачественной линии косметических средств и&nbsp;бытовой химии. Своевременно выполняем взятые на&nbsp;себя обязательства, уважаем интересы партнёров и&nbsp;клиентов, соответствуем самым высоким требованиям и&nbsp;стандартам&nbsp;&mdash; вот основные принципы, в&nbsp;соответствии с&nbsp;которыми мы&nbsp;выстраиваем свою деятельность на&nbsp;протяжении вот уже многих лет.</p>
+                <div class="title-lg mb-3">Производство косметической продукции</div>
+                <div>
+                  <p class="text-md">
+                    БЬЮТИ ПЛАСТ - российский производственный комплекс полного цикла - от упаковки до готовой продукции.
+                    Компания БЬЮТИ ПЛАСТ предлагает полный спектр услуг по производству пластиковой упаковки для косметики и бытовой химии, включая пластиковые флаконы, помповые дозаторы и укупорочные средства. На нашем высокотехнологичном оборудовании мы создаём продукцию из различных видов пластика, используя экструзионно-выдувные машины для ПНД флаконов и моностадийное оборудование для производства ПЭТ-упаковки.
+                    Наше подразделение предлагает широкий ассортимент упаковки, который станет надежной альтернативой импортной продукции и позволяет развивать производство внутри страны.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-lg-8">
-              <div class="text text--uppercase text-sm mb-2">
+              <h2 class="title-section mb-2">
                 Категории:
-              </div>
+              </h2>
 
               <ul class="list-reset categories-list">
 
@@ -218,7 +310,7 @@
                 </li>
                 <li class="categories-item">
                   <a href="">
-                    <span>EVI PROFESSIONAL</span>
+                    <span>Укопорочные средства</span>
                     <svg width="23" height="18">
                       <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
@@ -248,52 +340,55 @@
           </div>
         </div>
       </section>
+
       <section class="benefits">
         <div class="container">
-          <h2 class="text text--uppercase text-sm mb-2">
+          <h2 class="title-section mb-2">
             преимущества:
           </h2>
           <ul class="list-reset benefits-list">
 
             <li class="benefits-item">
               <div class="benefits-item__avatar">
-                <img src="img/person-avatar.png">
+                <img src="img/person-avatar.png" alt="Фото преимущества" width="60" height="60">
               </div>
 
-              <h3 class="title title-small mb-3 mb-lg-2 mb-2xl-3">Преимущество 1</h3>
-              <p class="text">Lorem ipsum dolor sit amet consectetur. Tincidunt est ut ac egestas sit tortor cras.</p>
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Стабильное и быстрое производство в России</h3>
+              <p class="text-md">Наше производство полностью локализовано, что позволяет нам оперативно выпускать пластиковые флаконы и укупорочные средства без зависимости от валютных колебаний и зарубежных поставок.</p>
             </li>
             <li class="benefits-item">
               <div class="benefits-item__avatar">
-                <img src="img/person-avatar.png">
+                <img src="img/person-avatar.png" alt="Фото преимущества" width="60" height="60">
               </div>
 
-              <h3 class="title title-small mb-3 mb-lg-2 mb-2xl-3">Преимущество 2</h3>
-              <p class="text">Lorem ipsum dolor sit amet consectetur. Tincidunt est ut ac egestas sit tortor cras.</p>
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Широкий выбор и готовность к поставке</h3>
+              <p class="text-md">Мы предлагаем разнообразный ассортимент пластиковых флаконов и укупорочных средств, обеспечиваем подбор образцов и поддерживаем складскую программу для быстрого выполнения заказов.</p>
             </li>
             <li class="benefits-item">
               <div class="benefits-item__avatar">
-                <img src="img/person-avatar.png">
+                <img src="img/person-avatar.png" alt="Фото преимущества" width="60" height="60">
               </div>
 
-              <h3 class="title title-small mb-3 mb-lg-2 mb-2xl-3">Преимущество 3</h3>
-              <p class="text">Lorem ipsum dolor sit amet consectetur. Tincidunt est ut ac egestas sit tortor cras.</p>
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Индивидуальный дизайн и уникальные решения</h3>
+              <p class="text-md">Разрабатываем упаковку по индивидуальному запросу, подбираем цветовые решения и предлагаем услуги по декорированию, чтобы ваша продукция выделялась на полке.</p>
             </li>
+
 
           </ul>
 
         </div>
       </section>
+
       <section class="products">
         <div class="container">
           <div class="products__top">
 
-            <h2 class="text text--uppercase text-sm products__left">
+            <h2 class="title-section products__left">
               Продукция:
             </h2>
 
             <div class="products__right">
-              <span class="title title-medium">Новинки</span>
+              <div class="title-lg">Новинки</div>
 
               <div class="slider-controls">
                 <div class="slider-button-prev slider-control">
@@ -313,149 +408,92 @@
 
           <div class="swiper products-slider">
 
-            <div class="swiper-wrapper">
+            <div class="swiper-wrapper products-slider__wrapper">
 
               <div class="swiper-slide product-slide">
                 <div class="product-slide__cont">
                   <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-1.png" alt="Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810">
+                    <img src="img/packaging/products/product-packaging-1.jpg" alt="помповый дозатор Long DV DIN 24/410" width="239" height="239">
                   </div>
-                  <h3 class="title text-sm">Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810</h3>
-                  <p class="text product-slide__text">
-                    универсальный поворотный дозатор, комплектующийся с ассортиментом флаконов ООО inch"ОМЕГА ПЛАСТinch", идеален для пеномоющих средств
-                  </p>
+                  <div class="product-slide__descr">
+                    <h3 class="title-sm mb-2">помповый дозатор Long DV DIN 24/410</h3>
+                    <p class="text-sm product-slide__text">
+                      универсальный выкручивающийся дозатор, комплектующийся с ассортиментом флаконов ООО "ОМЕГА ПЛАСТ", идеален для пеномоющих средств и продукции с гелевой основой — в косметических сериях, космецевтики и в автохимии
+                    </p>
+                  </div>
                 </div>
                 <a class="btn btn-primary" href="#">подробнее</a>
               </div>
               <div class="swiper-slide product-slide">
                 <div class="product-slide__cont">
                   <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-2.png" alt="Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410">
+                    <img src="img/packaging/products/product-packaging-2.jpg" alt="флакон 400 Санрайз 28/410 DIN" width="239" height="239">
                   </div>
-                  <h3 class="title text-sm">Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410</h3>
-                  <p class="text product-slide__text">
-                    новинка Российского рынка - комплект цилиндрических флаконов объёмом 1000/500/250/100 мл.,
-                  </p>
+                  <div class="product-slide__descr">
+                    <h3 class="title-sm mb-2">флакон 400 Санрайз 28/410 DIN</h3>
+                    <p class="text-sm product-slide__text">
+                      артикул: ФСР 400,объём: 400, стандарт: 28/410 DIN, тип: экструзионно-выдувное производство, размер горла: 28, цена по запросу
+                    </p>
+                  </div>
                 </div>
                 <a class="btn btn-primary" href="#">подробнее</a>
               </div>
               <div class="swiper-slide product-slide">
                 <div class="product-slide__cont">
                   <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-1.png" alt="Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810">
+                    <img src="img/packaging/products/product-packaging-3.jpg" alt="флакон ПЭТ.М 30 цилиндр Креатив DIN 20/410 синий" width="239" height="239">
                   </div>
-                  <h3 class="title text-sm">Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810</h3>
-                  <p class="text product-slide__text">
-                    универсальный поворотный дозатор, комплектующийся с ассортиментом флаконов ООО inch"ОМЕГА ПЛАСТinch", идеален для пеномоющих средств
-                  </p>
+                  <div class="product-slide__descr">
+                    <h3 class="title-sm mb-2">флакон ПЭТ.М 30 цилиндр Креатив DIN 20/410 синий</h3>
+                    <p class="text-sm product-slide__text">
+                      артикул: ФЛ ПЭТ.М 30, объём: 30, стандарт: 20/410DIN, тип: моностадийное ПЭТ производство NISSEI ASB, размер горла: 20, цена по запросу
+                    </p>
+                  </div>
                 </div>
                 <a class="btn btn-primary" href="#">подробнее</a>
               </div>
               <div class="swiper-slide product-slide">
                 <div class="product-slide__cont">
                   <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-2.png" alt="Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410">
+                    <img src="img/packaging/products/product-packaging-4.jpg" alt="колпачок флип - топ 28/410 округлый" width="239" height="239">
                   </div>
-                  <h3 class="title text-sm">Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410</h3>
-                  <p class="text product-slide__text">
-                    новинка Российского рынка - комплект цилиндрических флаконов объёмом 1000/500/250/100 мл.,
-                  </p>
+                  <div class="product-slide__descr">
+                    <h3 class="title-sm mb-2">колпачок флип - топ 28/410 округлый</h3>
+                    <p class="text-sm product-slide__text">
+                      укупорочное средство полимерное для парфюмерно-косметической продукции конфигурации ФЛИП-ТОП, обеспечивает комплектацию флакона под 28 горло, цветовая палитра изделия по согласованию с заказчиком.
+                    </p>
+                  </div>
                 </div>
                 <a class="btn btn-primary" href="#">подробнее</a>
               </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-1.png" alt="Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810">
-                  </div>
-                  <h3 class="title text-sm">Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810</h3>
-                  <p class="text product-slide__text">
-                    универсальный поворотный дозатор, комплектующийся с ассортиментом флаконов ООО inch"ОМЕГА ПЛАСТinch", идеален для пеномоющих средств
-                  </p>
-                </div>
-                <a class="btn btn-primary" href="#">подробнее</a>
-              </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-2.png" alt="Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410">
-                  </div>
-                  <h3 class="title text-sm">Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410</h3>
-                  <p class="text product-slide__text">
-                    новинка Российского рынка - комплект цилиндрических флаконов объёмом 1000/500/250/100 мл.,
-                  </p>
-                </div>
-                <a class="btn btn-primary" href="#">подробнее</a>
-              </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-1.png" alt="Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810">
-                  </div>
-                  <h3 class="title text-sm">Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810</h3>
-                  <p class="text product-slide__text">
-                    универсальный поворотный дозатор, комплектующийся с ассортиментом флаконов ООО inch"ОМЕГА ПЛАСТinch", идеален для пеномоющих средств
-                  </p>
-                </div>
-                <a class="btn btn-primary" href="#">подробнее</a>
-              </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-2.png" alt="Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410">
-                  </div>
-                  <h3 class="title text-sm">Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410</h3>
-                  <p class="text product-slide__text">
-                    новинка Российского рынка - комплект цилиндрических флаконов объёмом 1000/500/250/100 мл.,
-                  </p>
-                </div>
-                <a class="btn btn-primary" href="#">подробнее</a>
-              </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-1.png" alt="Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810">
-                  </div>
-                  <h3 class="title text-sm">Помповый дозатор Grande DIN 28/410, PCO 1881, BPF 28/415, PCO 1810</h3>
-                  <p class="text product-slide__text">
-                    универсальный поворотный дозатор, комплектующийся с ассортиментом флаконов ООО inch"ОМЕГА ПЛАСТinch", идеален для пеномоющих средств
-                  </p>
-                </div>
-                <a class="btn btn-primary" href="#">подробнее</a>
-              </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product-slide__img" style="--producer-img: url('../img/producer-1.png')">
-                    <img src="img/product-2.png" alt="Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410">
-                  </div>
-                  <h3 class="title text-sm">Комплект 1000 мл., 500 мл. 250 мл., 100 мл. стрейт цилиндры DIN 28/410</h3>
-                  <p class="text product-slide__text">
-                    новинка Российского рынка - комплект цилиндрических флаконов объёмом 1000/500/250/100 мл.,
-                  </p>
-                </div>
-                <a class="btn btn-primary" href="#">подробнее</a>
-              </div>
+
 
             </div>
 
           </div>
         </div>
       </section>
+
       <section class="about">
         <div class="container">
           <div class="row about__cont">
 
             <div class="col-12 col-lg-4 mb-5 mb-lg-0">
-              <h2 class="text text--uppercase about__title">
+              <h2 class="title-section about__title">
                 О компании
               </h2>
 
-              <div class="title title-medium about__subtitle">
-                HoReCa - cерия косметических средств для гостиничного сервиса
+              <div class="title-lg about__subtitle">
+                Компания БЬЮТИПЛАСТ — ведущий российский производитель пластиковой упаковки для косметики и бытовой химии.
               </div>
 
-              <div class="text about__text">
-                Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis. Molestie penatibus dui enim elementum bibendum. Arcu amet eget eleifend pharetra eget feugiat. Eget pretium enim cras turpis dictumst sed. Vulputate sagittis porttitor placerat viverra nisl posuere elit mi donec.
+              <div class="text-md">
+                <p class="indent-reset mb-2">
+                  В нашем арсенале — большой выбор готовой упаковки и поддержка складской программы для оперативных поставок. Мы также предоставляем услуги по разработке индивидуальной упаковки: создаем уникальные цветовые решения и декор, подчеркивающий стиль бренда наших клиентов.
+                </p>
+                <p class="indent-reset">
+                  Мы выпускаем широкий ассортимент пластиковых флаконов, помповых дозаторов и укупорочных средств, предлагая надежную альтернативу импортной продукции. Современное, высокоточное оборудование позволяет нам производить продукцию на территории России, что исключает зависимость от валютных колебаний и зарубежных поставок.
+                </p>
               </div>
             </div>
 
@@ -471,20 +509,18 @@
             <div class="col-12 col-lg-4 mt-auto">
               <ul class="list-reset about-benefits">
                 <li>
-                  <div class="title title-large about-benefits__title">15+</div>
-                  <p class="text text-sm about-benefits__text">Lorem ipsum dolor sit amet</p>
+                  <div class="title-xl about-benefits__title">24+</div>
+                  <p class="text-sm">Вида помповых дозаторов и укупорочных средств в наличии</p>
                 </li>
                 <li>
-                  <div class="title title-large about-benefits__title">15+</div>
-                  <p class="text text-sm about-benefits__text">Lorem ipsum dolor sit amet</p>
+                  <div class="title-xl about-benefits__title">75+</div>
+                  <p class="text-sm">Видов флаконов ПНД, ПЭТ в наличии</p>
                 </li>
                 <li>
-                  <div class="title title-large about-benefits__title">15+</div>
-                  <p class="text text-sm about-benefits__text">Lorem ipsum dolor sit amet</p>
+                  <p class="text-sm">Отгрузка со склада в Подмосковье, выполнение ассортиментного заказа в кратчайшие сроки</p>
                 </li>
                 <li>
-                  <div class="title title-large about-benefits__title">15+</div>
-                  <p class="text text-sm about-benefits__text">Lorem ipsum dolor sit amet</p>
+                  <p class="text-sm">Разработка эксклюзивных флаконов и укупорочных средств, брендирование, декорирование</p>
                 </li>
               </ul>
             </div>
@@ -499,19 +535,19 @@
 
           <div class="row justify-content-between">
             <div class="col-lg-5 col-2xl-6 mb-4 mb-lg-0 offset-lg-1">
-              <h2 class="title title-large mb-4">Оставьте заявку</h2>
-              <p class="text feedback__text">Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis. </p>
+              <h2 class="title-xl mb-4">Оставьте заявку</h2>
+              <p class="text-md feedback__text">Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis. </p>
             </div>
 
             <div class="col-lg-4">
               <form id="feedback-form" class="feedback-form " data-validate>
 
                 <div class="feedback-form__top">
-                  <div>
+                  <div class="form-field">
                     <label class="form-label text text-sm mb-1" for="">Имя</label>
                     <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
                   </div>
-                  <div>
+                  <div class="form-field">
                     <label class="form-label text text-sm mb-1" for="">Телефон</label>
                     <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
                   </div>
@@ -520,12 +556,14 @@
                 <div class="feedback-form__bottom">
                   <button class="btn btn-secondary" type="submit">отправить</button>
 
-                  <label class="form-checkbox">
-                    <input type="checkbox" data-validate="confirm" required>
-                    <span class="text-sm">
-                      Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
-                    </span>
-                  </label>
+                  <div class="form-field">
+                    <label class="form-checkbox">
+                      <input type="checkbox" data-validate="confirm" required>
+                      <span class="text-sm">
+                        Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
 
                 </div>
 
@@ -542,11 +580,8 @@
             <div class="col-12 col-lg-7 mb-5 mb-lg-0">
 
               <div class="contacts__top">
-                <h2 class="
-             text
-             text--uppercase
-             mb-2">контакты</h2>
-                <div class="title title-medium">Приходите к нам в офис</div>
+                <h2 class="title-section mb-2">контакты</h2>
+                <div class="title-lg">Приходите к нам в офис</div>
               </div>
 
               <div class="contacts__map">
@@ -562,14 +597,14 @@
 
                   <li class="contact-card">
                     <div class="contact-card__top">
-                      <span class="text text-sm">Офис:</span>
-                      <span class="contact-card__company">ООО «Бьюти Пласт»</span>
+                      <span class="text-sm">Офис:</span>
+                      <span class="text-sm text-sm--light">ООО «Бьюти Пласт»</span>
                     </div>
 
                     <div class="contact-card__bottom">
                       <div class="mb-4">
-                        <p class="indent-reset text-md">Россия, 127018, г. Москва, вн. тер. г. Муниципальный Округ Марьина Роща, ул. Сущёвский Вал, д. 16, стр. 6.</p>
-                        <p class="text text-sm">пн-пт 9:00-18.00</p>
+                        <p class="text-md text-md--dark">Россия, 127018, г. Москва, вн. тер. г. Муниципальный Округ Марьина Роща, ул. Сущёвский Вал, д. 16, стр. 6.</p>
+                        <p class="text-sm">пн-пт 9:00-18.00</p>
                       </div>
 
                       <div>
@@ -581,15 +616,15 @@
                         </ul>
                         <ul class="list-reset social-list">
                           <li>
-                            <a href="#">
-                              <svg width="25" height="25" aria-hidden="true">
+                            <a href="#" aria-label="Перейти в Telegram">
+                              <svg width="25" height="25" aria-label="Telegram">
                                 <use xlink:href="img/sprite.svg#telegram"></use>
                               </svg>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <svg width="25" height="25" aria-hidden="true">
+                            <a href="#" aria-label="Перейти в Vkontakte">
+                              <svg width="25" height="25" aria-label="Vkontakte">
                                 <use xlink:href="img/sprite.svg#vk"></use>
                               </svg>
                             </a>
@@ -600,14 +635,14 @@
                   </li>
                   <li class="contact-card">
                     <div class="contact-card__top">
-                      <span class="text text-sm">Производство:</span>
-                      <span class="contact-card__company">ООО «Бьюти Пласт»</span>
+                      <span class="text-sm">Производство:</span>
+                      <span class="text-sm text-sm--light">ООО «Бьюти Пласт»</span>
                     </div>
 
                     <div class="contact-card__bottom">
                       <div class="mb-4">
-                        <p class="indent-reset text-md">Россия, 140573, Московская область, г.о. Коломна, с. Бояркино, тер. Производственная, зд. 1, стр. 1</p>
-                        <p class="text text-sm">пн-пт 9:00-18.00</p>
+                        <p class="text-md text-md--dark">Россия, 140573, Московская область, г.о. Коломна, с. Бояркино, тер. Производственная, зд. 1, стр. 1</p>
+                        <p class="text-sm">пн-пт 9:00-18.00</p>
                       </div>
 
                       <div>
@@ -619,15 +654,15 @@
                         </ul>
                         <ul class="list-reset social-list">
                           <li>
-                            <a href="#">
-                              <svg width="25" height="25" aria-hidden="true">
+                            <a href="#" aria-label="Перейти в Telegram">
+                              <svg width="25" height="25" aria-label="Telegram">
                                 <use xlink:href="img/sprite.svg#telegram"></use>
                               </svg>
                             </a>
                           </li>
                           <li>
-                            <a href="#">
-                              <svg width="25" height="25" aria-hidden="true">
+                            <a href="#" aria-label="Перейти в Vkontakte">
+                              <svg width="25" height="25" aria-label="Vkontakte">
                                 <use xlink:href="img/sprite.svg#vk"></use>
                               </svg>
                             </a>
@@ -645,7 +680,7 @@
           </div>
 
           <div class="contacts-manager">
-            <h2 class="title title-medium mb-5 contacts-manager__title">
+            <h2 class="title-lg contacts-manager__title">
               Или обратитесь напрямую к нашим менеджерам
             </h2>
 
@@ -654,23 +689,23 @@
               <li class="manager-card">
                 <div class="manager-card__top">
                   <div class="manager-card__avatar">
-                    <img src="img/person-avatar.png">
+                    <img src="img/person-avatar.png" alt="Фото менеджера" width="60" height="60">
                   </div>
                   <div class="manager-card__info">
-                    <div class="text text-sm mb-3">Национальный менеджер по работе с ключевыми клиентами</div>
+                    <div class="text-sm mb-3">Национальный менеджер по работе с ключевыми клиентами</div>
                     <div class="manager-card__row">
-                      <div class="mr-3">Бабукова Виктория</div>
+                      <div class="text-md text-md--dark mr-3">Бабукова Виктория</div>
                       <ul class="list-reset social-list">
                         <li>
-                          <a href="#">
-                            <svg width="25" height="25" aria-hidden="true">
+                          <a href="#" aria-label="Перейти в Telegram">
+                            <svg width="25" height="25" aria-label="Telegram">
                               <use xlink:href="img/sprite.svg#telegram"></use>
                             </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
-                            <svg width="25" height="25" aria-hidden="true">
+                          <a href="#" aria-label="Перейти в WhatsApp">
+                            <svg width="25" height="25" aria-label="WhatsApp">
                               <use xlink:href="img/sprite.svg#whatsapp"></use>
                             </svg>
                           </a>
@@ -691,23 +726,23 @@
               <li class="manager-card">
                 <div class="manager-card__top">
                   <div class="manager-card__avatar">
-                    <img src="img/person-avatar.png">
+                    <img src="img/person-avatar.png" alt="Фото менеджера" width="60" height="60">
                   </div>
                   <div class="manager-card__info">
-                    <div class="text text-sm mb-3">Производственный менеджер по продажам</div>
+                    <div class="text-sm mb-3">Производственный менеджер по продажам</div>
                     <div class="manager-card__row">
-                      <div class="mr-3">Брандина Ольга</div>
+                      <div class="text-md text-md--dark mr-3">Брандина Ольга</div>
                       <ul class="list-reset social-list">
                         <li>
-                          <a href="#">
-                            <svg width="25" height="25" aria-hidden="true">
+                          <a href="#" aria-label="Перейти в Telegram">
+                            <svg width="25" height="25" aria-label="Telegram">
                               <use xlink:href="img/sprite.svg#telegram"></use>
                             </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
-                            <svg width="25" height="25" aria-hidden="true">
+                          <a href="#" aria-label="Перейти в WhatsApp">
+                            <svg width="25" height="25" aria-label="WhatsApp">
                               <use xlink:href="img/sprite.svg#whatsapp"></use>
                             </svg>
                           </a>
@@ -728,23 +763,23 @@
               <li class="manager-card">
                 <div class="manager-card__top">
                   <div class="manager-card__avatar">
-                    <img src="img/person-avatar.png">
+                    <img src="img/person-avatar.png" alt="Фото менеджера" width="60" height="60">
                   </div>
                   <div class="manager-card__info">
-                    <div class="text text-sm mb-3">Руководитель отдела продаж подразделения производство упаковки</div>
+                    <div class="text-sm mb-3">Руководитель отдела продаж подразделения производство упаковки</div>
                     <div class="manager-card__row">
-                      <div class="mr-3">Зиновьева Елена</div>
+                      <div class="text-md text-md--dark mr-3">Зиновьева Елена</div>
                       <ul class="list-reset social-list">
                         <li>
-                          <a href="#">
-                            <svg width="25" height="25" aria-hidden="true">
+                          <a href="#" aria-label="Перейти в Telegram">
+                            <svg width="25" height="25" aria-label="Telegram">
                               <use xlink:href="img/sprite.svg#telegram"></use>
                             </svg>
                           </a>
                         </li>
                         <li>
-                          <a href="#">
-                            <svg width="25" height="25" aria-hidden="true">
+                          <a href="#" aria-label="Перейти в WhatsApp">
+                            <svg width="25" height="25" aria-label="WhatsApp">
                               <use xlink:href="img/sprite.svg#whatsapp"></use>
                             </svg>
                           </a>
@@ -763,21 +798,23 @@
                 </div>
               </li>
 
+
             </ul>
           </div>
         </div>
       </section>
+
     </main>
     <footer class="site__footer footer">
       <div class="container">
         <div class="footer__cont">
-          <a class="text" href="">© 2021-2024 Все права защищены</a>
-          <a class="text" href="">Политика конфиденциальности</a>
-          <a class="text" href="">Согласие на обработку ПД</a>
-          <div class="text footer__development">
+          <p class="text-md" href="">© 2021-2024 Все права защищены</p>
+          <a class="text-md" href="">Политика конфиденциальности</a>
+          <a class="text-md" href="">Согласие на обработку ПД</a>
+          <div class="text-md footer__development">
             © Разработка сайта
-            <a href="">
-              <svg width="93" height="25" aria-hidden="true">
+            <a href="#" aria-label="Переход на сайт Разработчика">
+              <svg width="93" height="25" aria-label="Логотип Re:activno">
                 <use xlink:href="img/sprite.svg#logo-reactivno"></use>
               </svg>
             </a>
@@ -828,11 +865,11 @@
             <form id="feedback-form-modal" class="feedback-form feedback-form--modal" data-validate>
 
               <div class="feedback-form__top">
-                <div>
+                <div class="form-field">
                   <label class="form-label text text-sm mb-1" for="">Имя</label>
                   <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
                 </div>
-                <div>
+                <div class="form-field">
                   <label class="form-label text text-sm mb-1" for="">Телефон</label>
                   <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
                 </div>
@@ -841,12 +878,14 @@
               <div class="feedback-form__bottom">
                 <button class="btn btn-secondary" type="submit">отправить</button>
 
-                <label class="form-checkbox">
-                  <input type="checkbox" data-validate="confirm" required>
-                  <span class="text-sm">
-                    Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
-                  </span>
-                </label>
+                <div class="form-field">
+                  <label class="form-checkbox">
+                    <input type="checkbox" data-validate="confirm" required>
+                    <span class="text-sm">
+                      Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
+                    </span>
+                  </label>
+                </div>
 
               </div>
 
