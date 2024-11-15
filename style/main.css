@@ -2180,10 +2180,12 @@ a {
 .feedback {
   padding: 48px 0;
 
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%), url("../img/bg-feedback.png");
+  background-image: url("../img/bg-feedback-packaging.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  -o-border-image: fill 0 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
+     border-image: fill 0 linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, #ffffff 100%);
 
   --main-text-md-color: var(--gray-70-color);
 }
@@ -2196,6 +2198,9 @@ a {
   .feedback {
     padding: 96px 0;
   }
+}
+.feedback--cosmetics {
+  background-image: url("../img/bg-feedback-cosmetics.jpg");
 }
 @media (min-width: 992px) {
   .feedback__text {
