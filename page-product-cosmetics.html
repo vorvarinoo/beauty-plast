@@ -862,6 +862,92 @@
         </svg>
       </a>
     </div>
+    <div class="hystmodal" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal ">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="modal__title title title-medium mb-4">Спасибо за заявку!</div>
+            <div class="modal__text text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+            <button class="btn btn-secondary" data-hystclose>Хорошо</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="video-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--video">
+            <div class="modal__content">
+              <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+                <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#cross"></use>
+                </svg>
+              </button>
+              <div class="site-video">
+                <video class="site-video__content" width="100%" preload="metadata" playsinline="" controls>
+                  <source src="video/about-video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="feedback-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal ">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="modal__top">
+              <h2 class="title title-medium mb-4">Оставьте ваш номер телефона</h2>
+
+              <p class="text">
+                Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis.
+              </p>
+            </div>
+
+            <form id="feedback-form-modal" class="feedback-form feedback-form--modal" data-validate>
+
+              <div class="feedback-form__top">
+                <div class="form-field">
+                  <label class="form-label text text-sm mb-1" for="">Имя</label>
+                  <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
+                </div>
+                <div class="form-field">
+                  <label class="form-label text text-sm mb-1" for="">Телефон</label>
+                  <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
+                </div>
+              </div>
+
+              <div class="feedback-form__bottom">
+                <button class="btn btn-secondary" type="submit">отправить</button>
+
+                <div class="form-field">
+                  <label class="form-checkbox">
+                    <input type="checkbox" data-validate="confirm" required>
+                    <span class="text-sm">
+                      Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
+                    </span>
+                  </label>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="hystmodal" id="product-modal-1" aria-hidden="true">
       <div class="hystmodal__wrap">
         <div class="hystmodal__window" role="dialog" aria-modal="true">
@@ -1069,75 +1155,7 @@
         </div>
       </div>
     </div>
-    <div class="hystmodal" id="video-modal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <div class="modal modal--video">
-            <div class="modal__content">
-              <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
-                <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
-                  <use xlink:href="img/sprite.svg#cross"></use>
-                </svg>
-              </button>
-              <div class="site-video">
-                <video class="site-video__content" width="100%" preload="metadata" playsinline="" controls>
-                  <source src="video/about-video.mp4" type="video/mp4">
-                </video>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hystmodal" id="feedback-modal" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <div class="modal ">
-            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
-              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#cross"></use>
-              </svg>
-            </button>
-            <div class="modal__top">
-              <h2 class="title title-medium mb-4">Оставьте ваш номер телефона</h2>
 
-              <p class="text">
-                Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis.
-              </p>
-            </div>
-
-            <form id="feedback-form-modal" class="feedback-form feedback-form--modal" data-validate>
-
-              <div class="feedback-form__top">
-                <div class="form-field">
-                  <label class="form-label text text-sm mb-1" for="">Имя</label>
-                  <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
-                </div>
-                <div class="form-field">
-                  <label class="form-label text text-sm mb-1" for="">Телефон</label>
-                  <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
-                </div>
-              </div>
-
-              <div class="feedback-form__bottom">
-                <button class="btn btn-secondary" type="submit">отправить</button>
-
-                <div class="form-field">
-                  <label class="form-checkbox">
-                    <input type="checkbox" data-validate="confirm" required>
-                    <span class="text-sm">
-                      Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
-                    </span>
-                  </label>
-                </div>
-
-              </div>
-
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
   <script src="js/vendor-bundle.js"></script>
   <script src="js/main.js" type="module"></script>
