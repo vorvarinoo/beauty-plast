@@ -1,0 +1,33 @@
+.feedback {
+  --main-text-md-color: var(--gray-70-color);
+  --background-light: rgba(255, 255, 255, 0);
+  --background-dark: #ffffff;
+
+  padding: 48px 0;
+  background-image: url("../img/bg-feedback-packaging.jpg?v=2");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @include media-min ($lg) {
+    padding: 64px 0;
+  }
+
+  @include media-min ($xxl) {
+    padding: 96px 0;
+  }
+
+  &--cosmetics {
+    background-image: url("../img/bg-feedback-cosmetics.jpg?v=2");
+  }
+
+  &__text {
+    @include media-min ($lg) {
+      max-width: 255px;
+    }
+
+    @include media-min ($xxl) {
+      max-width: 375px;
+    }
+  }
+}

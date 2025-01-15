@@ -1,0 +1,7 @@
+.categories-list {
+  margin-bottom: 32px;
+
+  @include media-min ($xxl) {
+    margin-bottom: 64px;
+  }
+}

@@ -9,7 +9,7 @@ import {
 const initSliders = () => {
   initSlider( '.main-first', sliderConfig );
   initSlider( '.hero-slider', sliderConfig.heroSlider );
-  initSlider( '.products-slider', sliderConfig.productsSlider );
+  initSlider( '#new-products', sliderConfig.newProducts );
 };
 
 export {

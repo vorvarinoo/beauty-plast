@@ -5,8 +5,13 @@
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: color var(--transition-speed-slow) ease-in-out,
+    border-color var(--transition-speed-medium) ease-in-out,
+    background-color var(--transition-speed-medium) ease-in-out;
 
-  transition: color .3s ease-in-out, border-color .2s ease-in-out;
+  @include media-min ($xl) {
+    font-size: 18px;
+  }
 }
 
 .btn-icon {

@@ -10,7 +10,6 @@
     }
 
     & > li {
-
       @include media-max ($xl) {
         padding: 32px 0;
       }
@@ -58,14 +57,13 @@
     & svg {
       color: var(--link-svg-color, #7f7f7f);
       transform: rotateX(var(--svg-rotate, 0deg));
-      transition: transform .3s ease-in-out;
+      transition: transform var(--transition-speed-slow) ease-in-out;
     }
 
     & a {
       color: var(--link-color);
       font-size: inherit;
-
-      transition: color .2s ease-in-out;
+      transition: color var(--transition-speed-medium) ease-in-out;
     }
   }
 
@@ -96,7 +94,7 @@
     overflow: hidden;
     display: grid;
     grid-template-rows: var(--dropdown-row-height, 0fr);
-    transition: grid-template-rows .3s ease-in-out;
+    transition: grid-template-rows var(--transition-speed-slow) ease-in-out;
 
     & ul {
       overflow: hidden;

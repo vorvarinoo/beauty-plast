@@ -6,40 +6,4 @@
         </p>
       </div>
 
-      <form class="feedback-form feedback-form--modal">
-
-        <div class="feedback-form__top">
-          <div>
-            <label class="form-label text text-sm mb-1"
-                   for="">Имя</label>
-            <input class="form-input"
-                   type="text"
-                   name="Имя"
-                   placeholder="Имя">
-          </div>
-          <div>
-            <label class="form-label text text-sm mb-1"
-                   for="">Телефон</label>
-            <input class="form-input"
-                   type="tel"
-                   name="Контактный телефон"
-                   placeholder="+7 900 000 00 00">
-          </div>
-        </div>
-
-        <div class="feedback-form__bottom">
-          <button class="btn btn-secondary"
-                  type="submit">отправить</button>
-
-          <div class="">
-
-            <label class="form-checkbox">
-              <input type="checkbox">
-              <span>
-                @include('../common/confirm-text.html')
-              </span>
-            </label>
-          </div>
-        </div>
-
-      </form>
+      @include('../common/feedback-form.html', {id: 'feedback-form-modal', class: 'feedback-form--modal'})

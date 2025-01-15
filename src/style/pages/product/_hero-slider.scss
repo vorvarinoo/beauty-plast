@@ -1,0 +1,7 @@
+.hero-slider {
+  padding-top: 30px;
+
+  @include media-min ($lg) {
+    padding-top: 0;
+  }
+}

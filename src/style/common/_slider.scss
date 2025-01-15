@@ -2,7 +2,7 @@
   position: relative;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
+  transition: opacity var(--transition-speed-slow) ease-in-out;
 
   &:not(.swiper-initialized) {
     opacity: 0;
@@ -17,6 +17,7 @@
   display: flex;
   column-gap: 10px;
   margin-left: auto;
+  user-select: none;
 }
 
 .slider-control {
@@ -28,21 +29,18 @@
   backdrop-filter: blur(10px);
   pointer-events: auto;
   cursor: pointer;
-
   display: none;
   flex-shrink: 0;
   justify-content: center;
   align-items: center;
+  transition: color var(--transition-speed-medium) ease-in-out;
+  user-select: none;
 
-  transition: color .2s ease-in-out;
 
-  &.swiper-button-lock {
-    display: none;
-  }
 
   & svg {
     pointer-events: none;
-    transition: transform .3s ease-in-out;
+    transition: transform var(--transition-speed-slow) ease-in-out;
   }
 
 
@@ -51,7 +49,7 @@
   }
 
   @include media-min ($xl) {
-    transition: background-color .3s ease-in-out;
+    transition: background-color var(--transition-speed-slow) ease-in-out;
   }
 
   @media (hover: hover) {

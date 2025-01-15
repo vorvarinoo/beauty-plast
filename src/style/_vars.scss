@@ -2,12 +2,10 @@
   --white-color: #FFFFFF;
   --black-color: #000000;
   --blue-color: #003a69;
-
   --gray-70-color: #4d4d4d;
   --gray-50-color: #808080;
   --gray-30-color: #b3b3b3;
   --gray-15-color: #e6e6e6;
-
   --red-color: #BD0300;
   --red-40-color: #F56C69;
   --error-color: var(--red-color);
@@ -15,6 +13,11 @@
   // other vars
   --min-site-width: 375px;
   --max-site-width: 1600px;
+
+  // transition speed vars
+  --transition-speed-fast: .1s;
+  --transition-speed-medium: .2s;
+  --transition-speed-slow: .3s;
 }
 
 $sm: 540px;

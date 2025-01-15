@@ -12,7 +12,7 @@ const {
 const isProd = ( process.env.NODE_ENV === 'production' ) || ( process.env.NODE_ENV === 'minify' );
 
 const compileHTML = () => {
-  return src( [ './src/*.html', '!./src/head.html', '!./src/footer.html' ] )
+  return src( [ './src/*.html', '!./src/head.html', '!./src/footer.html', '!./src/head-secondary.html', '!./src/head-secondary.html', '!./src/footer-packaging.html', '!./src/footer-cosmetics.html' ] )
     .pipe( fileInclude( {
       prefix: '@',
       basepath: '@file'

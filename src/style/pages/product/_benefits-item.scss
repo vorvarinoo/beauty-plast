@@ -1,0 +1,55 @@
+.benefits-item {
+  position: relative;
+  padding-right: 64px;
+
+  @include media-min ($lg) {
+    padding-left: 24px;
+  }
+
+  &:nth-child(3n),
+  &:nth-child(3n-1) {
+    &::before {
+      content: '';
+      position: absolute;
+      top: -16px;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      border-top: 1px solid var(--gray-15-color);
+
+      @include media-min ($lg) {
+        top: 0;
+        left: -15px;
+        height: 100%;
+        width: 1px;
+        border-top: none;
+        border-left: 1px solid var(--gray-30-color);
+      }
+    }
+  }
+
+  &__img {
+    overflow: hidden;
+    margin-bottom: 16px;
+
+    @include media-min ($lg) {
+      margin-bottom: 32px;
+    }
+
+    @include media-min ($xxl) {
+      margin-bottom: 64px;
+    }
+
+    & img,
+    svg {
+      object-fit: contain;
+      user-select: none;
+      border-radius: 100%;
+
+      @include media-min ($lg) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+}

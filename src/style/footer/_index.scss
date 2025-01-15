@@ -1,5 +1,5 @@
 .footer {
-  --main-text-color: var(--gray-30-color);
+  --main-text-md-color: var(--gray-30-color);
 
   background-color: var(--blue-color);
   padding: 32px 0;
@@ -19,6 +19,18 @@
     @include media-min ($xl) {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+
+    }
+
+    & > a {
+      --link-hover-color: var(--white-color);
+
+      @media (hover: hover) {
+        &:hover {
+          color: var(--link-hover-color);
+        }
+      }
     }
   }
 

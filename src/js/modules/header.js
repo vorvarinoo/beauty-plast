@@ -14,7 +14,7 @@ export const initHeaderMenu = () => {
   const headerTopNode = document.querySelector( '.site__header' );
   const modalNode = headerTopNode.querySelector( '#mobile-menu' );
   const modalTriggerNode = headerTopNode.querySelector( '[data-header-modal="mobile-menu"]' );
-
+  const linksNode = modalNode.querySelectorAll( '.header-menu__link a' );
 
   if ( !modalNode || !modalTriggerNode ) return;
 
@@ -26,14 +26,14 @@ export const initHeaderMenu = () => {
   };
 
   function openModal() {
-    document.documentElement.classList.add( 'is-block-scroll' );
+    document.documentElement.classList.add( 'is-lock-scroll' );
     modalNode.setAttribute( 'aria-hidden', 'false' );
     modalTriggerNode.classList.add( 'burger--to-cross' );
     document.addEventListener( 'keydown', onEscKeydown );
   }
 
   function closeModal() {
-    document.documentElement.classList.remove( 'is-block-scroll' );
+    document.documentElement.classList.remove( 'is-lock-scroll' );
     modalNode.setAttribute( 'aria-hidden', 'true' );
     modalTriggerNode.classList.remove( 'burger--to-cross' );
     document.addEventListener( 'keydown', onEscKeydown );
@@ -44,6 +44,12 @@ export const initHeaderMenu = () => {
     resetOffsetTop( headerTopNode );
   }, () => {
     resetOffsetTop( headerTopNode );
+  } );
+
+  linksNode.forEach( link => {
+    link.addEventListener( 'click', () => {
+      closeModal();
+    } );
   } );
 
 

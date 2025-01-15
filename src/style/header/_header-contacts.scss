@@ -1,17 +1,28 @@
 .header-contacts {
-  display: flex;
-  justify-content: space-between;
   padding: 4px 0;
   border-bottom: 1px solid var(--gray-15-color);
   background-color: var(--white-color);
 
-  @include media-min ($md) {
+  @include media-min ($lg) {
     padding: 4px 32px;
+  }
+
+  &__cont {
+    max-width: 1920px;
+    padding: 0 15px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include media-min ($lg) {
+      padding: 0 32px;
+    }
   }
 
   &__list {
     display: grid;
-    gap: 10px;
+    row-gap: 6px;
 
     @include media-min ($md) {
       display: flex;
@@ -22,8 +33,11 @@
     text-decoration: underline;
     border: 1px solid transparent;
     border-radius: 8px;
-    padding: 0 12px;
-    transition: border-color .2s ease-in-out;
+    transition: border-color var(--transition-speed-medium) ease-in-out;
+
+    @include media-min ($md) {
+      padding: 0 12px;
+    }
 
     @media (hover: hover) {
       &:hover {

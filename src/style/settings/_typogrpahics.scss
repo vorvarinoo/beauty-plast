@@ -12,7 +12,10 @@ h2,
 h3,
 h4,
 h5,
-h6,
+h6 {
+  font-weight: 400;
+}
+
 strong,
 b {
   font-weight: 500;
@@ -21,19 +24,34 @@ b {
 a {
   --link-linel: var(--blue-color);
 
-  color: var(--blue-color);
+  color: var(--link-color, var(--blue-color));
   text-decoration-color: var(--link-line, transparent);
+  transition: color var(--transition-speed-medium) ease-in-out;
+}
+
+dl {
+  margin: 0;
+}
+
+dd {
+  margin: 0;
 }
 
 .title {
   @include indent-reset;
+
+  font-weight: 500;
   line-height: 1.1;
-  color: var(--blue-color);
+  color: var(--main-title-color, var(--blue-color));
 }
 
-.title-large {
+.title-xl {
+  @include indent-reset;
+
   font-weight: 500;
   font-size: 32px;
+  line-height: 1.1;
+  color: var(--main-title-xl-color, var(--blue-color));
 
   @include media-min ($xl) {
     font-size: 48px;
@@ -44,21 +62,44 @@ a {
   }
 }
 
-.title-medium {
+.title-lg {
+  @include indent-reset;
+
   font-weight: 500;
   font-size: 24px;
+  line-height: 1.1;
+  color: var(--main-title-lg-color, var(--blue-color));
 
   @include media-min ($xxl) {
     font-size: 32px;
   }
 }
 
-.title-small {
+.title-md {
+  @include indent-reset;
+
+  font-weight: 500;
   font-size: 18px;
+  color: var(--main-title-md-color, var(--blue-color));
 
   @include media-min ($xxl) {
     font-size: 24px;
   }
+}
+
+.title-sm {
+  @include indent-reset;
+
+  font-size: 16px;
+  color: var(--main-title-sm-color, var(--blue-color));
+}
+
+.title-section {
+  @include indent-reset;
+
+  font-size: 16px;
+  color: var(--main-title-section-color, var(--gray-30-color));
+  text-transform: uppercase;
 }
 
 .text {
@@ -71,22 +112,37 @@ a {
     font-size: 18px;
   }
 
-  &--uppercase {
-    text-transform: uppercase;
-  }
-
 }
 
 .text-sm {
-  font-size: 16px;
-}
+  @include indent-reset;
 
-.text-md {
-  @include media-min ($xxl) {
-    font-size: 18px;
+  font-size: 16px;
+  color: var(--main-text-sm-color, var(--gray-50-color));
+
+  &--light {
+    color: var(--main-text-sm-light-color, var(--gray-30-color));
   }
 }
 
-.text-end {
-  text-align: end;
+.text-md {
+  @include indent-reset;
+
+  font-size: 16px;
+  color: var(--main-text-md-color, var(--gray-50-color));
+
+  @include media-min ($xxl) {
+    font-size: 18px;
+  }
+
+  &--dark {
+    color: var(--main-text-sm-dark-color, var(--black-color));
+  }
+}
+
+.text-lg {
+  @include indent-reset;
+
+  font-size: 16px;
+  color: var(--main-text-lg-color, var(--gray-50-color));
 }

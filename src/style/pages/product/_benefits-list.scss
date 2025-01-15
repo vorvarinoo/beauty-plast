@@ -1,0 +1,12 @@
+.benefits-list {
+  display: grid;
+  row-gap: 32px;
+  border-top: 1px solid var(--gray-30-color);
+  padding: 16px 0;
+
+  @include media-min ($lg) {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+  }
+
+}

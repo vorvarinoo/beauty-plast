@@ -1,0 +1,43 @@
+.page {
+  margin: 104px 0 48px;
+
+  @include media-min ($xl) {
+    margin: 112px 0 128px;
+  }
+
+  &__top {
+    padding: 8px 0 32px;
+    margin-bottom: 16px;
+
+    @include media-min ($xl) {
+      padding-top: 24px;
+      margin-bottom: 32px;
+    }
+
+    @include media-min ($xxl) {
+      padding-bottom: 64px;
+    }
+  }
+
+  &__description {
+    --main-text-color: var(--gray-30-color);
+
+    display: grid;
+    row-gap: 16px;
+    margin: 16px 0 48px;
+
+    @include media-min ($xl) {
+      margin: 32px 0;
+    }
+
+    @include media-min ($xxl) {
+      margin-bottom: 64px;
+    }
+
+    & p {
+      margin: 0;
+    }
+
+  }
+
+}

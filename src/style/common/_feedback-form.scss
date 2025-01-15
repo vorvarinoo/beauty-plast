@@ -36,6 +36,7 @@
   }
 
   &__bottom {
+    position: relative;
     display: grid;
     row-gap: 32px;
     justify-items: flex-start;

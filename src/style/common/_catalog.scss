@@ -1,0 +1,159 @@
+.catalog {
+  &__product-list {
+    @include list-reset;
+
+    flex-shrink: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 30px;
+
+
+    @include media-min ($xl) {
+      grid-template-columns: repeat(3, 1fr);
+      row-gap: 64px
+    }
+
+    @include media-min ($xxl) {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+
+  &__product-more {
+    display: flex;
+    width: 100%;
+    margin-top: 48px;
+
+    @include media-min ($xl) {
+      margin-top: 64px;
+    }
+  }
+}
+
+.catalog-filter {
+  flex-shrink: 0;
+  width: 100%;
+  user-select: none;
+  border-radius: 14px;
+  padding: 14px 16px 16px 16px;
+  backdrop-filter: blur(10px);
+  background: rgba(235, 235, 235, 0.8);
+
+
+  @include media-min ($lg) {
+    position: sticky;
+    top: 150px;
+    max-width: 254px;
+  }
+
+  @include media-min ($xxl) {
+    max-width: 240px;
+  }
+
+  &__accordion {
+
+    &[open] {
+      --top-color: var(--gray-30-color);
+    }
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--top-color, var(--blue-color));
+    font-weight: 500;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color var(--transition-speed-medium) ease-in-out;
+
+    & svg {
+      display: none;
+
+      @include media-min ($lg) {
+        display: block;
+      }
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        --top-color: var(--blue-color);
+      }
+    }
+
+    @media (hover: none) {}
+  }
+
+  &__cont {
+    display: grid;
+    row-gap: 24px;
+    padding-top: 24px;
+
+    @include media-min ($lg) {
+      row-gap: 32px;
+      padding-top: 32px;
+    }
+  }
+
+  &__btns {
+    display: grid;
+    row-gap: 8px;
+
+    & > .btn {
+      padding: 7px 32px;
+    }
+  }
+}
+
+.filter-item {
+
+  &[open] {
+    --block-color: var(--blue-color);
+    --svg-rotate: 180deg;
+  }
+
+  & summary {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--block-color, var(--gray-50-color));
+    cursor: pointer;
+    transition: color var(--transition-speed-medium) ease-in-out;
+
+    & svg {
+      transition: transform var(--transition-speed-medium) ease-in-out;
+      transform: rotateX(var(--svg-rotate, 0));
+    }
+
+    @media (hover: hover) {
+      &:hover {
+        --block-color: var(--blue-color);
+      }
+    }
+  }
+
+  &__cont {
+    padding-top: 4px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    align-items: flex-start;
+
+    &--range {
+      flex-direction: row;
+      column-gap: 8px;
+
+      & > input {
+        display: inline-flex;
+        width: 100%;
+        border-radius: 14px;
+        padding: 6px 8px;
+        border: none;
+        font-size: 16px;
+        color: var(--blue-color);
+      }
+    }
+  }
+
+}

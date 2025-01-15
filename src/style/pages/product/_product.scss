@@ -1,0 +1,101 @@
+.product {
+
+  &__img {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    background-color: var(--white-color);
+
+    & > img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: scale(var(--product-slide-img-scale, 1));
+      transition: transform var(--transition-speed-slow) ease-in-out;
+      object-fit: contain;
+    }
+
+    &:has(img[src*="@product"]),
+    &:has(img[src=""]) {
+      display: none;
+      pointer-events: none;
+    }
+  }
+
+  &__producer {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 4px;
+    right: 4px;
+    border: 1px solid var(--gray-15-color);
+    border-radius: 14px;
+    background-color: var(--white-color);
+    width: 48px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & > img {
+      object-fit: contain;
+    }
+
+    &:has(img[src*="@producer"]) {
+      display: none;
+      pointer-events: none;
+
+    }
+  }
+
+
+}
+
+.product-slide {
+  --main-text-sm-color: var(--gray-30-color);
+
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid var(--gray-15-color);
+  border-radius: 24px;
+  background-color: var(--product-slide-background-color, transparent);
+  transition: background-color var(--transition-speed-slow) ease-in-out;
+
+  @media (hover: hover) {
+    &:hover {
+      --main-text-sm-color: var(--gray-50-color);
+      --product-slide-background-color: var(--gray-15-color);
+      --product-slide-img-scale: 1.3;
+    }
+  }
+
+
+  &__cont {
+    display: grid;
+    row-gap: 8px;
+  }
+
+  &__descr {
+    padding: 0 12px;
+  }
+
+  &__text {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    font-size: 16px;
+    transition: color var(--transition-speed-medium) ease-in-out;
+  }
+}

@@ -37,16 +37,16 @@
 
 @keyframes cross-middle-line {
   20% {
-    transform: translateY(0px);
+    transform: translateY(0);
   }
 
   50% {
-    transform: translateY(0px);
+    transform: translateY(0);
 
   }
 
   100% {
-    transform: translateY(0px) rotate(45deg);
+    transform: translateY(0) rotate(45deg);
 
   }
 }

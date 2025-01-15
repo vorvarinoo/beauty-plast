@@ -1,0 +1,23 @@
+<div class="swiper-slide product-slide">
+  <div class="product-slide__cont">
+    <div class="product__img">
+      <img src="img/@product-img"
+           alt="@if(context.title) {@title}"
+           width="239"
+           height="239">
+      <div class="product__producer">
+        <img src="img/@producer-img">
+      </div>
+    </div>
+    <div class="product-slide__descr">
+      <h3 class="title-sm mb-2">@if(context.title) {@title}</h3>
+      <p class="text-sm product-slide__text">
+        @if(context.text) {@text}
+      </p>
+    </div>
+  </div>
+
+  <a class="btn btn-primary product-slide__btn"
+     href="#"
+     data-hystmodal="#@if(context.modal) {@modal}">подробнее</a>
+</div>

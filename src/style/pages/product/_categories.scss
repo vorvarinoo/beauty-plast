@@ -1,0 +1,26 @@
+.categories {
+  position: relative;
+  padding: 48px 0;
+
+  @include media-min ($lg) {
+    padding: 64px 0;
+  }
+
+  @include media-min ($xxl) {
+    padding: 96px 0;
+  }
+
+  &__info {
+    @include media-min ($lg) {
+      margin-right: 32px;
+      margin-bottom: 0;
+      align-self: flex-start;
+      position: sticky;
+      top: var(--offset-top);
+    }
+
+    @include media-min ($xxl) {
+      margin-right: 48px;
+    }
+  }
+}

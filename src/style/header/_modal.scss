@@ -11,6 +11,7 @@
     pointer-events: auto;
     background-color: rgba(235, 235, 235, 0.9);
     backdrop-filter: blur(7px);
+
     @include anim(fade, .4s);
 
     & .header-modal__content {

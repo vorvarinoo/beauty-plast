@@ -1,7 +1,53 @@
-@include('hero.html')
-@include('categories.html')
-@include('benefits.html')
-@include('products.html')
-@include('about.html')
-@include('feedback.html')
-@include('contacts.html')
+<section class="main">
+  <div class="container">
+
+    <div class="main__top">
+
+      <h1 class="indent-reset title-medium main__title">
+        Российский производитель упаковки и косметических средств
+      </h1>
+
+      <div class="main__adress">
+        Россия, 127018, г. Москва, вн. тер. г. Муниципальный Округ Марьина Роща, ул. Сущёвский Вал, д. 16, стр. 6.
+      </div>
+
+    </div>
+
+    <ul class="list-reset main__products">
+
+      <li class="main-product">
+        <div class="main-product__img">
+          <img src="img/img-main-product-2.png"
+               alt="Косметическая продукции">
+        </div>
+
+        <a class="btn text-md main-product__link"
+           href="page-product-cosmetics.html">
+          производство косметической продукции
+          <svg width="22"
+               height="18">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </li>
+
+      <li class="main-product">
+        <div class="main-product__img">
+          <img src="img/img-main-product-1.png"
+               alt="Упаковка для косметической продукции">
+        </div>
+
+        <a class="btn text-md main-product__link"
+           href="page-product-packaging.html">
+          производство упаковки для косметической продукции
+          <svg width="22"
+               height="18">
+            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+          </svg>
+        </a>
+      </li>
+
+    </ul>
+
+  </div>
+</section>

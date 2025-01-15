@@ -1,0 +1,65 @@
+.manager-card {
+  position: relative;
+
+  @include media-min ($lg) {
+    padding: 0 24px 0 16px;
+  }
+
+  @include media-min ($xxl) {
+    padding: 0 64px 0 24px;
+  }
+
+  &__top {
+    display: flex;
+    margin-bottom: 24px;
+
+    @include media-min ($lg) {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 32px;
+    }
+
+    @include media-min ($xxl) {
+      flex-direction: row;
+      margin-bottom: 64px;
+    }
+  }
+
+  &__avatar {
+    flex-shrink: 0;
+    overflow: hidden;
+    margin-right: 24px;
+
+    @include media-min ($lg) {
+      margin-bottom: 12px;
+
+    }
+
+    @include media-min ($xxl) {
+      margin-bottom: 0;
+    }
+
+    & img {
+      object-fit: contain;
+      user-select: none;
+      border-radius: 100%;
+
+      @include media-min ($lg) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+  }
+
+  &__info {
+    flex: 1 100%;
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid var(--gray-30-color);
+    padding-top: 6px;
+  }
+
+}

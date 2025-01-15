@@ -2,8 +2,6 @@ import {
   sliderConfig
 } from './configs.js';
 
-
-
 const iosChecker = () => {
   return [
       'iPad Simulator',

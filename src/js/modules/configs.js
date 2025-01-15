@@ -1,7 +1,3 @@
-import {
-  pauseVideos
-} from './utils.js';
-
 const sliderConfig = {
   default: {
     slidesPerView: 1,
@@ -17,7 +13,7 @@ const sliderConfig = {
       prevEl: '.slider-button-prev',
     },
   },
-  productsSlider: {
+  newProducts: {
     spaceBetween: 30,
     watchSlidesProgress: true,
     navigation: {
@@ -26,7 +22,7 @@ const sliderConfig = {
     },
     breakpoints: {
       320: {
-        slidesPerView: 1.4
+        slidesPerView: 1.30
       },
       540: {
         slidesPerView: 2
@@ -55,19 +51,19 @@ const modalConfig = {
   catchFocus: true,
   closeOnEsc: true,
   backscroll: true,
-  afterClose: ( modalObj ) => {
-    pauseVideos( modalObj );
-  }
 };
 
 const validateConfig = {
   justValidate: {
     errorFieldCssClass: 'is-invalid',
     errorLabelStyle: {
-      color: 'var(--error)',
+      color: 'var(--red-color)',
       marginTop: '6px',
       fontSize: '12px',
       textAlign: 'left',
+      position: 'absolute',
+      bottom: '0',
+      transform: 'translateY(110%)',
     },
     errorFormClass: 'shaked',
     errorTimeout: 1500,
