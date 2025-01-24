@@ -1,0 +1,63 @@
+.cards-block {
+  margin: 16px 0 48px;
+
+  @include media-min ($xl) {
+    margin: 32px 0;
+    padding-bottom: 128px;
+  }
+
+  @include media-min ($xxl) {
+    padding-bottom: 0;
+    margin-bottom: 64px;
+  }
+
+  &__list {
+    @include list-reset;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 48px 30px;
+
+    @include media-min ($md) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    @include media-min ($xl) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @include media-min ($xxl) {
+      grid-template-columns: repeat(6, 1fr);
+    }
+
+    & > li {
+      display: grid;
+    }
+  }
+
+  &__item {
+    position: relative;
+    border: 1px solid var(--gray-15-color);
+    border-radius: 24px;
+    padding: 8px 8px 14px;
+
+    & h3 {
+      padding: 0 8px;
+
+      @include media-min ($xl) {
+        padding: 0 12px;
+      }
+    }
+
+    & a {
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

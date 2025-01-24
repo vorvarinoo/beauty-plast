@@ -1,0 +1,55 @@
+.cards-slider {
+  padding: 48px 0;
+
+  @include media-min ($lg) {
+    padding: 64px 0;
+  }
+
+  @include media-min ($xxl) {
+    padding: 96px 0;
+  }
+
+  &__top {
+    margin-bottom: 24px;
+
+    @include media-min ($lg) {
+      margin-bottom: 32px;
+      display: flex;
+    }
+  }
+
+  &__left {
+    flex-shrink: 0;
+    margin-right: 30px;
+    width: 100%;
+    border-bottom: 1px solid var(--gray-30-color);
+
+    @include media-min ($lg) {
+      border-bottom: none;
+      max-width: 160px;
+    }
+
+    @include media-min ($xxl) {
+      max-width: 240px;
+    }
+  }
+
+  &__right {
+    flex: 1 100%;
+    display: flex;
+    align-items: center;
+    padding-top: 16px;
+
+    @include media-min ($lg) {
+      padding-top: 0;
+      padding-bottom: 8px;
+      border-top: none;
+      border-bottom: 1px solid var(--gray-30-color);
+    }
+  }
+
+  &__slide {
+    display: flex;
+    height: auto;
+  }
+}

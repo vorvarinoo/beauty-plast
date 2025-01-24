@@ -23,17 +23,11 @@
 }
 
 .site-breadcrumb {
-  margin-bottom: 32px;
   font-size: 16px;
   color: var(--gray-30-color);
 
   @include media-min ($xl) {
-    margin-bottom: 64px;
     font-size: 18px;
-  }
-
-  @include media-min ($xxl) {
-    margin-bottom: 54px;
   }
 
   & > div {

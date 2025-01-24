@@ -1,0 +1,19 @@
+<div class="card-item">
+  <div class="card-item__cont">
+    <div class="card-item__img mb-2">
+      <img src="img/@img"
+           alt="@if(context.title) {@title}"
+           width="239"
+           height="239">
+    </div>
+    <div class="card-item__descr">
+      <h3 class="title-sm mb-2">@if(context.title) {@title}</h3>
+      <p class="text-sm card-item__text">
+        @if(context.text) {@text}
+      </p>
+    </div>
+  </div>
+
+  <a class="btn btn-primary card-item__btn"
+     href="/page-news-detail.html">подробнее</a>
+</div>

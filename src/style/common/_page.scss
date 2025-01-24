@@ -1,27 +1,72 @@
-.page {
-  margin: 104px 0 48px;
+.page {}
+
+.page-top {
+  padding: 104px 0 32px;
 
   @include media-min ($xl) {
-    margin: 112px 0 128px;
+    padding-top: 112px;
   }
 
-  &__top {
-    padding: 8px 0 32px;
+  @include media-min ($xxl) {
+    padding-bottom: 64px;
+  }
+
+  &--background {
+    --background-light: rgba(255, 255, 255, 0.3);
+    --background-dark: #ffffff;
+
+    @include media-min ($lg) {
+      background-image: url('../img/contract/top-img-bg.png');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      border-image: fill 0 linear-gradient(180deg, var(--background-light) 0%, var(--background-dark) 100%);
+    }
+  }
+
+  & .site-breadcrumb + h1 {
+    margin-top: 32px;
+
+    @include media-min ($xl) {
+      margin-top: 64px;
+    }
+  }
+
+  &:has(.site-breadcrumb + h1) {
     margin-bottom: 16px;
 
     @include media-min ($xl) {
-      padding-top: 24px;
       margin-bottom: 32px;
+    }
+  }
+}
+
+.page-description {
+  --main-text-color: var(--gray-30-color);
+
+  margin-bottom: 48px;
+
+  @include media-min ($xl) {
+    margin-bottom: 128px;
+  }
+
+  &--contract {
+    --main-text-color: var(--gray-50-color);
+
+    margin: 48px 0;
+
+    @include media-min ($xl) {
+      max-width: 540px;
     }
 
     @include media-min ($xxl) {
-      padding-bottom: 64px;
+      max-width: 510px;
     }
+
   }
 
-  &__description {
-    --main-text-color: var(--gray-30-color);
-
+  &__cont {
     display: grid;
     row-gap: 16px;
     margin: 16px 0 48px;
@@ -37,7 +82,5 @@
     & p {
       margin: 0;
     }
-
   }
-
 }

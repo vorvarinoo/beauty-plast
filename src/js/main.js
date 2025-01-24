@@ -18,6 +18,10 @@ import {
   initDropdown
 } from './modules/dropdown.js';
 
+import {
+  initPopUpCertificat
+} from './modules/pop-up-certificat.js';
+
 document.addEventListener( 'DOMContentLoaded', () => {
   initSiteSettings();
 
@@ -27,5 +31,6 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initSliders();
     initHeaderMenu();
     initDropdown();
+    initPopUpCertificat();
   } );
 } );

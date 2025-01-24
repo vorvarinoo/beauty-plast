@@ -1,0 +1,94 @@
+.news-page {
+  margin-bottom: 64px;
+
+  @include media-min ($xl) {
+    margin-bottom: 96px;
+  }
+
+  @include media-min ($xxl) {
+    margin-bottom: 128px;
+  }
+
+}
+
+.news-photo {
+  display: flex;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.news-meta {
+  &__title {
+    margin-bottom: 16px;
+
+    @include media-min ($lg) {
+      margin-bottom: 32px;
+    }
+
+    @include media-min ($xxl) {
+      margin-bottom: 48px;
+    }
+  }
+
+  &__descr {
+    margin-bottom: 32px;
+
+    @include media-min ($lg) {
+      margin-bottom: 64px;
+    }
+
+    @include media-min ($xxl) {
+      margin-bottom: 96px;
+    }
+
+    & > *:first-child {
+      margin-top: 0;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.news-container {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding-left: max(15px, calc((100% - var(--content-width, 1140px)) / 2));
+
+  @include media-min ($xxl) {
+    --content-width: 1460px;
+  }
+
+  @include media-min ($fhd) {
+    --content-width: 1620px;
+  }
+}
+
+.news-slider {
+  margin: 0;
+  height: max-content;
+
+  @include media-min ($xl) {
+    width: calc(100% - var(--offset-left, 490px));
+  }
+
+  @include media-min ($xxl) {
+    --offset-left: 625px;
+  }
+
+  @include media-min ($fhd) {
+    --offset-left: 690px;
+  }
+
+  &__slide {
+    border-radius: 14px;
+    display: flex;
+    overflow: hidden;
+  }
+
+  &__controls {
+    margin-top: 10px;
+  }
+}

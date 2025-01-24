@@ -12,6 +12,3 @@
   <div class="site__container">
     @include('html/header/index-secondary.html')
     <main class="site__content@if(!context.home){ site__content--offset}">
-      @if(context.bc){
-      @include('html/common/breadcrumbs.html', {page: '@title', path: '@path'})
-      }

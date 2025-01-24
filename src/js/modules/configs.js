@@ -5,7 +5,7 @@ const sliderConfig = {
     watchSlidesProgress: true,
   },
 
-  heroSlider: {
+  mainHero: {
     slidesPerView: 1,
     watchSlidesProgress: true,
     navigation: {
@@ -13,7 +13,7 @@ const sliderConfig = {
       prevEl: '.slider-button-prev',
     },
   },
-  newProducts: {
+  cards: {
     spaceBetween: 30,
     watchSlidesProgress: true,
     navigation: {
@@ -37,6 +37,58 @@ const sliderConfig = {
         slidesPerView: 6
       }
     }
+  },
+  product: {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    navigation: {
+      nextEl: '.slider-button-next',
+      prevEl: '.slider-button-prev',
+    },
+  },
+  productThumb: {
+    slidesPerView: 4,
+    centeredSlides: true,
+    loop: true,
+    spaceBetween: 10,
+    breakpoints: {
+      320: {
+        slidesPerView: 4
+      },
+      540: {
+        slidesPerView: 2
+      },
+      992: {
+        slidesPerView: 3
+      },
+      1600: {
+        slidesPerView: 4.5
+      }
+    }
+  },
+  news: {
+    slidesPerView: 1.3,
+    spaceBetween: 10,
+    loop: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1.3
+      },
+      768: {
+        slidesPerView: 2.2
+      },
+      1200: {
+        slidesPerView: 1.5
+      },
+      1600: {
+        slidesPerView: 2.1
+      }
+    },
+    navigation: {
+      nextEl: '.slider-button-next',
+      prevEl: '.slider-button-prev',
+    },
   },
 };
 

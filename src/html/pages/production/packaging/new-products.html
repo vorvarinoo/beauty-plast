@@ -1,0 +1,89 @@
+<section class="cards-slider"
+         id="new-products">
+  <div class="container">
+    <div class="cards-slider__top">
+
+      <h2 class="title-section cards-slider__left">
+        Продукция:
+      </h2>
+
+      <div class="cards-slider__right">
+        <div class="title-lg">Новинки</div>
+
+        <div class="slider-controls">
+          <div class="slider-button-prev slider-control">
+            <svg width="23"
+                 height="17">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="slider-button-next slider-control">
+            <svg width="23"
+                 height="17">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="swiper cards-slider__element slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "producer-img": "producer-1.svg",
+          "product-img": "packaging/products/1.jpg",
+          "title": "Помповый дозатор Long DV DIN 24/410",
+          "text": "универсальный выкручивающийся дозатор, комплектующийся с ассортиментом флаконов ООО \"ОМЕГА ПЛАСТ\", идеален для пеномоющих средств и продукции с гелевой основой — в косметических сериях, космецевтики и в автохимии",
+          "modal": "product-modal-1"})
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "producer-img": "producer-1.svg",
+          "product-img": "packaging/products/1.jpg",
+          "title": "Помповый дозатор Long DV DIN 24/410",
+          "text": "универсальный выкручивающийся дозатор, комплектующийся с ассортиментом флаконов ООО \"ОМЕГА ПЛАСТ\", идеален для пеномоющих средств и продукции с гелевой основой — в косметических сериях, космецевтики и в автохимии",
+          "modal": "product-modal-1"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "producer-img": "producer-1.svg",
+          "product-img": "packaging/products/2.jpg",
+          "title": "Флакон 400 Санрайз 28/410 DIN",
+          "text": "артикул: ФСР 400,объём: 400, стандарт: 28/410 DIN, тип: экструзионно-выдувное производство, размер горла: 28, цена по запросу",
+          "modal": "product-modal-2"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "producer-img": "producer-1.svg",
+          "product-img": "packaging/products/3.jpg?v=1",
+          "title": "флакон ПЭТ.М 250 овал DIN 28/410 зелёный",
+          "text": "артикул: ПЭТ.М - 250, объём: 250, стандарт: 28/410 DIN, тип: моностадийное ПЭТ производство NISSEI ASB, размер горла: 28",
+          "modal": "product-modal-3"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "producer-img": "producer-1.svg",
+          "product-img": "packaging/products/4.jpg",
+          "title": "Колпачок флип - топ 28/410 округлый",
+          "text": "укупорочное средство полимерное для парфюмерно-косметической продукции конфигурации ФЛИП-ТОП, обеспечивает комплектацию флакона под 28 горло, цветовая палитра изделия по согласованию с заказчиком.",
+          "modal": "product-modal-4"
+          })
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>

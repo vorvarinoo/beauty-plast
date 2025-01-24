@@ -1,0 +1,122 @@
+.product-meta {
+
+  &__descr {
+    margin-bottom: 48px;
+    display: grid;
+    row-gap: 16px;
+
+    @include media-min ($xl) {
+      margin-bottom: 64px;
+    }
+
+    & * {
+      margin: 0;
+    }
+  }
+
+  &__btns {
+    display: grid;
+    gap: 24px;
+    margin-bottom: 48px;
+
+    @include media-min ($xl) {
+      margin-bottom: 64px;
+    }
+
+    @include media-min ($lg) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 30px;
+    }
+  }
+
+  &__parametrs {
+    border-radius: 14px;
+    padding: 16px;
+    backdrop-filter: blur(10px);
+    background: rgba(235, 235, 235, 0.8);
+
+    @include media-min ($xl) {
+      padding: 24px 32px 32px 32px;
+    }
+
+    & > .title {
+      --main-title-color: var(--gray-30-color);
+
+      font-size: 24px;
+      margin-bottom: 32px;
+
+      @include media-min ($xl) {
+        margin-bottom: 42px;
+      }
+    }
+  }
+
+  &__parametrs-list {
+    & div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--gray-30-color);
+
+      &:first-child {
+        padding-top: 0;
+      }
+
+      &:last-child {
+        padding-bottom: 0;
+        border-bottom: none;
+      }
+    }
+
+    & dt,
+    & dl {
+      font-size: 18px;
+    }
+
+    & dt {
+      color: var(--gray-50-color);
+      margin-right: 30px;
+      flex-grow: 1;
+    }
+
+    & dd {
+      text-align: end;
+    }
+  }
+}
+
+.product-gallery {
+
+  &__slider {
+    position: relative;
+    margin-bottom: 12px;
+  }
+
+  &__photo {
+    display: flex;
+    justify-content: center;
+  }
+
+  & .slider-controls {
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__thumb-slider {}
+
+  &__thumb {
+    border: 1px solid var(--color-border-thumb, var(--gray-15-color));
+    border-radius: 16px;
+
+    &.swiper-slide-thumb-active {
+      --color-border-thumb: var(--gray-30-color)
+    }
+
+    & img {
+      display: flex;
+    }
+  }
+}

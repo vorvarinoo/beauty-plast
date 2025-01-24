@@ -1,0 +1,96 @@
+<section class="cards-slider"
+         id="new-products">
+  <div class="container">
+    <div class="cards-slider__top">
+
+      <h2 class="title-section cards-slider__left">
+        Продукция:
+      </h2>
+
+      <div class="cards-slider__right">
+        <div class="title-lg">Новинки</div>
+
+        <div class="slider-controls">
+          <div class="slider-button-prev slider-control">
+            <svg width="23"
+                 height="17"
+                 aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="slider-button-next slider-control">
+            <svg width="23"
+                 height="17"
+                 aria-hidden="true">
+              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="swiper cards-slider__element slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "product-img": "cosmetics/products/1.jpg",
+          "title": "Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор.",
+          "text": "Шампунь серии THE HOTEL разработан на основе ухаживающего комплекса KERAMARE&KERATRIX. Многокомпонентный состав продукта деликатно очищает, увлажняет и восстанавливает структуру волос и кожи головы.",
+          "modal": "product-modal-1"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "product-img": "cosmetics/products/2.jpg",
+          "title": "SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор.",
+          "text": "Гель для душа на основе природных экстрактов наполняет энергией свежести, заботливо и бережно очищает кожу, снимает усталость. Активные ингредиенты состава — масло виноградной косточки и бетаин, ухаживают за кожей тела, смягчают и насыщают питательными компонентами.",
+          "modal": "product-modal-2"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "product-img": "cosmetics/products/3.jpg",
+          "title": "EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к",
+          "text": "Кондиционер «Серебристый» создан специально для окрашенных в светлые тона, светлых, мелированных и обесцвеченных волос. Средство содержит высокий уровень фиолетового пигмента, чтобы обеспечить максимальную нейтрализацию желтого оттенка и легкое тонирование волос. Кондиционер питает и увлажняет волосы, придавая им серебристое мерцание, эластичность и ухоженный вид. Регулярное применение средства защищает цвет волос и препятствует появлению нежелательного оттенка желтизны. Для усиления эффекта рекомендуем использовать после шампуня серии «EVI» Professional «Серебристый».",
+          "modal": "product-modal-3"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "product-img": "cosmetics/products/4.jpg",
+          "title": "EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор.",
+          "text": "Средство 10 в 1 — для работы с лаком, гель-лаком, био-гелем, искусственными ногтями, типсами, а так же для работы с аксессуарами для стемпинга ногтей: скраперов, пластин для стемпинга, трафаретов, синтетических кистей и инструментов мастера, за исключением предметов с липкой и прозрачной силиконовой поверхностью.",
+          "modal": "product-modal-4"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "product-img": "cosmetics/products/5.jpg",
+          "title": "EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.",
+          "text": "Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей. Подходит для работы с натуральными и искусственными ногтями.",
+          "modal": "product-modal-5"
+          })
+        </div>
+
+        <div class="swiper-slide cards-slider__slide">
+          @include('../../template/card-product.html', {
+          "product-img": "cosmetics/products/6.jpg",
+          "title": "МЕЧТА Жидкость для снятия лака с помпой дозатором 150 ml",
+          "text": "Жидкость для снятия лака МЕЧТА быстро и эффективно удаляет любой лак, не повреждая ногтевую пластину. Приятный аромат продукта, создаёт настроение и комфорт в программе педикюра и маникюра, как в салонах красоты, так и в домашних условиях. ",
+          "modal": "product-modal-6"
+          })
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
