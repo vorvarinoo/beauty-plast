@@ -73,6 +73,12 @@ dd {
   @include media-min ($xxl) {
     font-size: 32px;
   }
+
+  &--size {
+    @include media-min ($xl) {
+      font-size: 32px;
+    }
+  }
 }
 
 .title-md {
@@ -145,4 +151,12 @@ dd {
 
   font-size: 16px;
   color: var(--main-text-lg-color, var(--gray-50-color));
+
+  @include media-min ($xl) {
+    font-size: 24px;
+  }
+
+  &--bold {
+    font-weight: 500;
+  }
 }

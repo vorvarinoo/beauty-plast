@@ -1,0 +1,48 @@
+.list-block {
+  padding: 64px 0;
+
+  @include media-min ($xl) {
+    padding: 96px 0;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+
+    @include media-min ($xl) {
+      margin-bottom: 32px;
+    }
+  }
+
+  &__list {
+    @include list-reset;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid var(--gray-30-color);
+    padding: 24px 0;
+
+    @include media-min ($xl) {
+      padding: 24px 64px 24px 24px;
+    }
+
+    &:first-child {
+      padding-top: 16px;
+    }
+  }
+
+  &__item-img {
+    flex-shrink: 0;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 16px;
+
+    @include media-min ($xl) {
+      max-width: 100px;
+      margin-right: 64px;
+    }
+
+    & > img {}
+  }
+}

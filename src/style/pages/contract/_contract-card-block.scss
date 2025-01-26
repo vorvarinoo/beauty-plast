@@ -1,0 +1,76 @@
+.contract-card-block {
+  padding: 64px 0 48px;
+
+  @include media-min ($xl) {
+    padding-bottom: 64px;
+  }
+
+  &__list {
+    display: grid;
+
+    @include media-min ($lg) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  &__item {
+    position: relative;
+    display: flex;
+    counter-increment: num-counter;
+    border-top: 1px solid var(--gray-30-color);
+    padding: 8px 0;
+
+    @include media-min ($lg) {
+      padding: 16px;
+    }
+
+    &:nth-child(3n)::before,
+    &:nth-child(3n-1)::before {
+      @include media-min ($lg) {
+        content: "";
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        height: calc(100% - 32px);
+        width: 1px;
+        border-left: 1px solid var(--gray-30-color);
+        padding: 16px 0;
+      }
+    }
+  }
+
+  &__item-img {
+    position: relative;
+    flex-shrink: 0;
+    margin-right: 16px;
+    border-radius: 100%;
+    width: 60px;
+    height: 60px;
+    background-color: var(--gray-15-color);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    @include media-min ($xl) {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::before {
+      content: counter(num-counter) "";
+      position: absolute;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 1.1;
+      color: var(--gray-30-color);
+      bottom: -10px;
+
+      @include media-min ($xl) {
+        font-size: 64px;
+        bottom: -16px;
+      }
+    }
+  }
+}

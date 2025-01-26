@@ -1,0 +1,14 @@
+.company-descr {
+  --main-title-xl-color: var(--gray-30-color);
+  --main-text-lg-color: var(--gray-30-color);
+
+  padding: 64px 0;
+
+  &__subtitle {
+    margin-bottom: 32px;
+
+    @include media-min ($lg) {
+      margin-bottom: 0;
+    }
+  }
+}

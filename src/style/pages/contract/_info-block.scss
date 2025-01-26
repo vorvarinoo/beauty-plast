@@ -1,0 +1,20 @@
+.info-block {
+  padding: 64px 0;
+
+  &__list {
+    @include list-reset;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+
+    @include media-min ($lg) {
+      grid-template-columns: repeat(7, 1fr);
+      column-gap: 44px;
+    }
+  }
+
+  &__item {
+    display: flex;
+  }
+}
