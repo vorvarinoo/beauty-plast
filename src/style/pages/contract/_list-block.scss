@@ -43,6 +43,12 @@
       margin-right: 64px;
     }
 
+    &--mr {
+      @include media-max ($xl) {
+        margin-right: 32px;
+      }
+    }
+
     & > img {}
   }
 }

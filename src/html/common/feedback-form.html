@@ -2,7 +2,7 @@
               class="feedback-form @if(context.class) {@class}"
               data-validate>
 
-          <div class="feedback-form__top">
+          <div class="feedback-form__top @if(context.fieldsClass) {@fieldsClass}">
             <div class="form-field">
               <label class="form-label text text-sm mb-1"
                      for="">Имя</label>
@@ -25,7 +25,7 @@
             </div>
           </div>
 
-          <div class="feedback-form__bottom">
+          <div class="feedback-form__bottom @if(context.bottomClass) {@bottomClass}">
             <button class="btn btn-secondary"
                     type="submit">отправить</button>
 
