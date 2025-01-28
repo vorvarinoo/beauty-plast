@@ -1,0 +1,64 @@
+.stepper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 108px;
+
+  &__field {
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    border-radius: 14px;
+    padding: 6px 8px;
+    background-color: var(--white-color);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__input {
+    border: none;
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--blue-color);
+    min-width: 2ex;
+
+    @include media-min ($xl) {
+      font-size: 18px;
+    }
+  }
+
+  &__btns {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    height: 50%;
+    cursor: pointer;
+    color: var(--gray-30-color);
+
+    &--up {
+      margin-bottom: 8px;
+    }
+
+    &--disabled {
+      color: var(--gray-15-color);
+    }
+  }
+
+}

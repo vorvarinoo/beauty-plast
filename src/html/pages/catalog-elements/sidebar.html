@@ -68,17 +68,71 @@
             </svg>
           </summary>
           <div class="filter-item__cont filter-item__cont--range">
-            <input type="number"
-                   name="Объем"
-                   value="0"
-                   min="0"
-                   max="100000">
-            <input type="number"
-                   name="Объем"
-                   value="1000"
-                   min="0"
-                   max="100000">
+            <div class="stepper stepper--min">
+              <label class="stepper__field">
+                <input class="stepper__input"
+                       type="text"
+                       name="Минимальный объем"
+                       aria-label="Минимальный объем"
+                       value="30">
+              </label>
+              <div class="stepper__btns">
+                <button class="stepper__btn stepper__btn--up"
+                        aria-label="Увеличить объем"
+                        type="button">
+                  <svg width="13"
+                       height="6"
+                       aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#stepper-up"></use>
+                  </svg>
+                </button>
+
+                <button class="stepper__btn stepper__btn--down stepper__btn--disabled"
+                        aria-label="Уменьшить объем"
+                        type="button">
+                  <svg width="13"
+                       height="6"
+                       aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#stepper-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="stepper stepper--max">
+              <label class="stepper__field">
+                <input class="stepper__input"
+                       type="text"
+                       aria-label="Максимальный объем"
+                       name="Максимальный объем"
+                       value="1000">
+              </label>
+              <div class="stepper__btns">
+                <button class="stepper__btn stepper__btn--up"
+                        aria-label="Увеличить объем"
+                        type="button">
+                  <svg width="13"
+                       height="6"
+                       aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#stepper-up"></use>
+                  </svg>
+                </button>
+
+                <button class="stepper__btn stepper__btn--down stepper__btn--disabled"
+                        aria-label="Уменьшить объем"
+                        type="button">
+                  <svg width="13"
+                       height="6"
+                       aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#stepper-down"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
+
+
+
+
         </details>
         <details class="filter-item">
           <summary>
