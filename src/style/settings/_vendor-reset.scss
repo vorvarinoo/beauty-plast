@@ -1,3 +1,31 @@
 .swiper-slide {
   height: var(--swiper-height, 100%);
 }
+
+#baguetteBox-overlay {
+  background-color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.baguetteBox-button#close-button {
+  background-color: var(--gray-15-color);
+  width: 50px;
+  height: 50px;
+
+
+  @media (hover: hover) {
+    &:hover {
+      background-color: var(--blue-color);
+    }
+  }
+}
+
+.baguetteBox-button svg {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.baguetteBox-button svg g {
+  transform-origin: center;
+  transform: scale(0.8);
+}

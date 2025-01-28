@@ -111,13 +111,7 @@ dd {
 .text {
   @include indent-reset;
 
-  font-size: 16px;
   color: var(--main-text-color, var(--gray-50-color));
-
-  @include media-min ($xxl) {
-    font-size: 18px;
-  }
-
 }
 
 .text-sm {

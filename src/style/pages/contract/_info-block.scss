@@ -1,33 +1,58 @@
 .info-block {
   padding: 64px 0;
 
-  &__title {
-    margin-bottom: 24px;
-
-    @include media-min ($xl) {
-      margin-bottom: 32px;
-    }
-  }
-
   &__list {
     @include list-reset;
-
+    display: grid;
     width: 100%;
 
-    &--grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 30px 20px;
-
-
-      @include media-min ($lg) {
-        grid-template-columns: repeat(7, 1fr);
-        column-gap: 44px;
-      }
-    }
   }
 
   &__item {
     display: flex;
+  }
+}
+
+.partnership {
+  &__list {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px 20px;
+
+    @include media-min ($lg) {
+      grid-template-columns: repeat(7, 1fr);
+      column-gap: 44px;
+    }
+  }
+}
+
+.bottles {
+  @include media-max ($lg) {
+    padding: 48px 0 128px;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__products {
+    display: flex;
+    padding-left: min(45px, 13%);
+
+    @include media-min ($lg) {
+      margin-left: auto;
+    }
+  }
+
+  &__list {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: flex-end;
+
+    @include media-min ($lg) {
+      gap: 30px 64px;
+    }
+
+    @include media-min ($xxl) {
+      gap: 64px 164px;
+    }
   }
 }

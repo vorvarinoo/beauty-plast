@@ -13,11 +13,12 @@ import {
 import {
   initHeaderMenu
 } from './modules/header.js';
-
 import {
   initDropdown
 } from './modules/dropdown.js';
-
+import {
+  initTabs
+} from './modules/tabs.js';
 import {
   initPopUpCertificat
 } from './modules/pop-up-certificat.js';
@@ -31,6 +32,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initSliders();
     initHeaderMenu();
     initDropdown();
+    initTabs();
     initPopUpCertificat();
   } );
 } );

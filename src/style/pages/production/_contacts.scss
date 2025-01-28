@@ -52,3 +52,100 @@
     }
   }
 }
+
+.contacts-department {
+  padding: 64px 0;
+
+  @include media-min ($xl) {
+    padding-bottom: 96px;
+  }
+
+  @include media-min ($xxl) {
+    padding-top: 96px;
+  }
+
+  &__top {
+    padding-left: max(15px, calc((100% - var(--content-width, 540px)) / 2));
+
+    @include media-min ($md) {
+      --content-width: 690px;
+
+      padding-left: 0;
+      width: min(var(--content-width), 100%);
+      margin: 0 auto;
+    }
+
+    @include media-min ($lg) {
+      --content-width: 930px;
+    }
+
+    @include media-min ($xl) {
+      --content-width: 1110px;
+    }
+
+    @include media-min ($xxl) {
+      --content-width: 1430px;
+    }
+
+    @include media-min ($fhd) {
+      --content-width: 1590px;
+    }
+  }
+
+  &__btns {
+    display: flex;
+    margin-bottom: 64px;
+    overflow-y: hidden;
+    padding-right: 15px;
+
+    @include media-min ($md) {
+      overflow: visible;
+      padding-right: 0;
+    }
+
+    @include media-min ($lg) {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+
+    @include media-min ($xl) {
+      margin-bottom: 96px;
+    }
+
+    & > li {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      @include media-min ($lg) {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__btn {
+    --main-title-lg-color: var(--gray-30-color);
+
+    text-align: start;
+    transition: color var(--transition-speed-medium) ease-in-out;
+    text-decoration: underline;
+    min-width: 200px;
+
+    @include media-min ($xl) {
+      font-size: 32px;
+    }
+
+    @include media-min ($fhd) {
+      padding-right: 70px;
+    }
+
+    &.is-selected {
+      --main-title-lg-color: var(--blue-color);
+
+      text-decoration: none;
+    }
+  }
+}
