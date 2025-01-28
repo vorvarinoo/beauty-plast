@@ -10,8 +10,8 @@
   <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style/vendor-bundle.css?v=2">
-  <link rel="stylesheet" href="style/main.css?v=2">
+  <link rel="stylesheet" href="style/vendor-bundle.css?v=1.11">
+  <link rel="stylesheet" href="style/main.css?v=1.11">
   <title>Главная</title>
 </head>
 
@@ -53,7 +53,7 @@
               <ul class="list-reset header-menu__list">
                 <li class="header-menu__link" data-dropdown>
                   <div class="d-flex align-items-center">
-                    <a href="/">Продукция
+                    <a href="#products">Продукция
                     </a>
 
                     <div class="header-menu__link-btn">
@@ -77,11 +77,11 @@
                   </div>
 
                 </li>
-                <li class="header-menu__link"><a href="#">О компании</a>
+                <li class="header-menu__link"><a href="#about">О компании</a>
 
                 </li>
                 <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
-                <li class="header-menu__link"><a href="#">Контакты</a></li>
+                <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
               </ul>
             </nav>
           </div>
@@ -110,7 +110,7 @@
                 <ul class="list-reset header-menu__list">
                   <li class="header-menu__link" data-dropdown>
                     <div class="d-flex align-items-center">
-                      <a href="/">Продукция
+                      <a href="#products">Продукция
                       </a>
 
                       <div class="header-menu__link-btn">
@@ -134,11 +134,11 @@
                     </div>
 
                   </li>
-                  <li class="header-menu__link"><a href="#">О компании</a>
+                  <li class="header-menu__link"><a href="#about">О компании</a>
 
                   </li>
                   <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
-                  <li class="header-menu__link"><a href="#">Контакты</a></li>
+                  <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
                 </ul>
               </nav>
               <div class="header-modal__btn">
@@ -152,21 +152,106 @@
       </div>
     </header>
     <main class="site__content site__content--offset">
-
-
       <section class="hero">
         <div class="swiper hero-slider slider">
 
           <div class="swiper-wrapper">
 
-            <div class="swiper-slide hero-slide" style="background-image: url(img/img-bg-hero-2.png);">
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-1.png);">
               <div class="container">
                 <div class="hero-slide__cont">
                   <div class="hero-slide__img">
-                    <img src="img/img-main-product-2.png" alt="HoReCa - cерия косметических средств для гостиничного сервиса" width="375" height="375">
+                    <img src="img/img-main-product-1.png" alt="Экструзионно-выдувное и моностадийное ПЭТ производство" width="375" height="375">
                   </div>
                   <div class="hero-slide__info">
-                    <h2 class="title-xl mb-5">HoReCa - cерия косметических средств для гостиничного сервиса</h2>
+                    <h2 class="title-xl mb-5">Экструзионно-выдувное и моностадийное ПЭТ производство</h2>
+                    <div class="hero-slide__btns">
+                      <!-- <a class="btn btn-secondary"
+             href="">Вся продукция</a> -->
+
+                      <div class="slider-controls">
+                        <div class="slider-button-prev slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                          </svg>
+                        </div>
+                        <div class="slider-button-next slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-2.jpg);">
+              <div class="container">
+                <div class="hero-slide__cont">
+                  <div class="hero-slide__img">
+                  </div>
+                  <div class="hero-slide__info">
+                    <h2 class="title-xl mb-5">Моностадийное пэт производство</h2>
+                    <div class="hero-slide__btns">
+                      <!-- <a class="btn btn-secondary"
+             href="">Вся продукция</a> -->
+
+                      <div class="slider-controls">
+                        <div class="slider-button-prev slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                          </svg>
+                        </div>
+                        <div class="slider-button-next slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-3.jpg);">
+              <div class="container">
+                <div class="hero-slide__cont">
+                  <div class="hero-slide__img">
+                  </div>
+                  <div class="hero-slide__info">
+                    <h2 class="title-xl mb-5">Помповые дозаторы</h2>
+                    <div class="hero-slide__btns">
+                      <!-- <a class="btn btn-secondary"
+             href="">Вся продукция</a> -->
+
+                      <div class="slider-controls">
+                        <div class="slider-button-prev slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                          </svg>
+                        </div>
+                        <div class="slider-button-next slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide hero-slide" style="background-image: url(img/packaging/hero/bg-4.jpg);">
+              <div class="container">
+                <div class="hero-slide__cont">
+                  <div class="hero-slide__img">
+                  </div>
+                  <div class="hero-slide__info">
+                    <h2 class="title-xl mb-5">Укупорочные средства</h2>
                     <div class="hero-slide__btns">
                       <!-- <a class="btn btn-secondary"
              href="">Вся продукция</a> -->
@@ -200,10 +285,12 @@
             <div class="col-lg-4 mb-5 mb-lg-0">
               <div class="categories__info">
                 <div class="title-lg mb-3">БЬЮТИ ПЛАСТ&nbsp;&mdash; российский производственный комплекс полного цикла&nbsp;&mdash; от&nbsp;упаковки до&nbsp;готовой продукции.</div>
-                <p class="text-md">
-                  БЬЮТИ&nbsp;&mdash; подразделение компании, занимающееся производством готовой косметической продукции и&nbsp;средств бытовой химии, в&nbsp;которой используется упаковка, разработанная нашими дизайнерами и&nbsp;воплощенная технологами. Мы&nbsp;создаем продукцию на&nbsp;высокопроизводительном варочном оборудовании, опираясь на&nbsp;собственную лабораторию и&nbsp;команду квалифицированных специалистов.
-                  Слаженная работа складской и&nbsp;логистической программ позволяет нам эффективно выводить на&nbsp;рынок высококачественные продукты по&nbsp;конкурентоспособным ценам, делая их&nbsp;доступными для широкого круга потребителей.
-                </p>
+                <div>
+                  <p class="text-md">
+                    Компания БЬЮТИ ПЛАСТ предлагает полный спектр услуг по&nbsp;производству пластиковой упаковки для косметики и&nbsp;бытовой химии, включая пластиковые флаконы, помповые дозаторы и&nbsp;укупорочные средства. На&nbsp;нашем высокотехнологичном оборудовании мы&nbsp;создаём продукцию из&nbsp;различных видов пластика, используя экструзионно-выдувные машины для ПНД флаконов и&nbsp;моностадийное оборудование для производства ПЭТ-упаковки.
+                    Наше подразделение предлагает широкий ассортимент упаковки, который станет надежной альтернативой импортной продукции и&nbsp;позволяет развивать производство внутри страны.
+                  </p>
+                </div>
               </div>
             </div>
             <div class="col-lg-8">
@@ -215,108 +302,37 @@
 
                 <li class="categories-item">
                   <a href="">
-                    <span>EVI SALON PROFESSIONAL</span>
-                    <svg width="23" height="18">
+                    <span>Помповые дозаторы</span>
+                    <svg width="23" height="18" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="categories-item">
                   <a href="">
-                    <span>EVI PROFESSIONAL</span>
-                    <svg width="23" height="18">
+                    <span>Укопорочные средства</span>
+                    <svg width="23" height="18" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="categories-item">
                   <a href="">
-                    <span>HORECA ТОВАРЫ ДЛЯ ОТЕЛЕЙ И ГОСТИНИЦ</span>
-                    <svg width="23" height="18">
+                    <span>Флаконы</span>
+                    <svg width="23" height="18" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                   </a>
                 </li>
                 <li class="categories-item">
                   <a href="">
-                    <span>SAY YES</span>
-                    <svg width="23" height="18">
+                    <span>Комплекты</span>
+                    <svg width="23" height="18" aria-hidden="true">
                       <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
                     </svg>
                   </a>
                 </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>LAFITEL</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>LAFITEL АНТИБАКТЕРИАЛЬНЫЕ И АНТИСЕПТИЧЕСКИЕ СРЕДСТВА ДЛЯ ЗАЩИТЫ РУК</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>SMART BOX NAIL</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>LAFITEL ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>МЕЧТА ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>ВОЛШЕБНАЯ ЛАСКА ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>МЕЧТА COSMETICS</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>МЕЧТА BABY</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
-                <li class="categories-item">
-                  <a href="">
-                    <span>МОСКИЛЛ</span>
-                    <svg width="23" height="18">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-                    </svg>
-                  </a>
-                </li>
+
 
               </ul>
 
@@ -333,44 +349,50 @@
           <ul class="list-reset benefits-list">
 
             <li class="benefits-item">
-              <div class="benefits-item__avatar">
-                <img src="img/person-avatar.png" alt="Фото преимущества" width="60" height="60">
+              <div class="benefits-item__img">
+                <svg width="60" height="60" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#production"></use>
+                </svg>
               </div>
 
-              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Полный цикл разработки и производства</h3>
-              <p class="text-md">Мы предлагаем полный цикл создания продукта: от концепции до промышленного выпуска. Собственная лаборатория обеспечивает разработку уникальных рецептур, тестирование и сертификацию по стандартам ГОСТ РФ, что позволяет оперативно выводить продукцию на рынок.</p>
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Стабильное и быстрое производство в России</h3>
+              <p class="text-md">Наше производство полностью локализовано, что позволяет нам оперативно выпускать пластиковые флаконы и укупорочные средства без зависимости от валютных колебаний и зарубежных поставок.</p>
             </li>
             <li class="benefits-item">
-              <div class="benefits-item__avatar">
-                <img src="img/person-avatar.png" alt="Фото преимущества" width="60" height="60">
+              <div class="benefits-item__img">
+                <svg width="60" height="60" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#choice"></use>
+                </svg>
               </div>
 
-              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Цены, доступные каждому</h3>
-              <p class="text-md">Сосредоточение всех производственных мощностей на одном комплексе позволяет нам поддерживать конкурентоспособные цены, предлагая высококачественную продукцию, доступную для широкого круга покупателей.</p>
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Широкий выбор и готовность к поставке</h3>
+              <p class="text-md">Мы предлагаем разнообразный ассортимент пластиковых флаконов и укупорочных средств, обеспечиваем подбор образцов и поддерживаем складскую программу для быстрого выполнения заказов.</p>
             </li>
             <li class="benefits-item">
-              <div class="benefits-item__avatar">
-                <img src="img/person-avatar.png" alt="Фото преимущества" width="60" height="60">
+              <div class="benefits-item__img">
+                <svg width="60" height="60" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#design"></use>
+                </svg>
               </div>
 
-              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Партнерство для создания собственных брендов (СТМ)</h3>
-              <p class="text-md">Мы предоставляем услуги контрактного производства для создания продукции под собственной торговой маркой. Опытная команда специалистов создаст уникальные косметические продукты, которые подчеркнут индивидуальность вашего бренда.</p>
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Индивидуальный дизайн и уникальные решения</h3>
+              <p class="text-md">Разрабатываем упаковку по индивидуальному запросу, подбираем цветовые решения и предлагаем услуги по декорированию, чтобы ваша продукция выделялась на полке.</p>
             </li>
-
 
           </ul>
 
         </div>
       </section>
-      <section class="products">
-        <div class="container">
-          <div class="products__top">
 
-            <h2 class="title-section products__left">
+      <section class="cards-slider" id="new-products">
+        <div class="container">
+          <div class="cards-slider__top">
+
+            <h2 class="title-section cards-slider__left">
               Продукция:
             </h2>
 
-            <div class="products__right">
+            <div class="cards-slider__right">
               <div class="title-lg">Новинки</div>
 
               <div class="slider-controls">
@@ -390,117 +412,113 @@
 
           </div>
 
-          <div class="swiper products-slider slider">
+          <div class="swiper cards-slider__element slider">
 
-            <div class="swiper-wrapper products-slider__wrapper">
+            <div class="swiper-wrapper">
 
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product__img">
-                    <img src="img/cosmetics/products/1.jpg" alt="Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор." width="239" height="239">
-                    <div class="product__producer">
-                      <img src="img/@producer-img">
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/packaging/products/1.jpg" alt="Помповый дозатор Long DV DIN 24/410" width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/producer-1.svg">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">Помповый дозатор Long DV DIN 24/410</h3>
+                      <p class="text-sm card-item__text">
+                        универсальный выкручивающийся дозатор, комплектующийся с ассортиментом флаконов ООО "ОМЕГА ПЛАСТ", идеален для пеномоющих средств и продукции с гелевой основой — в косметических сериях, космецевтики и в автохимии
+                      </p>
                     </div>
                   </div>
-                  <div class="product-slide__descr">
-                    <h3 class="title-sm mb-2">Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор.</h3>
-                    <p class="text-sm product-slide__text">
-                      Шампунь серии THE HOTEL разработан на основе ухаживающего комплекса KERAMARE&KERATRIX. Многокомпонентный состав продукта деликатно очищает, увлажняет и восстанавливает структуру волос и кожи головы.
-                    </p>
-                  </div>
-                </div>
 
-                <a class="btn btn-primary product-slide__btn" href="#" data-hystmodal="#product-modal-1">подробнее</a>
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-1">подробнее</a>
+                </div>
               </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product__img">
-                    <img src="img/cosmetics/products/2.jpg" alt="SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор." width="239" height="239">
-                    <div class="product__producer">
-                      <img src="img/@producer-img">
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/packaging/products/1.jpg" alt="Помповый дозатор Long DV DIN 24/410" width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/producer-1.svg">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">Помповый дозатор Long DV DIN 24/410</h3>
+                      <p class="text-sm card-item__text">
+                        универсальный выкручивающийся дозатор, комплектующийся с ассортиментом флаконов ООО "ОМЕГА ПЛАСТ", идеален для пеномоющих средств и продукции с гелевой основой — в косметических сериях, космецевтики и в автохимии
+                      </p>
                     </div>
                   </div>
-                  <div class="product-slide__descr">
-                    <h3 class="title-sm mb-2">SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор.</h3>
-                    <p class="text-sm product-slide__text">
-                      Гель для душа на основе природных экстрактов наполняет энергией свежести, заботливо и бережно очищает кожу, снимает усталость. Активные ингредиенты состава — масло виноградной косточки и бетаин, ухаживают за кожей тела, смягчают и насыщают питательными компонентами.
-                    </p>
-                  </div>
-                </div>
 
-                <a class="btn btn-primary product-slide__btn" href="#" data-hystmodal="#product-modal-2">подробнее</a>
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-1">подробнее</a>
+                </div>
               </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product__img">
-                    <img src="img/cosmetics/products/3.jpg" alt="EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к" width="239" height="239">
-                    <div class="product__producer">
-                      <img src="img/@producer-img">
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/packaging/products/2.jpg" alt="Флакон 400 Санрайз 28/410 DIN" width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/producer-1.svg">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">Флакон 400 Санрайз 28/410 DIN</h3>
+                      <p class="text-sm card-item__text">
+                        артикул: ФСР 400,объём: 400, стандарт: 28/410 DIN, тип: экструзионно-выдувное производство, размер горла: 28, цена по запросу
+                      </p>
                     </div>
                   </div>
-                  <div class="product-slide__descr">
-                    <h3 class="title-sm mb-2">EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к</h3>
-                    <p class="text-sm product-slide__text">
-                      Кондиционер «Серебристый» создан специально для окрашенных в светлые тона, светлых, мелированных и обесцвеченных волос. Средство содержит высокий уровень фиолетового пигмента, чтобы обеспечить максимальную нейтрализацию желтого оттенка и легкое тонирование волос. Кондиционер питает и увлажняет волосы, придавая им серебристое мерцание, эластичность и ухоженный вид. Регулярное применение средства защищает цвет волос и препятствует появлению нежелательного оттенка желтизны. Для усиления эффекта рекомендуем использовать после шампуня серии «EVI» Professional «Серебристый».
-                    </p>
-                  </div>
-                </div>
 
-                <a class="btn btn-primary product-slide__btn" href="#" data-hystmodal="#product-modal-3">подробнее</a>
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-2">подробнее</a>
+                </div>
               </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product__img">
-                    <img src="img/cosmetics/products/4.jpg" alt="EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор." width="239" height="239">
-                    <div class="product__producer">
-                      <img src="img/@producer-img">
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/packaging/products/3.jpg?v=1" alt="флакон ПЭТ.М 250 овал DIN 28/410 зелёный" width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/producer-1.svg">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">флакон ПЭТ.М 250 овал DIN 28/410 зелёный</h3>
+                      <p class="text-sm card-item__text">
+                        артикул: ПЭТ.М - 250, объём: 250, стандарт: 28/410 DIN, тип: моностадийное ПЭТ производство NISSEI ASB, размер горла: 28
+                      </p>
                     </div>
                   </div>
-                  <div class="product-slide__descr">
-                    <h3 class="title-sm mb-2">EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор.</h3>
-                    <p class="text-sm product-slide__text">
-                      Средство 10 в 1 — для работы с лаком, гель-лаком, био-гелем, искусственными ногтями, типсами, а так же для работы с аксессуарами для стемпинга ногтей: скраперов, пластин для стемпинга, трафаретов, синтетических кистей и инструментов мастера, за исключением предметов с липкой и прозрачной силиконовой поверхностью.
-                    </p>
-                  </div>
-                </div>
 
-                <a class="btn btn-primary product-slide__btn" href="#" data-hystmodal="#product-modal-4">подробнее</a>
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-3">подробнее</a>
+                </div>
               </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product__img">
-                    <img src="img/cosmetics/products/5.jpg" alt="EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор." width="239" height="239">
-                    <div class="product__producer">
-                      <img src="img/@producer-img">
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/packaging/products/4.jpg" alt="Колпачок флип - топ 28/410 округлый" width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/producer-1.svg">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">Колпачок флип - топ 28/410 округлый</h3>
+                      <p class="text-sm card-item__text">
+                        укупорочное средство полимерное для парфюмерно-косметической продукции конфигурации ФЛИП-ТОП, обеспечивает комплектацию флакона под 28 горло, цветовая палитра изделия по согласованию с заказчиком.
+                      </p>
                     </div>
                   </div>
-                  <div class="product-slide__descr">
-                    <h3 class="title-sm mb-2">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h3>
-                    <p class="text-sm product-slide__text">
-                      Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей. Подходит для работы с натуральными и искусственными ногтями.
-                    </p>
-                  </div>
-                </div>
 
-                <a class="btn btn-primary product-slide__btn" href="#" data-hystmodal="#product-modal-5">подробнее</a>
-              </div>
-              <div class="swiper-slide product-slide">
-                <div class="product-slide__cont">
-                  <div class="product__img">
-                    <img src="img/cosmetics/products/6.jpg" alt="МЕЧТА Жидкость для снятия лака с помпой дозатором 150 ml" width="239" height="239">
-                    <div class="product__producer">
-                      <img src="img/@producer-img">
-                    </div>
-                  </div>
-                  <div class="product-slide__descr">
-                    <h3 class="title-sm mb-2">МЕЧТА Жидкость для снятия лака с помпой дозатором 150 ml</h3>
-                    <p class="text-sm product-slide__text">
-                      Жидкость для снятия лака МЕЧТА быстро и эффективно удаляет любой лак, не повреждая ногтевую пластину. Приятный аромат продукта, создаёт настроение и комфорт в программе педикюра и маникюра, как в салонах красоты, так и в домашних условиях.
-                    </p>
-                  </div>
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-4">подробнее</a>
                 </div>
-
-                <a class="btn btn-primary product-slide__btn" href="#" data-hystmodal="#product-modal-6">подробнее</a>
               </div>
 
             </div>
@@ -509,7 +527,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="container">
           <div class="row about__cont">
 
@@ -519,22 +537,22 @@
               </h2>
 
               <div class="title-lg about__subtitle">
-                HoReCa&nbsp;&mdash; cерия косметических средств для гостиничного сервиса
+                БЬЮТИ ПЛАСТ&nbsp;&mdash; российский производственный комплекс полного цикла&nbsp;&mdash; от&nbsp;упаковки до&nbsp;готовой продукции
               </div>
 
               <div class="text-md">
                 <p class="indent-reset mb-2">
-                  Компания БЬЮТИ специализируется на&nbsp;производстве готовой косметической продукции и&nbsp;средств бытовой химии, предлагая клиентам полный цикл разработки&nbsp;&mdash; от&nbsp;идеи до&nbsp;промышленного выпуска. Наличие собственной лаборатории позволяет создавать уникальные рецептуры, проходящие тестирование и&nbsp;сертификацию по&nbsp;ГОСТ&nbsp;РФ, что гарантирует высокое качество и&nbsp;безопасность продукции.
+                  В&nbsp;нашем арсенале&nbsp;&mdash; большой выбор готовой упаковки и&nbsp;поддержка складской программы для оперативных поставок. Мы&nbsp;также предоставляем услуги по&nbsp;разработке индивидуальной упаковки: создаем уникальные цветовые решения и&nbsp;декор, подчеркивающий стиль бренда наших клиентов.
                 </p>
                 <p class="indent-reset">
-                  Наши технические мощности сосредоточены в&nbsp;одном комплексе, что позволяет оптимизировать затраты и&nbsp;обеспечивать доступные цены на&nbsp;продукцию для конечного потребителя. Мы&nbsp;также предлагаем контрактное производство и&nbsp;сотрудничаем с&nbsp;партнёрами для создания продукции под собственной торговой маркой (СТМ), помогая развивать индивидуальные бренды с&nbsp;уникальной косметической линейкой.
+                  Мы&nbsp;выпускаем широкий ассортимент пластиковых флаконов, помповых дозаторов и&nbsp;укупорочных средств, предлагая надежную альтернативу импортной продукции. Современное, высокоточное оборудование позволяет нам производить продукцию на&nbsp;территории России, что исключает зависимость от&nbsp;валютных колебаний и&nbsp;зарубежных поставок.
                 </p>
               </div>
             </div>
 
             <div class="d-flex flex-grow-1 align-items-center justify-content-center mb-5 mb-lg-0">
-              <button class="btn about__btn-play" data-hystmodal="#video-modal">
-                <span class="text">
+              <button class="btn about__btn-play" data-hystmodal="#video-modal" disabled>
+                <span class="text-md">
                   Смотрите видео
                 </span>
               </button>
@@ -544,16 +562,18 @@
             <div class="col-12 col-lg-4 mt-auto">
               <ul class="list-reset about-benefits">
                 <li>
-                  <p class="text-sm">Ассортимент косметических брендов для взрослых и детей</p>
+                  <div class="title-xl about-benefits__title">24+</div>
+                  <p class="text-sm">Вида помповых дозаторов и укупорочных средств в наличии</p>
                 </li>
                 <li>
-                  <p class="text-sm">Комплексная разработка продукции - от создания флакона и рецептуры, до сертификации и доставки.</p>
+                  <div class="title-xl about-benefits__title">75+</div>
+                  <p class="text-sm">Видов флаконов ПНД, ПЭТ в наличии</p>
                 </li>
                 <li>
                   <p class="text-sm">Отгрузка со склада в Подмосковье, выполнение ассортиментного заказа в кратчайшие сроки</p>
                 </li>
                 <li>
-                  <p class="text-sm">Контрактное производство, косметические продукты для вашего бренда</p>
+                  <p class="text-sm">Разработка эксклюзивных флаконов и укупорочных средств, брендирование, декорирование</p>
                 </li>
               </ul>
             </div>
@@ -562,19 +582,19 @@
 
         </div>
       </section>
-      <section class="feedback feedback--cosmetics">
+
+      <section class="feedback">
         <div class="container">
 
           <div class="row justify-content-between">
             <div class="col-lg-5 col-2xl-6 mb-4 mb-lg-0 offset-lg-1">
               <h2 class="title-xl mb-4">Оставьте заявку</h2>
-              <p class="text-md feedback__text">Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis. </p>
             </div>
 
             <div class="col-lg-4">
               <form id="feedback-form" class="feedback-form " data-validate>
 
-                <div class="feedback-form__top">
+                <div class="feedback-form__top ">
                   <div class="form-field">
                     <label class="form-label text text-sm mb-1" for="">Имя</label>
                     <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
@@ -585,7 +605,7 @@
                   </div>
                 </div>
 
-                <div class="feedback-form__bottom">
+                <div class="feedback-form__bottom ">
                   <button class="btn btn-secondary" type="submit">отправить</button>
 
                   <div class="form-field">
@@ -605,8 +625,7 @@
 
         </div>
       </section>
-
-      <section class="contacts">
+      <section class="contacts" id="contacts">
         <div class="container">
           <div class="row justify-content-between">
 
@@ -873,7 +892,7 @@
               </svg>
             </button>
             <div class="modal__title title title-medium mb-4">Спасибо за заявку!</div>
-            <div class="modal__text text">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+            <div class="modal__text text-md">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
             <button class="btn btn-secondary" data-hystclose>Хорошо</button>
           </div>
         </div>
@@ -911,14 +930,14 @@
             <div class="modal__top">
               <h2 class="title title-medium mb-4">Оставьте ваш номер телефона</h2>
 
-              <p class="text">
+              <p class="text-md">
                 Lorem ipsum dolor sit amet consectetur. Nunc sed condimentum aliquam imperdiet sed. Felis ut eros odio in etiam mattis.
               </p>
             </div>
 
             <form id="feedback-form-modal" class="feedback-form feedback-form--modal" data-validate>
 
-              <div class="feedback-form__top">
+              <div class="feedback-form__top ">
                 <div class="form-field">
                   <label class="form-label text text-sm mb-1" for="">Имя</label>
                   <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
@@ -929,7 +948,7 @@
                 </div>
               </div>
 
-              <div class="feedback-form__bottom">
+              <div class="feedback-form__bottom ">
                 <button class="btn btn-secondary" type="submit">отправить</button>
 
                 <div class="form-field">
@@ -961,25 +980,42 @@
             <div class="product-modal">
               <div class="product-modal__top">
                 <div class="product__img product__img--details">
-                  <img src="img/cosmetics/products/1.jpg">
+                  <img src="img/packaging/products/1.jpg">
                   <div class="product__producer">
-                    <img src="img/producer-2.png">
+                    <img src="img/producer-1.svg">
                   </div>
                 </div>
               </div>
               <div class="product-modal__bottom">
-                <h2 class="title-lg product-modal__title">Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор.</h2>
+                <h2 class="title-lg product-modal__title">Помповый дозатор Long DV DIN 24/410</h2>
 
                 <div class="product-modal__info">
-                  <p class="text">
-                    Шампунь серии THE HOTEL разработан на основе ухаживающего комплекса KERAMARE&KERATRIX. Многокомпонентный состав продукта деликатно очищает, увлажняет и восстанавливает структуру волос и кожи головы.
-                  </p>
+                  <dl class="product-modal__list">
+                    <div class="product-modal__list-item">
+                      <dt>Артикул:</dt>
+                      <dd>Long DV24</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Стандарт:</dt>
+                      <dd>24/410 DIN</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Тип:</dt>
+                      <dd>выкручивающийся</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Размер горла:</dt>
+                      <dd>24</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <div>Цена по запросу</div>
+                    </div>
+                  </dl>
 
                   <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
                 </div>
               </div>
             </div>
-
           </div>
         </div>
       </div>
@@ -996,19 +1032,41 @@
             <div class="product-modal">
               <div class="product-modal__top">
                 <div class="product__img product__img--details">
-                  <img src="img/cosmetics/products/2.jpg">
+                  <img src="img/packaging/products/2.jpg">
                   <div class="product__producer">
-                    <img src="img/producer-2.png">
+                    <img src="img/producer-1.svg">
                   </div>
                 </div>
               </div>
               <div class="product-modal__bottom">
-                <h2 class="title-lg product-modal__title">SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор.</h2>
+                <h2 class="title-lg product-modal__title">Флакон 400 Санрайз 28/410 DIN</h2>
 
                 <div class="product-modal__info">
-                  <p class="text">
-                    Гель для душа на основе природных экстрактов наполняет энергией свежести, заботливо и бережно очищает кожу, снимает усталость. Активные ингредиенты состава — масло виноградной косточки и бетаин, ухаживают за кожей тела, смягчают и насыщают питательными компонентами.
-                  </p>
+                  <dl class="product-modal__list">
+                    <div class="product-modal__list-item">
+                      <dt>Артикул:</dt>
+                      <dd>ФСР 400</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Объём:</dt>
+                      <dd>400</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Стандарт:</dt>
+                      <dd>28/410 DIN</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Тип:</dt>
+                      <dd>экструзионно-выдувное производство</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Размер горла:</dt>
+                      <dd>28</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <div>Цена по запросу</div>
+                    </div>
+                  </dl>
 
                   <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
                 </div>
@@ -1030,24 +1088,47 @@
             <div class="product-modal">
               <div class="product-modal__top">
                 <div class="product__img product__img--details">
-                  <img src="img/cosmetics/products/3.jpg">
+                  <img src="img/packaging/products/3.jpg">
                   <div class="product__producer">
-                    <img src="img/producer-2.png">
+                    <img src="img/producer-1.svg">
                   </div>
                 </div>
               </div>
               <div class="product-modal__bottom">
-                <h2 class="title-lg product-modal__title">EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к</h2>
+                <h2 class="title-lg product-modal__title">флакон ПЭТ.М 250 овал DIN 28/410 зелёный</h2>
 
                 <div class="product-modal__info">
-                  <p class="text">
-                    Кондиционер «Серебристый» создан специально для окрашенных в светлые тона, светлых, мелированных и обесцвеченных волос. Средство содержит высокий уровень фиолетового пигмента, чтобы обеспечить максимальную нейтрализацию желтого оттенка и легкое тонирование волос.
-                  </p>
+                  <dl class="product-modal__list">
+                    <div class="product-modal__list-item">
+                      <dt>Артикул:</dt>
+                      <dd>ПЭТ.М - 250</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Объём:</dt>
+                      <dd>250</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Стандарт:</dt>
+                      <dd>28/410 DIN</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Тип:</dt>
+                      <dd>моностадийное ПЭТ производство NISSEI ASB</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Размер горла:</dt>
+                      <dd>28</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <div>Цена по запросу</div>
+                    </div>
+                  </dl>
 
                   <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -1064,89 +1145,37 @@
             <div class="product-modal">
               <div class="product-modal__top">
                 <div class="product__img product__img--details">
-                  <img src="img/cosmetics/products/4.jpg">
+                  <img src="img/packaging/products/4.jpg">
                   <div class="product__producer">
-                    <img src="img/producer-2.png">
+                    <img src="img/producer-1.svg">
                   </div>
                 </div>
               </div>
               <div class="product-modal__bottom">
-                <h2 class="title-lg product-modal__title">EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор.</h2>
+                <h2 class="title-lg product-modal__title">Колпачок флип - топ 28/410 округлый</h2>
 
                 <div class="product-modal__info">
-                  <p class="text">
-                    Средство 10 в 1 — для работы с лаком, гель-лаком, био-гелем, искусственными ногтями, типсами, а так же для работы с аксессуарами для стемпинга ногтей: скраперов, пластин для стемпинга, трафаретов, синтетических кистей и инструментов мастера, за исключением предметов с липкой и прозрачной силиконовой поверхностью.
-                  </p>
-
-                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hystmodal" id="product-modal-6" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <div class="modal modal--product">
-            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
-              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#cross"></use>
-              </svg>
-            </button>
-            <div class="product-modal">
-              <div class="product-modal__top">
-                <div class="product__img product__img--details">
-                  <img src="img/cosmetics/products/5.jpg">
-                  <div class="product__producer">
-                    <img src="img/producer-2.png">
-                  </div>
-                </div>
-              </div>
-              <div class="product-modal__bottom">
-                <h2 class="title-lg product-modal__title">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h2>
-
-                <div class="product-modal__info">
-                  <p class="text">
-                    Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей.
-                    Подходит для работы с натуральными и искусственными ногтями.
-                  </p>
-
-                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="hystmodal" id="product-modal-6" aria-hidden="true">
-      <div class="hystmodal__wrap">
-        <div class="hystmodal__window" role="dialog" aria-modal="true">
-          <div class="modal modal--product">
-            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
-              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
-                <use xlink:href="img/sprite.svg#cross"></use>
-              </svg>
-            </button>
-            <div class="product-modal">
-              <div class="product-modal__top">
-                <div class="product__img product__img--details">
-                  <img src="img/cosmetics/products/5.jpg">
-                  <div class="product__producer">
-                    <img src="img/producer-2.png">
-                  </div>
-                </div>
-              </div>
-              <div class="product-modal__bottom">
-                <h2 class="title-lg product-modal__title">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h2>
-
-                <div class="product-modal__info">
-                  <p class="text">
-                    Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей.
-                    Подходит для работы с натуральными и искусственными ногтями.
-                  </p>
+                  <dl class="product-modal__list">
+                    <div class="product-modal__list-item">
+                      <dt>Артикул:</dt>
+                      <dd>ФТ - 28 округлый</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Стандарт:</dt>
+                      <dd>28/410 DIN</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Тип:</dt>
+                      <dd>флип-топ</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <dt>Размер горла:</dt>
+                      <dd>28</dd>
+                    </div>
+                    <div class="product-modal__list-item">
+                      <div>Цена по запросу</div>
+                    </div>
+                  </dl>
 
                   <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
                 </div>
