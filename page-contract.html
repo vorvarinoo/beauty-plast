@@ -81,10 +81,27 @@
                       </li>
                     </ul>
                   </div>
-
                 </li>
-                <li class="header-menu__link"><a href="#about">О компании</a>
+                <li class="header-menu__link" data-dropdown>
+                  <div class="d-flex align-items-center">
+                    <a href="#about">О компании</a>
 
+                    <div class="header-menu__link-btn">
+                      <span>
+                        <svg width="18" height="8">
+                          <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="header-menu__dropdown">
+                    <ul class="list-reset">
+                      <li class="header-menu__link">
+                        <a href="#">Сертификаты</a>
+                      </li>
+                    </ul>
+                  </div>
                 </li>
                 <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
                 <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
@@ -144,10 +161,27 @@
                         </li>
                       </ul>
                     </div>
-
                   </li>
-                  <li class="header-menu__link"><a href="#about">О компании</a>
+                  <li class="header-menu__link" data-dropdown>
+                    <div class="d-flex align-items-center">
+                      <a href="#about">О компании</a>
 
+                      <div class="header-menu__link-btn">
+                        <span>
+                          <svg width="18" height="8">
+                            <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="header-menu__dropdown">
+                      <ul class="list-reset">
+                        <li class="header-menu__link">
+                          <a href="#">Сертификаты</a>
+                        </li>
+                      </ul>
+                    </div>
                   </li>
                   <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
                   <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
@@ -173,7 +207,7 @@
               </div>
             </nav>
             <h1 class="title-xl">Контрактное производство</h1>
-            <div class="page-description page-description--contract text-md">
+            <div class="p-0 text-md page-description page-description--contract">
               <p>
                 БЬЮТИ ПЛАСТ - это промышленное производство широкого ассортимента косметической продукции в различных категориях: HoReCa одноразовая косметика для отелей, профессиональные продукты для салонов красоты и домашнего ухода, репелленты, инсектициды, антисептики и различная beauty продукция для детей и взрослых.
               </p>
@@ -182,7 +216,6 @@
           </div>
         </div>
       </section>
-
       <section class="company-descr company-descr--pt border-top">
         <div class="container">
           <div class="row">
@@ -236,7 +269,7 @@
       <section class="list-block ingredients">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0 pr-xl-5">
               <h2 class="title-lg title-lg--size list-block__title">Мы используем качественное, натуральное и безопасное сырье</h2>
               <p class="text-lg text-lg--bold">
                 Использование современных способов производства позволяет нам применять различные ингредиенты, независимо от их консистенции и вязкости. В настоящее время в нашем распоряжении имеется обширный портфель рецептур для косметических средств, в состав которых входит только качественное, натуральное и безопасное сырье.
@@ -283,50 +316,54 @@
           </div>
         </div>
       </section>
-
       <section class="contract-card-block production-plan">
         <div class="container">
           <div class="row">
-            <h2 class="title-lg title-lg--size col-lg-7 col-2xl-6 mb-5">БЬЮТИ ПЛАСТ - контрактное производство косметической продукции для Вашего бренда</h2>
-            <div class="title-section col-12 mb-2">План производства СТМ:</div>
-            <ul class="list-reset contract-card-block__list production-plan__list col-12">
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Разработка и утверждение уникальных рецептур в требуемом ценовом сегменте</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Разработка формата упаковки и укупорочного средства</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Полный цикл лабораторных испытаний</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Согласование и утверждение объёмов производства</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Подготовка и подписание договора</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Получение сертификатов и госрегистрации</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Разработка дизайн&#8209;проекта ГП</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Промышленный запуск проекта</div>
-              </li>
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__num"></div>
-                <div class="title-md">Доставка товара</div>
-              </li>
-            </ul>
+            <div class="col-12 col-lg-7 col-2xl-6 mb-5">
+              <h2 class="title-lg title-lg--size">БЬЮТИ ПЛАСТ - контрактное производство косметической продукции для Вашего бренда</h2>
+            </div>
+
+            <div class="col-12">
+              <div class="title-section mb-2">План производства СТМ:</div>
+              <ul class="list-reset contract-card-block__list production-plan__list">
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Разработка и утверждение уникальных рецептур в требуемом ценовом сегменте</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Разработка формата упаковки и укупорочного средства</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Полный цикл лабораторных испытаний</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Согласование и утверждение объёмов производства</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Подготовка и подписание договора</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Получение сертификатов и госрегистрации</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Разработка дизайн&#8209;проекта ГП</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Промышленный запуск проекта</div>
+                </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__num"></div>
+                  <div class="title-md">Доставка товара</div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
@@ -373,88 +410,95 @@
       <section class="contract-card-block offer-customers">
         <div class="container">
           <div class="row">
-            <h2 class="title-lg title-lg--size col-lg-7 col-2xl-5 mb-2">Нашим заказчикам упаковки для СТМ мы&nbsp;готовы предложить:</h2>
-            <ul class="list-reset contract-card-block__list offer-customers__list col-12">
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#box"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Разработку эксклюзивной упаковки: флаконов HDPE, PET от 30 мл. до 1500 мл., в том числе и с наклонным горлом, и комплектного укупорочного средства - дозатора, флип-топа, диск-топа и винтовой крышки</div>
-              </li>
 
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#unique"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Подбор уникального цветового решения упаковки, декорирование укупорочного средства - фольгирование по клише серебром/золотом</div>
-              </li>
+            <div class="col-lg-7 col-2xl-5 mb-2">
+              <h2 class="title-lg title-lg--size">Нашим заказчикам упаковки для СТМ мы&nbsp;готовы предложить:</h2>
+            </div>
 
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#delivery-truck"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Кратчайшие сроки выполнения ассортиментного заказа</div>
-              </li>
+            <div class="col-12">
+              <ul class="list-reset contract-card-block__list offer-customers__list">
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#box"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Разработку эксклюзивной упаковки: флаконов HDPE, PET от 30 мл. до 1500 мл., в том числе и с наклонным горлом, и комплектного укупорочного средства - дозатора, флип-топа, диск-топа и винтовой крышки</div>
+                </li>
 
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#bottle"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Ассортимент серийных флаконов для косметических продуктов и средств бытовой химии, объёмом от 30 мл. до 1500 мл.</div>
-              </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#unique"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Подбор уникального цветового решения упаковки, декорирование укупорочного средства - фольгирование по клише серебром/золотом</div>
+                </li>
 
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#microscop"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Лабораторное тестирование упаковки и укупорочных средств</div>
-              </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#delivery-truck"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Кратчайшие сроки выполнения ассортиментного заказа</div>
+                </li>
 
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#rubles"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Рублёвые контракты внутри страны</div>
-              </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#bottle"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Ассортимент серийных флаконов для косметических продуктов и средств бытовой химии, объёмом от 30 мл. до 1500 мл.</div>
+                </li>
 
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#documentation"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Подготовку документации</div>
-              </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#microscop"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Лабораторное тестирование упаковки и укупорочных средств</div>
+                </li>
 
-              <li class="contract-card-block__item">
-                <div class="contract-card-block__icon">
-                  <svg width="45" height="45" aria-hidden="true">
-                    <use xlink:href="img/sprite.svg#certification"></use>
-                  </svg>
-                </div>
-                <div class="title-md">Сертификация и протоколы испытания</div>
-              </li>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#rubles"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Рублёвые контракты внутри страны</div>
+                </li>
 
-            </ul>
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#documentation"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Подготовку документации</div>
+                </li>
+
+                <li class="contract-card-block__item">
+                  <div class="contract-card-block__icon">
+                    <svg width="45" height="45" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#certification"></use>
+                    </svg>
+                  </div>
+                  <div class="title-md">Сертификация и протоколы испытания</div>
+                </li>
+
+              </ul>
+            </div>
+
           </div>
         </div>
       </section>
       <section class="list-block packages">
         <div class="container">
           <div class="row">
-            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0 pr-xl-5">
               <h2 class="title-lg title-lg--size list-block__title">Экструзионно - выдувноепроизводство флаконов</h2>
               <p class="text-md">
                 Новинка 2021 г. – приобретение и вводв эксплуатацию Тайваньского высокопроизводительного экструзионного оборудования PARKER – одного из лидеров отраслипо изготовлению станков дляпроизводства флаконов РР, РЕ,включая возможность изготовленияфлаконов с НАКЛОННЫМ ГОРЛОМ,особенно востребованныхв бытовой химии.

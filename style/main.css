@@ -621,13 +621,13 @@ dd {
 }
 
 .page-description {
-  margin-bottom: 48px;
+  padding-bottom: 48px;
 
   --main-text-color: var(--gray-30-color);
 }
 @media (min-width: 1200px) {
   .page-description {
-    margin-bottom: 128px;
+    padding: 32px 0 128px;
   }
 }
 .page-description--contract {
@@ -647,22 +647,30 @@ dd {
 }
 .page-description__cont {
   display: grid;
-  margin: 16px 0 48px;
 
   row-gap: 16px;
 }
+.page-description__cont p {
+  margin: 0;
+}
+
+.page-product {
+  margin-bottom: 32px;
+}
+@media (min-width: 992px) {
+  .page-product {
+    margin-bottom: 0;
+  }
+}
 @media (min-width: 1200px) {
-  .page-description__cont {
-    margin: 32px 0;
+  .page-product {
+    padding-top: 32px;
   }
 }
 @media (min-width: 1600px) {
-  .page-description__cont {
-    margin-bottom: 64px;
+  .page-product {
+    padding-top: 0;
   }
-}
-.page-description__cont p {
-  margin: 0;
 }
 
 .btn {
@@ -1340,18 +1348,16 @@ dd {
 }
 
 .cards-block {
-  margin: 16px 0 48px;
+  padding: 16px 0 48px;
 }
 @media (min-width: 1200px) {
   .cards-block {
-    margin: 32px 0;
-    padding-bottom: 128px;
+    padding: 32px 0 128px;
   }
 }
 @media (min-width: 1600px) {
   .cards-block {
-    margin-bottom: 64px;
-    padding-bottom: 0;
+    padding-bottom: 64px;
   }
 }
 .cards-block__list {
@@ -1454,12 +1460,9 @@ dd {
 .catalog-filter__top::-webkit-details-marker {
   display: none;
 }
-.catalog-filter__top svg {
-  display: none;
-}
 @media (min-width: 992px) {
   .catalog-filter__top svg {
-    display: block;
+    display: none;
   }
 }
 @media (hover: hover) {
@@ -1555,11 +1558,11 @@ dd {
 }
 
 .catalog-product {
-  margin-bottom: 48px;
+  padding: 16px 0 48px;
 }
 @media (min-width: 1200px) {
   .catalog-product {
-    margin-bottom: 96px;
+    padding: 32px 0 96px;
   }
 }
 .catalog-product__list {
@@ -1842,24 +1845,31 @@ dd {
 }
 
 .news-page {
-  margin-bottom: 64px;
+  padding-bottom: 64px;
 }
 @media (min-width: 1200px) {
   .news-page {
-    margin-bottom: 96px;
+    padding: 32px 0 96px;
   }
 }
 @media (min-width: 1600px) {
   .news-page {
-    margin-bottom: 128px;
+    padding: 0 0 128px;
   }
 }
 
 .news-photo {
-  display: flex;
+  position: relative;
+
+  height: 0;
+  padding-bottom: 100%;
   overflow: hidden;
 
   border-radius: 14px;
+}
+.news-photo img {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .news-meta__title {
@@ -2567,6 +2577,8 @@ dd {
   transition:         transform var(--transition-speed-slow) ease-in-out, -webkit-transform var(--transition-speed-slow) ease-in-out;
 }
 .header-menu__link a {
+  flex-shrink: 0;
+
   font-size: inherit;
   color: var(--link-color);
 
