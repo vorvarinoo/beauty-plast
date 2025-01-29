@@ -1492,9 +1492,6 @@ dd {
   padding: 7px 32px;
 }
 
-.filter-item {
-  list-style: none;
-}
 .filter-item[open] {
   --block-color: var(--blue-color);
   --svg-rotate: 180deg;
@@ -1503,6 +1500,7 @@ dd {
   display: flex;
   align-items: center;
 
+  list-style: none;
   font-weight: 400;
   font-size: 18px;
   color: var(--block-color, var(--gray-50-color));
@@ -1654,6 +1652,7 @@ dd {
 
   display: flex;
   flex-direction: column;
+  height: 100%;
 
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -1677,7 +1676,12 @@ dd {
   cursor: pointer;
 }
 .stepper__btn--up {
-  margin-bottom: 8px;
+  align-items: end;
+  padding-bottom: 4px;
+}
+.stepper__btn--down {
+  align-items: start;
+  padding-top: 4px;
 }
 .stepper__btn--disabled {
   color: var(--gray-15-color);
