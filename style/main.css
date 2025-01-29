@@ -619,14 +619,6 @@ dd {
     margin-top: 64px;
   }
 }
-.page-top:has(.site-breadcrumb + h1) {
-  margin-bottom: 16px;
-}
-@media (min-width: 1200px) {
-  .page-top:has(.site-breadcrumb + h1) {
-    margin-bottom: 32px;
-  }
-}
 
 .page-description {
   margin-bottom: 48px;
@@ -1450,6 +1442,7 @@ dd {
   justify-content: space-between;
   align-items: center;
 
+  list-style: none;
   font-weight: 500;
   font-size: 18px;
   color: var(--top-color, var(--blue-color));
@@ -1457,6 +1450,9 @@ dd {
   cursor: pointer;
 
   transition: color var(--transition-speed-medium) ease-in-out;
+}
+.catalog-filter__top::-webkit-details-marker {
+  display: none;
 }
 .catalog-filter__top svg {
   display: none;
