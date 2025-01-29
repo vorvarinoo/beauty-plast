@@ -50,13 +50,28 @@
   }
 }
 
-
 .form-checkbox {
   display: inline-flex;
   gap: 1rem;
   align-items: flex-start;
   position: relative;
   isolation: isolate;
+
+  &--filter {
+    --checkbox-background-color: var(--white-color);
+
+    cursor: pointer;
+    display: inline-flex;
+    gap: 8px;
+
+    & input:checked + span {
+      --checkbox-text-color: var(--blue-color);
+    }
+
+    & > span {
+      color: var(--checkbox-text-color, var(--gray-50-color));
+    }
+  }
 
   & input {
     position: relative;

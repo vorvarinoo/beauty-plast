@@ -11,7 +11,7 @@
   @include media-min ($lg) {
     position: sticky;
     top: 150px;
-    max-width: 254px;
+    // max-width: 254px;
   }
 
   @include media-min ($xxl) {
@@ -19,7 +19,6 @@
   }
 
   &__accordion {
-
     &[open] {
       --top-color: var(--gray-30-color);
     }
@@ -61,6 +60,7 @@
       row-gap: 32px;
       padding-top: 32px;
     }
+
   }
 
   &__btns {

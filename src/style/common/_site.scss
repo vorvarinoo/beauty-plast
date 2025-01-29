@@ -37,14 +37,28 @@
   }
 
   & a {
-    color: inherit;
     font-size: inherit;
+    transition: color var(--transition-speed-medium) ease-in-out,
+      border-color var(--transition-speed-medium) ease-in-out;
+
+    @media (hover: hover) {
+      &:hover {
+        --breadcrumbs-color: var(--blue-color);
+      }
+    }
+
+    @media (hover: none) {
+      &:active {
+        color: var(--blue-color);
+      }
+    }
   }
 
   & a,
   & span {
+    color: var(--breadcrumbs-color, var(--gray-30-color));
     display: inline-block;
-    border: 1px solid var(--gray-15-color);
+    border: 1px solid var(--breadcrumbs-color, var(--gray-30-color));
     border-radius: 8px;
     padding: 0 8px;
   }
