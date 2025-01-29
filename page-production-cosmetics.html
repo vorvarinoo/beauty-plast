@@ -3,1570 +3,1224 @@
 
 <head>
   <meta charset="utf-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible"
-      content="ie=edge">
-<link rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicons/favicon-16x16.png">
-<link rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicons/favicon-32x32.png">
-<link rel="apple-touch-icon"
-      sizes="180x180"
-      href="img/favicons/apple-touch-icon.png">
-<link rel="manifest"
-      href="site.webmanifest">
-<link rel="preload"
-      href="fonts/opensans-regular.woff2"
-      as="font"
-      type="font/woff2"
-      crossorigin>
-<link rel="stylesheet"
-      href="style/vendor-bundle.css?v=1.11">
-<link rel="stylesheet"
-      href="style/main.css?v=1.11">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="preload" href="fonts/opensans-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style/vendor-bundle.css?v=1.11">
+  <link rel="stylesheet" href="style/main.css?v=1.11">
   <title>Главная</title>
 </head>
 
 <body class="indent-reset site">
-  <div inert=""
-       id="site-top"></div>
+  <div inert="" id="site-top"></div>
   <div class="site__container">
     <header class="site__header header header--fixed">
-  <div class="header-contacts">
-  <div class="header-contacts__cont">
-    <ul class="list-reset header-contacts__list">
-      <li>
-        <a class="header-contacts__item"
-           href="mailto:info@beauty-plast.ru">info@beauty-plast.ru</a>
-      </li>
-    </ul>
-
-    <ul class="list-reset header-contacts__list">
-      <li>
-        <a class="header-contacts__item"
-           href="tel:84950250333">8(495) 025-03-33</a>
-      </li>
-    </ul>
-  </div>
-</div>
-  <div class="header__cont">
-
-    <div class="header__wrap">
-
-      <div class="header__logo">
-        <div class="logo logo--background-color">
-  <a href="/"
-     aria-label="Перейти на главную страницу">
-    <svg width="175"
-         height="38"
-         aria-label="Логотип BEAUTY PLAST">
-      <use xlink:href="img/sprite.svg#logo"></use>
-    </svg>
-  </a>
-</div>
-      </div>
-
-      <div class="header__menu d-none d-xl-block">
-        <nav class="header-menu  ">
-  <ul class="list-reset header-menu__list">
-    <li class="header-menu__link"
-        data-dropdown>
-      <div class="d-flex align-items-center">
-        <a href="#products">Продукция
-        </a>
-
-        <div class="header-menu__link-btn">
-          <span>
-            <svg width="18"
-                 height="8">
-              <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
-            </svg>
-          </span>
-        </div>
-      </div>
-
-      <div class="header-menu__dropdown">
-        <ul class="list-reset">
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-        </ul>
-      </div>
-
-    </li>
-    <li class="header-menu__link"><a href="#about">О компании</a>
-
-    </li>
-    <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
-    <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
-  </ul>
-</nav>
-      </div>
-
-      <div class="header__btn">
-        <button class="btn btn-primary"
-                data-hystmodal="#feedback-modal">
-          Заказать звонок
-        </button>
-      </div>
-
-
-      <button class="btn site-header__burger burger d-xl-none"
-              type="button"
-              aria-label="Меню"
-              data-header-modal="mobile-menu">
-        <span class="burger__line burger__line--top"></span>
-        <span class="burger__line burger__line--middle"></span>
-        <span class="burger__line burger__line--bottom"></span>
-      </button>
-
-    </div>
-
-  </div>
-  <div class="header-modal"
-     aria-hidden="true"
-     id="mobile-menu">
-  <div class="header-modal__content">
-    <div class="container">
-      <div class="header-modal__wrap">
-        <nav class="header-menu  d-xl-none mb-4">
-  <ul class="list-reset header-menu__list">
-    <li class="header-menu__link"
-        data-dropdown>
-      <div class="d-flex align-items-center">
-        <a href="#products">Продукция
-        </a>
-
-        <div class="header-menu__link-btn">
-          <span>
-            <svg width="18"
-                 height="8">
-              <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
-            </svg>
-          </span>
-        </div>
-      </div>
-
-      <div class="header-menu__dropdown">
-        <ul class="list-reset">
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-          <li class="header-menu__link">
-            <a href="#">Бренды</a>
-          </li>
-        </ul>
-      </div>
-
-    </li>
-    <li class="header-menu__link"><a href="#about">О компании</a>
-
-    </li>
-    <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
-    <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
-  </ul>
-</nav>
-        <div class="header-modal__btn">
-          <button class="btn btn-primary"
-                  data-hystmodal="#feedback-modal">
-            Заказать звонок
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-</header>
-    <main class="site__content site__content--offset">
-<section class="hero">
-  <div class="swiper hero-slider slider">
-
-    <div class="swiper-wrapper">
-
-      <div class="swiper-slide hero-slide"
-     style="background-image: url(img/img-bg-hero-2.png);">
-  <div class="container">
-    <div class="hero-slide__cont">
-      <div class="hero-slide__img">
-        <img src="img/img-main-product-2.png"
-             alt="HoReCa - cерия косметических средств для гостиничного сервиса"
-             width="375"
-             height="375">
-      </div>
-      <div class="hero-slide__info">
-        <h2 class="title-xl mb-5">HoReCa - cерия косметических средств для гостиничного сервиса</h2>
-        <div class="hero-slide__btns">
-          <!-- <a class="btn btn-secondary"
-             href="">Вся продукция</a> -->
-
-          <div class="slider-controls">
-            <div class="slider-button-prev slider-control">
-              <svg width="23"
-                   height="17">
-                <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
-              </svg>
-            </div>
-            <div class="slider-button-next slider-control">
-              <svg width="23"
-                   height="17">
-                <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-              </svg>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="categories">
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-4 mb-5 mb-lg-0">
-        <div class="categories__info">
-          <div class="title-lg mb-3">БЬЮТИ ПЛАСТ&nbsp;&mdash; российский производственный комплекс полного цикла&nbsp;&mdash; от&nbsp;упаковки до&nbsp;готовой продукции.</div>
-          <p class="text-md">
-            БЬЮТИ&nbsp;ПЛАСТ&nbsp;&mdash; подразделение компании, занимающееся производством готовой косметической продукции и&nbsp;средств бытовой химии, в&nbsp;которой используется упаковка, разработанная нашими дизайнерами и&nbsp;воплощенная технологами. Мы&nbsp;создаем продукцию на&nbsp;высокопроизводительном варочном оборудовании, опираясь на&nbsp;собственную лабораторию и&nbsp;команду квалифицированных специалистов.
-            Слаженная работа складской и&nbsp;логистической программ позволяет нам эффективно выводить на&nbsp;рынок высококачественные продукты по&nbsp;конкурентоспособным ценам, делая их&nbsp;доступными для широкого круга потребителей.
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-8">
-        <h2 class="title-section mb-2">
-          Категории:
-        </h2>
-
-        <ul class="list-reset categories-list">
-
-          <li class="categories-item">
-  <a href="">
-    <span>EVI SALON PROFESSIONAL</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>EVI PROFESSIONAL</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>HORECA ТОВАРЫ ДЛЯ ОТЕЛЕЙ И ГОСТИНИЦ</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>SAY YES</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>LAFITEL</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>LAFITEL АНТИБАКТЕРИАЛЬНЫЕ И АНТИСЕПТИЧЕСКИЕ СРЕДСТВА ДЛЯ ЗАЩИТЫ РУК</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>SMART BOX NAIL</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>LAFITEL ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>МЕЧТА ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>ВОЛШЕБНАЯ ЛАСКА ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>МЕЧТА COSMETICS</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>МЕЧТА BABY</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-<li class="categories-item">
-  <a href="">
-    <span>МОСКИЛЛ</span>
-    <svg width="23"
-         height="18"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-    </svg>
-  </a>
-</li>
-
-
-        </ul>
-
-        <a href=""
-           class="btn btn-secondary">В каталог</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="benefits">
-  <div class="container">
-    <h2 class="title-section mb-2">
-      преимущества:
-    </h2>
-    <ul class="list-reset benefits-list">
-
-      <li class="benefits-item">
-  <div class="benefits-item__img">
-    <svg width="60"
-         height="60"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#development"></use>
-    </svg>
-  </div>
-
-  <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Полный цикл разработки и производства</h3>
-  <p class="text-md">Мы предлагаем полный цикл создания продукта: от концепции до промышленного выпуска. Собственная лаборатория обеспечивает разработку уникальных рецептур, тестирование и сертификацию по стандартам ГОСТ РФ, что позволяет оперативно выводить продукцию на рынок.</p>
-</li><li class="benefits-item">
-  <div class="benefits-item__img">
-    <svg width="60"
-         height="60"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#prices"></use>
-    </svg>
-  </div>
-
-  <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Цены, доступные каждому</h3>
-  <p class="text-md">Сосредоточение всех производственных мощностей на одном комплексе позволяет нам поддерживать конкурентоспособные цены, предлагая высококачественную продукцию, доступную для широкого круга покупателей.</p>
-</li><li class="benefits-item">
-  <div class="benefits-item__img">
-    <svg width="60"
-         height="60"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#partnership"></use>
-    </svg>
-  </div>
-
-  <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Партнерство для создания собственных брендов (СТМ)</h3>
-  <p class="text-md">Мы предоставляем услуги контрактного производства для создания продукции под собственной торговой маркой. Опытная команда специалистов создаст уникальные косметические продукты, которые подчеркнут индивидуальность вашего бренда.</p>
-</li>
-
-    </ul>
-
-  </div>
-</section>
-
-<section class="cards-slider"
-         id="new-products">
-  <div class="container">
-    <div class="cards-slider__top">
-
-      <h2 class="title-section cards-slider__left">
-        Продукция:
-      </h2>
-
-      <div class="cards-slider__right">
-        <div class="title-lg">Новинки</div>
-
-        <div class="slider-controls">
-          <div class="slider-button-prev slider-control">
-            <svg width="23"
-                 height="17"
-                 aria-hidden="true">
-              <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
-            </svg>
-          </div>
-          <div class="slider-button-next slider-control">
-            <svg width="23"
-                 height="17"
-                 aria-hidden="true">
-              <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-            </svg>
-          </div>
-        </div>
-
-      </div>
-
-    </div>
-
-    <div class="swiper cards-slider__element slider">
-
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide cards-slider__slide">
-          <div class="card-item card-product">
-  <div class="card-item__cont">
-    <div class="card-item__img card-product__img mb-2">
-      <img src="img/cosmetics/products/1.jpg"
-           alt="Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор."
-           width="239"
-           height="239">
-      <div class="card-product__producer">
-        <img src="img/@producer-img">
-      </div>
-    </div>
-    <div class="card-item__descr">
-      <h3 class="title-sm mb-2">Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор.</h3>
-      <p class="text-sm card-item__text">
-        Шампунь серии THE HOTEL разработан на основе ухаживающего комплекса KERAMARE&KERATRIX. Многокомпонентный состав продукта деликатно очищает, увлажняет и восстанавливает структуру волос и кожи головы.
-      </p>
-    </div>
-  </div>
-
-  <a class="btn btn-primary card-item__btn"
-     href="#"
-     data-hystmodal="#product-modal-1">подробнее</a>
-</div>
-        </div>
-
-        <div class="swiper-slide cards-slider__slide">
-          <div class="card-item card-product">
-  <div class="card-item__cont">
-    <div class="card-item__img card-product__img mb-2">
-      <img src="img/cosmetics/products/2.jpg"
-           alt="SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор."
-           width="239"
-           height="239">
-      <div class="card-product__producer">
-        <img src="img/@producer-img">
-      </div>
-    </div>
-    <div class="card-item__descr">
-      <h3 class="title-sm mb-2">SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор.</h3>
-      <p class="text-sm card-item__text">
-        Гель для душа на основе природных экстрактов наполняет энергией свежести, заботливо и бережно очищает кожу, снимает усталость. Активные ингредиенты состава — масло виноградной косточки и бетаин, ухаживают за кожей тела, смягчают и насыщают питательными компонентами.
-      </p>
-    </div>
-  </div>
-
-  <a class="btn btn-primary card-item__btn"
-     href="#"
-     data-hystmodal="#product-modal-2">подробнее</a>
-</div>
-        </div>
-
-        <div class="swiper-slide cards-slider__slide">
-          <div class="card-item card-product">
-  <div class="card-item__cont">
-    <div class="card-item__img card-product__img mb-2">
-      <img src="img/cosmetics/products/3.jpg"
-           alt="EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к"
-           width="239"
-           height="239">
-      <div class="card-product__producer">
-        <img src="img/@producer-img">
-      </div>
-    </div>
-    <div class="card-item__descr">
-      <h3 class="title-sm mb-2">EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к</h3>
-      <p class="text-sm card-item__text">
-        Кондиционер «Серебристый» создан специально для окрашенных в светлые тона, светлых, мелированных и обесцвеченных волос. Средство содержит высокий уровень фиолетового пигмента, чтобы обеспечить максимальную нейтрализацию желтого оттенка и легкое тонирование волос. Кондиционер питает и увлажняет волосы, придавая им серебристое мерцание, эластичность и ухоженный вид. Регулярное применение средства защищает цвет волос и препятствует появлению нежелательного оттенка желтизны. Для усиления эффекта рекомендуем использовать после шампуня серии «EVI» Professional «Серебристый».
-      </p>
-    </div>
-  </div>
-
-  <a class="btn btn-primary card-item__btn"
-     href="#"
-     data-hystmodal="#product-modal-3">подробнее</a>
-</div>
-        </div>
-
-        <div class="swiper-slide cards-slider__slide">
-          <div class="card-item card-product">
-  <div class="card-item__cont">
-    <div class="card-item__img card-product__img mb-2">
-      <img src="img/cosmetics/products/4.jpg"
-           alt="EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор."
-           width="239"
-           height="239">
-      <div class="card-product__producer">
-        <img src="img/@producer-img">
-      </div>
-    </div>
-    <div class="card-item__descr">
-      <h3 class="title-sm mb-2">EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор.</h3>
-      <p class="text-sm card-item__text">
-        Средство 10 в 1 — для работы с лаком, гель-лаком, био-гелем, искусственными ногтями, типсами, а так же для работы с аксессуарами для стемпинга ногтей: скраперов, пластин для стемпинга, трафаретов, синтетических кистей и инструментов мастера, за исключением предметов с липкой и прозрачной силиконовой поверхностью.
-      </p>
-    </div>
-  </div>
-
-  <a class="btn btn-primary card-item__btn"
-     href="#"
-     data-hystmodal="#product-modal-4">подробнее</a>
-</div>
-        </div>
-
-        <div class="swiper-slide cards-slider__slide">
-          <div class="card-item card-product">
-  <div class="card-item__cont">
-    <div class="card-item__img card-product__img mb-2">
-      <img src="img/cosmetics/products/5.jpg"
-           alt="EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор."
-           width="239"
-           height="239">
-      <div class="card-product__producer">
-        <img src="img/@producer-img">
-      </div>
-    </div>
-    <div class="card-item__descr">
-      <h3 class="title-sm mb-2">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h3>
-      <p class="text-sm card-item__text">
-        Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей. Подходит для работы с натуральными и искусственными ногтями.
-      </p>
-    </div>
-  </div>
-
-  <a class="btn btn-primary card-item__btn"
-     href="#"
-     data-hystmodal="#product-modal-5">подробнее</a>
-</div>
-        </div>
-
-        <div class="swiper-slide cards-slider__slide">
-          <div class="card-item card-product">
-  <div class="card-item__cont">
-    <div class="card-item__img card-product__img mb-2">
-      <img src="img/cosmetics/products/6.jpg"
-           alt="МЕЧТА Жидкость для снятия лака с помпой дозатором 150 ml"
-           width="239"
-           height="239">
-      <div class="card-product__producer">
-        <img src="img/@producer-img">
-      </div>
-    </div>
-    <div class="card-item__descr">
-      <h3 class="title-sm mb-2">МЕЧТА Жидкость для снятия лака с помпой дозатором 150 ml</h3>
-      <p class="text-sm card-item__text">
-        Жидкость для снятия лака МЕЧТА быстро и эффективно удаляет любой лак, не повреждая ногтевую пластину. Приятный аромат продукта, создаёт настроение и комфорт в программе педикюра и маникюра, как в салонах красоты, так и в домашних условиях. 
-      </p>
-    </div>
-  </div>
-
-  <a class="btn btn-primary card-item__btn"
-     href="#"
-     data-hystmodal="#product-modal-6">подробнее</a>
-</div>
-        </div>
-
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section class="about"
-         id="about">
-  <div class="container">
-    <div class="row about__cont">
-
-      <div class="col-12 col-lg-4 mb-5 mb-lg-0">
-        <h2 class="title-section about__title">
-          О компании
-        </h2>
-
-        <div class="title-lg about__subtitle">
-          БЬЮТИ ПЛАСТ&nbsp;&mdash; российский производственный комплекс полного цикла&nbsp;&mdash; от&nbsp;упаковки до&nbsp;готовой продукции
-        </div>
-
-        <div class="text-md">
-          <p class="indent-reset mb-2">
-            Компания БЬЮТИ ПЛАСТ специализируется на&nbsp;производстве готовой косметической продукции и&nbsp;средств бытовой химии, предлагая клиентам полный цикл разработки&nbsp;&mdash; от&nbsp;идеи до&nbsp;промышленного выпуска. Наличие собственной лаборатории позволяет создавать уникальные рецептуры, проходящие тестирование и&nbsp;сертификацию по&nbsp;ГОСТ&nbsp;РФ, что гарантирует высокое качество и&nbsp;безопасность продукции.
-          </p>
-          <p class="indent-reset">
-            Наши технические мощности сосредоточены в&nbsp;одном комплексе, что позволяет оптимизировать затраты и&nbsp;обеспечивать доступные цены на&nbsp;продукцию для конечного потребителя. Мы&nbsp;также предлагаем контрактное производство и&nbsp;сотрудничаем с&nbsp;партнёрами для создания продукции под собственной торговой маркой (СТМ), помогая развивать индивидуальные бренды с&nbsp;уникальной косметической линейкой.
-          </p>
-        </div>
-      </div>
-
-      <div class="d-flex flex-grow-1 align-items-center justify-content-center mb-5 mb-lg-0">
-        <button class="btn about__btn-play"
-                data-hystmodal="#video-modal"
-                disabled>
-          <span class="text-md">
-            Смотрите видео
-          </span>
-        </button>
-      </div>
-
-
-      <div class="col-12 col-lg-4 mt-auto">
-        <ul class="list-reset about-benefits">
-          <li>
-            <p class="text-sm">Ассортимент косметических брендов для взрослых и детей</p>
-          </li>
-          <li>
-            <p class="text-sm">Комплексная разработка продукции - от создания флакона и рецептуры, до сертификации и доставки.</p>
-          </li>
-          <li>
-            <p class="text-sm">Отгрузка со склада в Подмосковье, выполнение ассортиментного заказа в кратчайшие сроки</p>
-          </li>
-          <li>
-            <p class="text-sm">Контрактное производство, косметические продукты для вашего бренда</p>
-          </li>
-        </ul>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="feedback feedback--cosmetics">
-  <div class="container">
-
-    <div class="row justify-content-between">
-      <div class="col-lg-5 col-2xl-6 mb-4 mb-lg-0 offset-lg-1">
-        <h2 class="title-xl mb-4">Оставьте заявку</h2>
-
-      </div>
-
-      <div class="col-lg-4">
-                <form id="feedback-form"
-              class="feedback-form "
-              data-validate>
-          <input class="visually-hidden"
-                 type="text"
-                 name="Страница"
-                 value="">
-          <div class="feedback-form__top ">
-            <div class="form-field">
-              <label class="form-label text text-sm mb-1"
-                     for="">Имя</label>
-              <input class="form-input"
-                     type="text"
-                     name="Имя"
-                     placeholder="Имя"
-                     data-validate="name"
-                     required>
-            </div>
-            <div class="form-field">
-              <label class="form-label text text-sm mb-1"
-                     for="">Телефон</label>
-              <input class="form-input"
-                     type="tel"
-                     name="Контактный телефон"
-                     placeholder="+7 900 000 00 00"
-                     data-validate="phone"
-                     required>
-            </div>
-          </div>
-
-          <div class="feedback-form__bottom ">
-            <button class="btn btn-secondary"
-                    type="submit">отправить</button>
-
-            <div class="form-field">
-              <label class="form-checkbox">
-                <input type="checkbox"
-                       data-validate="confirm"
-                       required>
-                <span class="text-sm">
-                  Я согласен(на) с <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
-                </span>
-              </label>
-            </div>
-
-          </div>
-
-        </form>
-      </div>
-    </div>
-
-  </div>
-</section>
-<section class="contacts main-contacts"
-         id="contacts">
-  <div class="container">
-    <div class="row justify-content-between">
-
-      <div class="col-12 col-lg-7 mb-5 mb-lg-0">
-
-        <div class="contacts__top">
-          <h2 class="title-section mb-2">контакты</h2>
-          <div class="title-lg">Приходите к нам в офис</div>
-        </div>
-
-        <div class="contacts__map">
-          <script type="text/javascript"
-                  charset="utf-8"
-                  async
-                  src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61b1b4241e70d6775dc685a104dc02274755741761ebc89919ba7ff96152ad8e&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
-
-      </div>
-
-      <div class="col-12 col-lg-5 col-xl-4">
-
-        <div class="contacts__scroll-block">
-          <ul class="list-reset contacts__list">
-
-            <li class="contact-card">
-  <div class="contact-card__top">
-    <span class="text-sm">Офис:</span>
-    <span class="text-sm text-sm--light">ООО «Бьюти Пласт»</span>
-  </div>
-
-  <div class="contact-card__bottom">
-    <div class="mb-4">
-      <p class="text-md text-md--dark">Россия, 127018, г. Москва, вн. тер. г. Муниципальный Округ Марьина Роща, ул. Сущёвский Вал, д. 16, стр. 6.</p>
-      <p class="text-sm">пн-пт 9:00-18.00</p>
-    </div>
-
-    <div>
-      <ul class="list-reset contact-list contact-list--lg mb-3">
-        <li><a href="tel:">+7 495 025-03-33 , доб. 0000</a></li>
-      </ul>
-      <ul class="list-reset contact-list contact-list--lg mb-3">
-        <li><a href="mailto:">info@beauty-plast.ru</a></li>
-      </ul>
-      <ul class="list-reset social-list">
-        <li>
-          <a href="#"
-             aria-label="Перейти в Telegram">
-            <svg width="25"
-                 height="25"
-                 aria-label="Telegram">
-              <use xlink:href="img/sprite.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#"
-             aria-label="Перейти в Vkontakte">
-            <svg width="25"
-                 height="25"
-                 aria-label="Vkontakte">
-              <use xlink:href="img/sprite.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</li><li class="contact-card">
-  <div class="contact-card__top">
-    <span class="text-sm">Производство:</span>
-    <span class="text-sm text-sm--light">ООО «Бьюти Пласт»</span>
-  </div>
-
-  <div class="contact-card__bottom">
-    <div class="mb-4">
-      <p class="text-md text-md--dark">Россия, 140573, Московская область, г.о. Коломна, с. Бояркино, тер. Производственная, зд. 1, стр. 1</p>
-      <p class="text-sm">пн-пт 9:00-18.00</p>
-    </div>
-
-    <div>
-      <ul class="list-reset contact-list contact-list--lg mb-3">
-        <li><a href="tel:">+7 495 025-03-33 , доб. 0000</a></li>
-      </ul>
-      <ul class="list-reset contact-list contact-list--lg mb-3">
-        <li><a href="mailto:">info@beauty-plast.ru</a></li>
-      </ul>
-      <ul class="list-reset social-list">
-        <li>
-          <a href="#"
-             aria-label="Перейти в Telegram">
-            <svg width="25"
-                 height="25"
-                 aria-label="Telegram">
-              <use xlink:href="img/sprite.svg#telegram"></use>
-            </svg>
-          </a>
-        </li>
-        <li>
-          <a href="#"
-             aria-label="Перейти в Vkontakte">
-            <svg width="25"
-                 height="25"
-                 aria-label="Vkontakte">
-              <use xlink:href="img/sprite.svg#vk"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</li>
-
+      <div class="header-contacts">
+        <div class="header-contacts__cont">
+          <ul class="list-reset header-contacts__list">
+            <li>
+              <a class="header-contacts__item" href="mailto:info@beauty-plast.ru">info@beauty-plast.ru</a>
+            </li>
+          </ul>
+
+          <ul class="list-reset header-contacts__list">
+            <li>
+              <a class="header-contacts__item" href="tel:84950250333">8(495) 025-03-33</a>
+            </li>
           </ul>
         </div>
-
       </div>
+      <div class="header__cont">
 
-    </div>
+        <div class="header__wrap">
 
-    <div class="contacts-manager">
-      <h2 class="title-lg contacts-manager__title">
-        Контакты подразделений
-      </h2>
+          <div class="header__logo">
+            <div class="logo logo--background-color">
+              <a href="/" aria-label="Перейти на главную страницу">
+                <svg width="175" height="38" aria-label="Логотип BEAUTY PLAST">
+                  <use xlink:href="img/sprite.svg#logo"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
 
-      <ul class="list-reset contacts-manager__list main-contacts__list">
+          <div class="header__menu d-none d-xl-block">
+            <nav class="header-menu  ">
+              <ul class="list-reset header-menu__list">
+                <li class="header-menu__link" data-dropdown>
+                  <div class="d-flex align-items-center">
+                    <a href="#products">Продукция
+                    </a>
 
-        <li class="manager-card">
-  <div class="manager-card__top">
-    <div class="manager-card__avatar">
-      <img src="img/person-avatar.png"
-           alt="Фото менеджера"
-           width="60"
-           height="60">
-    </div>
-    <div class="manager-card__info">
-      <div class="text-sm mb-3">Отдел продаж косметической продукции</div>
-      <div class="manager-card__row">
-        <div class="text-md text-md--dark mr-3">BEAUTY</div>
-        <ul class="list-reset social-list">
-          <li>
-            <a href="#"
-               aria-label="Перейти в Telegram">
-              <svg width="25"
-                   height="25"
-                   aria-label="Telegram">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#"
-               aria-label="Перейти в WhatsApp">
-              <svg width="25"
-                   height="25"
-                   aria-label="WhatsApp">
-                <use xlink:href="img/sprite.svg#whatsapp"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="manager-card__bottom">
-    <ul class="list-reset contact-list contact-list--lg mb-3">
-      <li><a href="tel:">+7 495 025 03 33, доб. 3030</a></li>
-    </ul>
-    <ul class="list-reset contact-list contact-list--lg mb-3">
-      <li><a href="mailto:"> opt@beauty-plast.ru</a></li>
-    </ul>
-  </div>
-</li>
-<li class="manager-card">
-  <div class="manager-card__top">
-    <div class="manager-card__avatar">
-      <img src="img/person-avatar.png"
-           alt="Фото менеджера"
-           width="60"
-           height="60">
-    </div>
-    <div class="manager-card__info">
-      <div class="text-sm mb-3">Отдел продаж упаковки для косметической продукции</div>
-      <div class="manager-card__row">
-        <div class="text-md text-md--dark mr-3">PLAST</div>
-        <ul class="list-reset social-list">
-          <li>
-            <a href="#"
-               aria-label="Перейти в Telegram">
-              <svg width="25"
-                   height="25"
-                   aria-label="Telegram">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#"
-               aria-label="Перейти в WhatsApp">
-              <svg width="25"
-                   height="25"
-                   aria-label="WhatsApp">
-                <use xlink:href="img/sprite.svg#whatsapp"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="manager-card__bottom">
-    <ul class="list-reset contact-list contact-list--lg mb-3">
-      <li><a href="tel:">+7 495 025 03 33</a></li>
-    </ul>
-    <ul class="list-reset contact-list contact-list--lg mb-3">
-      <li><a href="mailto:">pack@beauty-plast.ru</a></li>
-    </ul>
-  </div>
-</li>
-<li class="manager-card">
-  <div class="manager-card__top">
-    <div class="manager-card__avatar">
-      <img src="img/person-avatar.png"
-           alt="Фото менеджера"
-           width="60"
-           height="60">
-    </div>
-    <div class="manager-card__info">
-      <div class="text-sm mb-3">Отдел продаж косметической продукции для отелей и гостиниц</div>
-      <div class="manager-card__row">
-        <div class="text-md text-md--dark mr-3">HORECA</div>
-        <ul class="list-reset social-list">
-          <li>
-            <a href="#"
-               aria-label="Перейти в Telegram">
-              <svg width="25"
-                   height="25"
-                   aria-label="Telegram">
-                <use xlink:href="img/sprite.svg#telegram"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a href="#"
-               aria-label="Перейти в WhatsApp">
-              <svg width="25"
-                   height="25"
-                   aria-label="WhatsApp">
-                <use xlink:href="img/sprite.svg#whatsapp"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <div class="manager-card__bottom">
-    <ul class="list-reset contact-list contact-list--lg mb-3">
-      <li><a href="tel:">+7 495 026 03 33</a></li>
-    </ul>
-    <ul class="list-reset contact-list contact-list--lg mb-3">
-      <li><a href="mailto:">horeca@beauty-plast.ru</a></li>
-    </ul>
-  </div>
-</li>
+                    <div class="header-menu__link-btn">
+                      <span>
+                        <svg width="18" height="8">
+                          <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
+                        </svg>
+                      </span>
+                    </div>
+                  </div>
+
+                  <div class="header-menu__dropdown">
+                    <ul class="list-reset">
+                      <li class="header-menu__link">
+                        <a href="#">Бренды</a>
+                      </li>
+                      <li class="header-menu__link">
+                        <a href="#">Бренды</a>
+                      </li>
+                      <li class="header-menu__link">
+                        <a href="#">Бренды</a>
+                      </li>
+                      <li class="header-menu__link">
+                        <a href="#">Бренды</a>
+                      </li>
+                    </ul>
+                  </div>
+
+                </li>
+                <li class="header-menu__link"><a href="#about">О компании</a>
+
+                </li>
+                <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
+                <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
+              </ul>
+            </nav>
+          </div>
+
+          <div class="header__btn">
+            <button class="btn btn-primary" data-hystmodal="#feedback-modal">
+              Заказать звонок
+            </button>
+          </div>
 
 
-      </ul>
-    </div>
-  </div>
-</section>
-
-			</main>
-			<footer class="site__footer footer">
-  <div class="container">
-    <div class="footer__cont">
-      <p class="text-md"
-         href="">© 2021-2024 Все права защищены</p>
-      <a class="text-md"
-         href="">Политика конфиденциальности</a>
-      <a class="text-md"
-         href="">Согласие на обработку ПД</a>
-      <div class="text-md footer__development">
-        © Разработка сайта
-        <a href="#"
-           aria-label="Переход на сайт Разработчика">
-          <svg width="93"
-               height="25"
-               aria-label="Логотип Re:activno">
-            <use xlink:href="img/sprite.svg#logo-reactivno"></use>
-          </svg>
-        </a>
-      </div>
-    </div>
-  </div>
-</footer>
-<div class="scroll-top"
-     id="scroll-top">
-  <a class="scroll-top__link"
-     href="#site-top"
-     aria-label="Наверх страницы">
-    <svg width="10"
-         height="10"
-         aria-hidden="true">
-      <use xlink:href="img/sprite.svg#arrow-up"></use>
-    </svg>
-  </a>
-</div>
-<div class="hystmodal"
-     id="send-ok-modal"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal ">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <div class="modal__title title title-medium mb-4">Спасибо за заявку!</div>
-<div class="modal__text text-md">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
-<button class="btn btn-secondary"
-        data-hystclose>Хорошо</button>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="hystmodal"
-     id="video-modal"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal modal--video">
-        <div class="modal__content">
-          <button class="modal__close"
-                  type="button"
-                  aria-label="Закрыть окно"
-                  data-hystclose>
-            <svg class="modal__close-icon"
-                 width="30"
-                 height="30"
-                 aria-hidden="true">
-              <use xlink:href="img/sprite.svg#cross"></use>
-            </svg>
+          <button class="btn site-header__burger burger d-xl-none" type="button" aria-label="Меню" data-header-modal="mobile-menu">
+            <span class="burger__line burger__line--top"></span>
+            <span class="burger__line burger__line--middle"></span>
+            <span class="burger__line burger__line--bottom"></span>
           </button>
-          <div class="site-video">
-  <video class="site-video__content"
-         width="100%"
-         preload="metadata"
-         playsinline=""
-         controls>
-    <source src="video/about-video.mp4"
-            type="video/mp4">
-  </video>
-</div>
+
+        </div>
+
+      </div>
+      <div class="header-modal" aria-hidden="true" id="mobile-menu">
+        <div class="header-modal__content">
+          <div class="container">
+            <div class="header-modal__wrap">
+              <nav class="header-menu  d-xl-none mb-4">
+                <ul class="list-reset header-menu__list">
+                  <li class="header-menu__link" data-dropdown>
+                    <div class="d-flex align-items-center">
+                      <a href="#products">Продукция
+                      </a>
+
+                      <div class="header-menu__link-btn">
+                        <span>
+                          <svg width="18" height="8">
+                            <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
+                          </svg>
+                        </span>
+                      </div>
+                    </div>
+
+                    <div class="header-menu__dropdown">
+                      <ul class="list-reset">
+                        <li class="header-menu__link">
+                          <a href="#">Бренды</a>
+                        </li>
+                        <li class="header-menu__link">
+                          <a href="#">Бренды</a>
+                        </li>
+                        <li class="header-menu__link">
+                          <a href="#">Бренды</a>
+                        </li>
+                        <li class="header-menu__link">
+                          <a href="#">Бренды</a>
+                        </li>
+                      </ul>
+                    </div>
+
+                  </li>
+                  <li class="header-menu__link"><a href="#about">О компании</a>
+
+                  </li>
+                  <li class="header-menu__link"><a href="#">Контрактное производство</a></li>
+                  <li class="header-menu__link"><a href="#contacts">Контакты</a></li>
+                </ul>
+              </nav>
+              <div class="header-modal__btn">
+                <button class="btn btn-primary" data-hystmodal="#feedback-modal">
+                  Заказать звонок
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="site__content site__content--offset">
+      <section class="hero">
+        <div class="swiper hero-slider slider">
+
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide hero-slide" style="background-image: url(img/img-bg-hero-2.png);">
+              <div class="container">
+                <div class="hero-slide__cont">
+                  <div class="hero-slide__img">
+                    <img src="img/img-main-product-2.png" alt="HoReCa - cерия косметических средств для гостиничного сервиса" width="375" height="375">
+                  </div>
+                  <div class="hero-slide__info">
+                    <h2 class="title-xl mb-5">HoReCa - cерия косметических средств для гостиничного сервиса</h2>
+                    <div class="hero-slide__btns">
+                      <!-- <a class="btn btn-secondary"
+             href="">Вся продукция</a> -->
+
+                      <div class="slider-controls">
+                        <div class="slider-button-prev slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                          </svg>
+                        </div>
+                        <div class="slider-button-next slider-control">
+                          <svg width="23" height="17">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                          </svg>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="categories">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+              <div class="categories__info">
+                <div class="title-lg mb-3">БЬЮТИ ПЛАСТ&nbsp;&mdash; российский производственный комплекс полного цикла&nbsp;&mdash; от&nbsp;упаковки до&nbsp;готовой продукции.</div>
+                <p class="text-md">
+                  БЬЮТИ&nbsp;ПЛАСТ&nbsp;&mdash; подразделение компании, занимающееся производством готовой косметической продукции и&nbsp;средств бытовой химии, в&nbsp;которой используется упаковка, разработанная нашими дизайнерами и&nbsp;воплощенная технологами. Мы&nbsp;создаем продукцию на&nbsp;высокопроизводительном варочном оборудовании, опираясь на&nbsp;собственную лабораторию и&nbsp;команду квалифицированных специалистов.
+                  Слаженная работа складской и&nbsp;логистической программ позволяет нам эффективно выводить на&nbsp;рынок высококачественные продукты по&nbsp;конкурентоспособным ценам, делая их&nbsp;доступными для широкого круга потребителей.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-8">
+              <h2 class="title-section mb-2">
+                Категории:
+              </h2>
+
+              <ul class="list-reset categories-list">
+
+                <li class="categories-item">
+                  <a href="">
+                    <span>EVI SALON PROFESSIONAL</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>EVI PROFESSIONAL</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>HORECA ТОВАРЫ ДЛЯ ОТЕЛЕЙ И ГОСТИНИЦ</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>SAY YES</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>LAFITEL</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>LAFITEL АНТИБАКТЕРИАЛЬНЫЕ И АНТИСЕПТИЧЕСКИЕ СРЕДСТВА ДЛЯ ЗАЩИТЫ РУК</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>SMART BOX NAIL</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>LAFITEL ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>МЕЧТА ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>ВОЛШЕБНАЯ ЛАСКА ЖИДКОСТЬ ДЛЯ СНЯТИЯ ЛАКА</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>МЕЧТА COSMETICS</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>МЕЧТА BABY</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="categories-item">
+                  <a href="">
+                    <span>МОСКИЛЛ</span>
+                    <svg width="23" height="18" aria-hidden="true">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </a>
+                </li>
+
+
+              </ul>
+
+              <a href="" class="btn btn-secondary">В каталог</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="benefits">
+        <div class="container">
+          <h2 class="title-section mb-2">
+            преимущества:
+          </h2>
+          <ul class="list-reset benefits-list">
+
+            <li class="benefits-item">
+              <div class="benefits-item__img">
+                <svg width="60" height="60" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#development"></use>
+                </svg>
+              </div>
+
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Полный цикл разработки и производства</h3>
+              <p class="text-md">Мы предлагаем полный цикл создания продукта: от концепции до промышленного выпуска. Собственная лаборатория обеспечивает разработку уникальных рецептур, тестирование и сертификацию по стандартам ГОСТ РФ, что позволяет оперативно выводить продукцию на рынок.</p>
+            </li>
+            <li class="benefits-item">
+              <div class="benefits-item__img">
+                <svg width="60" height="60" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#prices"></use>
+                </svg>
+              </div>
+
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Цены, доступные каждому</h3>
+              <p class="text-md">Сосредоточение всех производственных мощностей на одном комплексе позволяет нам поддерживать конкурентоспособные цены, предлагая высококачественную продукцию, доступную для широкого круга покупателей.</p>
+            </li>
+            <li class="benefits-item">
+              <div class="benefits-item__img">
+                <svg width="60" height="60" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#partnership"></use>
+                </svg>
+              </div>
+
+              <h3 class="title-md mb-3 mb-lg-2 mb-2xl-3">Партнерство для создания собственных брендов (СТМ)</h3>
+              <p class="text-md">Мы предоставляем услуги контрактного производства для создания продукции под собственной торговой маркой. Опытная команда специалистов создаст уникальные косметические продукты, которые подчеркнут индивидуальность вашего бренда.</p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <section class="cards-slider" id="new-products">
+        <div class="container">
+          <div class="cards-slider__top">
+
+            <h2 class="title-section cards-slider__left">
+              Продукция:
+            </h2>
+
+            <div class="cards-slider__right">
+              <div class="title-lg">Новинки</div>
+
+              <div class="slider-controls">
+                <div class="slider-button-prev slider-control">
+                  <svg width="23" height="17" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-left"></use>
+                  </svg>
+                </div>
+                <div class="slider-button-next slider-control">
+                  <svg width="23" height="17" aria-hidden="true">
+                    <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="swiper cards-slider__element slider">
+
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/cosmetics/products/1.jpg" alt="Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор." width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/@producer-img">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор.</h3>
+                      <p class="text-sm card-item__text">
+                        Шампунь серии THE HOTEL разработан на основе ухаживающего комплекса KERAMARE&KERATRIX. Многокомпонентный состав продукта деликатно очищает, увлажняет и восстанавливает структуру волос и кожи головы.
+                      </p>
+                    </div>
+                  </div>
+
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-1">подробнее</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/cosmetics/products/2.jpg" alt="SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор." width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/@producer-img">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор.</h3>
+                      <p class="text-sm card-item__text">
+                        Гель для душа на основе природных экстрактов наполняет энергией свежести, заботливо и бережно очищает кожу, снимает усталость. Активные ингредиенты состава — масло виноградной косточки и бетаин, ухаживают за кожей тела, смягчают и насыщают питательными компонентами.
+                      </p>
+                    </div>
+                  </div>
+
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-2">подробнее</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/cosmetics/products/3.jpg" alt="EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к" width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/@producer-img">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к</h3>
+                      <p class="text-sm card-item__text">
+                        Кондиционер «Серебристый» создан специально для окрашенных в светлые тона, светлых, мелированных и обесцвеченных волос. Средство содержит высокий уровень фиолетового пигмента, чтобы обеспечить максимальную нейтрализацию желтого оттенка и легкое тонирование волос. Кондиционер питает и увлажняет волосы, придавая им серебристое мерцание, эластичность и ухоженный вид. Регулярное применение средства защищает цвет волос и препятствует появлению нежелательного оттенка желтизны. Для усиления эффекта рекомендуем использовать после шампуня серии «EVI» Professional «Серебристый».
+                      </p>
+                    </div>
+                  </div>
+
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-3">подробнее</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/cosmetics/products/4.jpg" alt="EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор." width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/@producer-img">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор.</h3>
+                      <p class="text-sm card-item__text">
+                        Средство 10 в 1 — для работы с лаком, гель-лаком, био-гелем, искусственными ногтями, типсами, а так же для работы с аксессуарами для стемпинга ногтей: скраперов, пластин для стемпинга, трафаретов, синтетических кистей и инструментов мастера, за исключением предметов с липкой и прозрачной силиконовой поверхностью.
+                      </p>
+                    </div>
+                  </div>
+
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-4">подробнее</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/cosmetics/products/5.jpg" alt="EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор." width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/@producer-img">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h3>
+                      <p class="text-sm card-item__text">
+                        Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей. Подходит для работы с натуральными и искусственными ногтями.
+                      </p>
+                    </div>
+                  </div>
+
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-5">подробнее</a>
+                </div>
+              </div>
+
+              <div class="swiper-slide cards-slider__slide">
+                <div class="card-item card-product">
+                  <div class="card-item__cont">
+                    <div class="card-item__img card-product__img mb-2">
+                      <img src="img/cosmetics/products/6.jpg" alt="МЕЧТА Жидкость для снятия лака с помпой дозатором 150 ml" width="239" height="239">
+                      <div class="card-product__producer">
+                        <img src="img/@producer-img">
+                      </div>
+                    </div>
+                    <div class="card-item__descr">
+                      <h3 class="title-sm mb-2">МЕЧТА Жидкость для снятия лака с помпой дозатором 150 ml</h3>
+                      <p class="text-sm card-item__text">
+                        Жидкость для снятия лака МЕЧТА быстро и эффективно удаляет любой лак, не повреждая ногтевую пластину. Приятный аромат продукта, создаёт настроение и комфорт в программе педикюра и маникюра, как в салонах красоты, так и в домашних условиях.
+                      </p>
+                    </div>
+                  </div>
+
+                  <a class="btn btn-primary card-item__btn" href="#" data-hystmodal="#product-modal-6">подробнее</a>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container">
+          <div class="row about__cont">
+
+            <div class="col-12 col-lg-4 mb-5 mb-lg-0">
+              <h2 class="title-section about__title">
+                О компании
+              </h2>
+
+              <div class="title-lg about__subtitle">
+                БЬЮТИ ПЛАСТ&nbsp;&mdash; российский производственный комплекс полного цикла&nbsp;&mdash; от&nbsp;упаковки до&nbsp;готовой продукции
+              </div>
+
+              <div class="text-md">
+                <p class="indent-reset mb-2">
+                  Компания БЬЮТИ ПЛАСТ специализируется на&nbsp;производстве готовой косметической продукции и&nbsp;средств бытовой химии, предлагая клиентам полный цикл разработки&nbsp;&mdash; от&nbsp;идеи до&nbsp;промышленного выпуска. Наличие собственной лаборатории позволяет создавать уникальные рецептуры, проходящие тестирование и&nbsp;сертификацию по&nbsp;ГОСТ&nbsp;РФ, что гарантирует высокое качество и&nbsp;безопасность продукции.
+                </p>
+                <p class="indent-reset">
+                  Наши технические мощности сосредоточены в&nbsp;одном комплексе, что позволяет оптимизировать затраты и&nbsp;обеспечивать доступные цены на&nbsp;продукцию для конечного потребителя. Мы&nbsp;также предлагаем контрактное производство и&nbsp;сотрудничаем с&nbsp;партнёрами для создания продукции под собственной торговой маркой (СТМ), помогая развивать индивидуальные бренды с&nbsp;уникальной косметической линейкой.
+                </p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-grow-1 align-items-center justify-content-center mb-5 mb-lg-0">
+              <button class="btn about__btn-play" data-hystmodal="#video-modal" disabled>
+                <span class="text-md">
+                  Смотрите видео
+                </span>
+              </button>
+            </div>
+
+
+            <div class="col-12 col-lg-4 mt-auto">
+              <ul class="list-reset about-benefits">
+                <li>
+                  <p class="text-sm">Ассортимент косметических брендов для взрослых и детей</p>
+                </li>
+                <li>
+                  <p class="text-sm">Комплексная разработка продукции - от создания флакона и рецептуры, до сертификации и доставки.</p>
+                </li>
+                <li>
+                  <p class="text-sm">Отгрузка со склада в Подмосковье, выполнение ассортиментного заказа в кратчайшие сроки</p>
+                </li>
+                <li>
+                  <p class="text-sm">Контрактное производство, косметические продукты для вашего бренда</p>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <section class="feedback feedback--cosmetics">
+        <div class="container">
+
+          <div class="row justify-content-between">
+            <div class="col-lg-5 col-2xl-6 mb-4 mb-lg-0 offset-lg-1">
+              <h2 class="title-xl mb-4">Оставьте заявку</h2>
+
+            </div>
+
+            <div class="col-lg-4">
+              <form id="feedback-form" class="feedback-form " data-validate>
+                <input class="visually-hidden" type="text" name="Страница" value="">
+                <div class="feedback-form__top ">
+                  <div class="form-field">
+                    <label class="form-label text text-sm mb-1" for="">Имя</label>
+                    <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
+                  </div>
+                  <div class="form-field">
+                    <label class="form-label text text-sm mb-1" for="">Телефон</label>
+                    <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
+                  </div>
+                </div>
+
+                <div class="feedback-form__bottom ">
+                  <button class="btn btn-secondary" type="submit">отправить</button>
+
+                  <div class="form-field">
+                    <label class="form-checkbox">
+                      <input type="checkbox" data-validate="confirm" required>
+                      <span class="text-sm">
+                        Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
+                      </span>
+                    </label>
+                  </div>
+
+                </div>
+
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </section>
+      <section class="contacts main-contacts" id="contacts">
+        <div class="container">
+          <div class="row justify-content-between">
+
+            <div class="col-12 col-lg-7 mb-5 mb-lg-0">
+
+              <div class="contacts__top">
+                <h2 class="title-section mb-2">контакты</h2>
+                <div class="title-lg">Приходите к нам в офис</div>
+              </div>
+
+              <div class="contacts__map">
+                <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A61b1b4241e70d6775dc685a104dc02274755741761ebc89919ba7ff96152ad8e&amp;width=100%25&amp;height=500&amp;lang=ru_RU&amp;scroll=true"></script>
+              </div>
+
+            </div>
+
+            <div class="col-12 col-lg-5 col-xl-4">
+
+              <div class="contacts__scroll-block">
+                <ul class="list-reset contacts__list">
+
+                  <li class="contact-card">
+                    <div class="contact-card__top">
+                      <span class="text-sm">Офис:</span>
+                      <span class="text-sm text-sm--light">ООО «Бьюти Пласт»</span>
+                    </div>
+
+                    <div class="contact-card__bottom">
+                      <div class="mb-4">
+                        <p class="text-md text-md--dark">Россия, 127018, г. Москва, вн. тер. г. Муниципальный Округ Марьина Роща, ул. Сущёвский Вал, д. 16, стр. 6.</p>
+                        <p class="text-sm">пн-пт 9:00-18.00</p>
+                      </div>
+
+                      <div>
+                        <ul class="list-reset contact-list contact-list--lg mb-3">
+                          <li><a href="tel:">+7 495 025-03-33 , доб. 0000</a></li>
+                        </ul>
+                        <ul class="list-reset contact-list contact-list--lg mb-3">
+                          <li><a href="mailto:">info@beauty-plast.ru</a></li>
+                        </ul>
+                        <ul class="list-reset social-list">
+                          <li>
+                            <a href="#" aria-label="Перейти в Telegram">
+                              <svg width="25" height="25" aria-label="Telegram">
+                                <use xlink:href="img/sprite.svg#telegram"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" aria-label="Перейти в Vkontakte">
+                              <svg width="25" height="25" aria-label="Vkontakte">
+                                <use xlink:href="img/sprite.svg#vk"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="contact-card">
+                    <div class="contact-card__top">
+                      <span class="text-sm">Производство:</span>
+                      <span class="text-sm text-sm--light">ООО «Бьюти Пласт»</span>
+                    </div>
+
+                    <div class="contact-card__bottom">
+                      <div class="mb-4">
+                        <p class="text-md text-md--dark">Россия, 140573, Московская область, г.о. Коломна, с. Бояркино, тер. Производственная, зд. 1, стр. 1</p>
+                        <p class="text-sm">пн-пт 9:00-18.00</p>
+                      </div>
+
+                      <div>
+                        <ul class="list-reset contact-list contact-list--lg mb-3">
+                          <li><a href="tel:">+7 495 025-03-33 , доб. 0000</a></li>
+                        </ul>
+                        <ul class="list-reset contact-list contact-list--lg mb-3">
+                          <li><a href="mailto:">info@beauty-plast.ru</a></li>
+                        </ul>
+                        <ul class="list-reset social-list">
+                          <li>
+                            <a href="#" aria-label="Перейти в Telegram">
+                              <svg width="25" height="25" aria-label="Telegram">
+                                <use xlink:href="img/sprite.svg#telegram"></use>
+                              </svg>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" aria-label="Перейти в Vkontakte">
+                              <svg width="25" height="25" aria-label="Vkontakte">
+                                <use xlink:href="img/sprite.svg#vk"></use>
+                              </svg>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="contacts-manager">
+            <h2 class="title-lg contacts-manager__title">
+              Контакты подразделений
+            </h2>
+
+            <ul class="list-reset contacts-manager__list main-contacts__list">
+
+              <li class="manager-card">
+                <div class="manager-card__top">
+                  <div class="manager-card__avatar">
+                    <img src="img/person-avatar.png" alt="Фото менеджера" width="60" height="60">
+                  </div>
+                  <div class="manager-card__info">
+                    <div class="text-sm mb-3">Отдел продаж косметической продукции</div>
+                    <div class="manager-card__row">
+                      <div class="text-md text-md--dark mr-3">BEAUTY</div>
+                      <ul class="list-reset social-list">
+                        <li>
+                          <a href="#" aria-label="Перейти в Telegram">
+                            <svg width="25" height="25" aria-label="Telegram">
+                              <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Перейти в WhatsApp">
+                            <svg width="25" height="25" aria-label="WhatsApp">
+                              <use xlink:href="img/sprite.svg#whatsapp"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="manager-card__bottom">
+                  <ul class="list-reset contact-list contact-list--lg mb-3">
+                    <li><a href="tel:">+7 495 025 03 33, доб. 3030</a></li>
+                  </ul>
+                  <ul class="list-reset contact-list contact-list--lg mb-3">
+                    <li><a href="mailto:"> opt@beauty-plast.ru</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="manager-card">
+                <div class="manager-card__top">
+                  <div class="manager-card__avatar">
+                    <img src="img/person-avatar.png" alt="Фото менеджера" width="60" height="60">
+                  </div>
+                  <div class="manager-card__info">
+                    <div class="text-sm mb-3">Отдел продаж упаковки для косметической продукции</div>
+                    <div class="manager-card__row">
+                      <div class="text-md text-md--dark mr-3">PLAST</div>
+                      <ul class="list-reset social-list">
+                        <li>
+                          <a href="#" aria-label="Перейти в Telegram">
+                            <svg width="25" height="25" aria-label="Telegram">
+                              <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Перейти в WhatsApp">
+                            <svg width="25" height="25" aria-label="WhatsApp">
+                              <use xlink:href="img/sprite.svg#whatsapp"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="manager-card__bottom">
+                  <ul class="list-reset contact-list contact-list--lg mb-3">
+                    <li><a href="tel:">+7 495 025 03 33</a></li>
+                  </ul>
+                  <ul class="list-reset contact-list contact-list--lg mb-3">
+                    <li><a href="mailto:">pack@beauty-plast.ru</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="manager-card">
+                <div class="manager-card__top">
+                  <div class="manager-card__avatar">
+                    <img src="img/person-avatar.png" alt="Фото менеджера" width="60" height="60">
+                  </div>
+                  <div class="manager-card__info">
+                    <div class="text-sm mb-3">Отдел продаж косметической продукции для отелей и гостиниц</div>
+                    <div class="manager-card__row">
+                      <div class="text-md text-md--dark mr-3">HORECA</div>
+                      <ul class="list-reset social-list">
+                        <li>
+                          <a href="#" aria-label="Перейти в Telegram">
+                            <svg width="25" height="25" aria-label="Telegram">
+                              <use xlink:href="img/sprite.svg#telegram"></use>
+                            </svg>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#" aria-label="Перейти в WhatsApp">
+                            <svg width="25" height="25" aria-label="WhatsApp">
+                              <use xlink:href="img/sprite.svg#whatsapp"></use>
+                            </svg>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="manager-card__bottom">
+                  <ul class="list-reset contact-list contact-list--lg mb-3">
+                    <li><a href="tel:">+7 495 026 03 33</a></li>
+                  </ul>
+                  <ul class="list-reset contact-list contact-list--lg mb-3">
+                    <li><a href="mailto:">horeca@beauty-plast.ru</a></li>
+                  </ul>
+                </div>
+              </li>
+
+
+            </ul>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer class="site__footer footer">
+      <div class="container">
+        <div class="footer__cont">
+          <p class="text-md" href="">© 2021-2024 Все права защищены</p>
+          <a class="text-md" href="">Политика конфиденциальности</a>
+          <a class="text-md" href="">Согласие на обработку ПД</a>
+          <div class="text-md footer__development">
+            © Разработка сайта
+            <a href="#" aria-label="Переход на сайт Разработчика">
+              <svg width="93" height="25" aria-label="Логотип Re:activno">
+                <use xlink:href="img/sprite.svg#logo-reactivno"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="scroll-top" id="scroll-top">
+      <a class="scroll-top__link" href="#site-top" aria-label="Наверх страницы">
+        <svg width="10" height="10" aria-hidden="true">
+          <use xlink:href="img/sprite.svg#arrow-up"></use>
+        </svg>
+      </a>
+    </div>
+    <div class="hystmodal" id="send-ok-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal ">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="modal__title title title-medium mb-4">Спасибо за заявку!</div>
+            <div class="modal__text text-md">Мы свяжемся с вами в ближайшее время и обсудим все детали.</div>
+            <button class="btn btn-secondary" data-hystclose>Хорошо</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="video-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--video">
+            <div class="modal__content">
+              <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+                <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                  <use xlink:href="img/sprite.svg#cross"></use>
+                </svg>
+              </button>
+              <div class="site-video">
+                <video class="site-video__content" width="100%" preload="metadata" playsinline="" controls>
+                  <source src="video/about-video.mp4" type="video/mp4">
+                </video>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="feedback-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal ">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="modal__top">
+              <h2 class="title title-medium mb-4">Оставьте ваш номер телефона</h2>
+            </div>
+
+            <form id="feedback-form-modal" class="feedback-form feedback-form--modal" data-validate>
+              <input class="visually-hidden" type="text" name="Страница" value="">
+              <div class="feedback-form__top ">
+                <div class="form-field">
+                  <label class="form-label text text-sm mb-1" for="">Имя</label>
+                  <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
+                </div>
+                <div class="form-field">
+                  <label class="form-label text text-sm mb-1" for="">Телефон</label>
+                  <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
+                </div>
+              </div>
+
+              <div class="feedback-form__bottom ">
+                <button class="btn btn-secondary" type="submit">отправить</button>
+
+                <div class="form-field">
+                  <label class="form-checkbox">
+                    <input type="checkbox" data-validate="confirm" required>
+                    <span class="text-sm">
+                      Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
+                    </span>
+                  </label>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="request-modal" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal ">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="modal__top">
+              <h2 class="title title-medium mb-4">Оставить заявку</h2>
+            </div>
+
+            <form id="feedback-form-modal" class="feedback-form feedback-form--modal" data-validate>
+              <input class="visually-hidden" type="text" name="Страница товара" value="EVI Professional ANTI-YELLOW EFFECT, CRYSTAL BLOND">
+              <div class="feedback-form__top ">
+                <div class="form-field">
+                  <label class="form-label text text-sm mb-1" for="">Имя</label>
+                  <input class="form-input" type="text" name="Имя" placeholder="Имя" data-validate="name" required>
+                </div>
+                <div class="form-field">
+                  <label class="form-label text text-sm mb-1" for="">Телефон</label>
+                  <input class="form-input" type="tel" name="Контактный телефон" placeholder="+7 900 000 00 00" data-validate="phone" required>
+                </div>
+              </div>
+
+              <div class="feedback-form__bottom ">
+                <button class="btn btn-secondary" type="submit">отправить</button>
+
+                <div class="form-field">
+                  <label class="form-checkbox">
+                    <input type="checkbox" data-validate="confirm" required>
+                    <span class="text-sm">
+                      Я согласен(на) с <a href="#" target="_blank" rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#" target="_blank" rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
+                    </span>
+                  </label>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hystmodal" id="product-modal-1" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--product">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="product-modal">
+              <div class="product-modal__top">
+                <div class="product__img product__img--details">
+                  <img src="img/cosmetics/products/1.jpg">
+                </div>
+              </div>
+              <div class="product-modal__bottom">
+                <h2 class="title-lg product-modal__title">Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор.</h2>
+
+                <div class="product-modal__info">
+                  <p class="text-md">
+                    Шампунь серии THE HOTEL разработан на основе ухаживающего комплекса KERAMARE&KERATRIX. Многокомпонентный состав продукта деликатно очищает, увлажняет и восстанавливает структуру волос и кожи головы.
+                  </p>
+
+                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="product-modal-2" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--product">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="product-modal">
+              <div class="product-modal__top">
+                <div class="product__img product__img--details">
+                  <img src="img/cosmetics/products/2.jpg">
+                </div>
+              </div>
+              <div class="product-modal__bottom">
+                <h2 class="title-lg product-modal__title">SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор.</h2>
+
+                <div class="product-modal__info">
+                  <p class="text-md">
+                    Гель для душа на основе природных экстрактов наполняет энергией свежести, заботливо и бережно очищает кожу, снимает усталость. Активные ингредиенты состава — масло виноградной косточки и бетаин, ухаживают за кожей тела, смягчают и насыщают питательными компонентами.
+                  </p>
+
+                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="product-modal-3" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--product">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="product-modal">
+              <div class="product-modal__top">
+                <div class="product__img product__img--details">
+                  <img src="img/cosmetics/products/3.jpg">
+                </div>
+              </div>
+              <div class="product-modal__bottom">
+                <h2 class="title-lg product-modal__title">EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к</h2>
+
+                <div class="product-modal__info">
+                  <p class="text-md">
+                    Кондиционер «Серебристый» создан специально для окрашенных в светлые тона, светлых, мелированных и обесцвеченных волос. Средство содержит высокий уровень фиолетового пигмента, чтобы обеспечить максимальную нейтрализацию желтого оттенка и легкое тонирование волос.
+                  </p>
+
+                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="product-modal-4" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--product">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="product-modal">
+              <div class="product-modal__top">
+                <div class="product__img product__img--details">
+                  <img src="img/cosmetics/products/4.jpg">
+                </div>
+              </div>
+              <div class="product-modal__bottom">
+                <h2 class="title-lg product-modal__title">EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор.</h2>
+
+                <div class="product-modal__info">
+                  <p class="text-md">
+                    Средство 10 в 1 — для работы с лаком, гель-лаком, био-гелем, искусственными ногтями, типсами, а так же для работы с аксессуарами для стемпинга ногтей: скраперов, пластин для стемпинга, трафаретов, синтетических кистей и инструментов мастера, за исключением предметов с липкой и прозрачной силиконовой поверхностью.
+                  </p>
+
+                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="product-modal-5" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--product">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="product-modal">
+              <div class="product-modal__top">
+                <div class="product__img product__img--details">
+                  <img src="img/cosmetics/products/5.jpg">
+                </div>
+              </div>
+              <div class="product-modal__bottom">
+                <h2 class="title-lg product-modal__title">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h2>
+
+                <div class="product-modal__info">
+                  <p class="text-md">
+                    Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей.
+                    Подходит для работы с натуральными и искусственными ногтями.
+                  </p>
+
+                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hystmodal" id="product-modal-6" aria-hidden="true">
+      <div class="hystmodal__wrap">
+        <div class="hystmodal__window" role="dialog" aria-modal="true">
+          <div class="modal modal--product">
+            <button class="modal__close" type="button" aria-label="Закрыть окно" data-hystclose>
+              <svg class="modal__close-icon" width="30" height="30" aria-hidden="true">
+                <use xlink:href="img/sprite.svg#cross"></use>
+              </svg>
+            </button>
+            <div class="product-modal">
+              <div class="product-modal__top">
+                <div class="product__img product__img--details">
+                  <img src="img/cosmetics/products/5.jpg">
+                </div>
+              </div>
+              <div class="product-modal__bottom">
+                <h2 class="title-lg product-modal__title">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h2>
+
+                <div class="product-modal__info">
+                  <p class="text-md">
+                    Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей.
+                    Подходит для работы с натуральными и искусственными ногтями.
+                  </p>
+
+                  <button class="btn btn-secondary" data-hystmodal="#feedback-modal">получить прайс лист</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
-<div class="hystmodal"
-     id="feedback-modal"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal ">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-              <div class="modal__top">
-        <h2 class="title title-medium mb-4">Оставьте ваш номер телефона</h2>
-      </div>
+  <script src="js/vendor-bundle.js"></script>
+  <script src="js/main.js" type="module"></script>
+</body>
 
-              <form id="feedback-form-modal"
-              class="feedback-form feedback-form--modal"
-              data-validate>
-          <input class="visually-hidden"
-                 type="text"
-                 name="Страница"
-                 value="">
-          <div class="feedback-form__top ">
-            <div class="form-field">
-              <label class="form-label text text-sm mb-1"
-                     for="">Имя</label>
-              <input class="form-input"
-                     type="text"
-                     name="Имя"
-                     placeholder="Имя"
-                     data-validate="name"
-                     required>
-            </div>
-            <div class="form-field">
-              <label class="form-label text text-sm mb-1"
-                     for="">Телефон</label>
-              <input class="form-input"
-                     type="tel"
-                     name="Контактный телефон"
-                     placeholder="+7 900 000 00 00"
-                     data-validate="phone"
-                     required>
-            </div>
-          </div>
-
-          <div class="feedback-form__bottom ">
-            <button class="btn btn-secondary"
-                    type="submit">отправить</button>
-
-            <div class="form-field">
-              <label class="form-checkbox">
-                <input type="checkbox"
-                       data-validate="confirm"
-                       required>
-                <span class="text-sm">
-                  Я согласен(на) с <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
-                </span>
-              </label>
-            </div>
-
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="hystmodal"
-     id="request-modal"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal ">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-              <div class="modal__top">
-        <h2 class="title title-medium mb-4">Оставить заявку</h2>
-      </div>
-
-              <form id="feedback-form-modal"
-              class="feedback-form feedback-form--modal"
-              data-validate>
-          <input class="visually-hidden"
-                 type="text"
-                 name="Страница товара"
-                 value="EVI Professional ANTI-YELLOW EFFECT, CRYSTAL BLOND">
-          <div class="feedback-form__top ">
-            <div class="form-field">
-              <label class="form-label text text-sm mb-1"
-                     for="">Имя</label>
-              <input class="form-input"
-                     type="text"
-                     name="Имя"
-                     placeholder="Имя"
-                     data-validate="name"
-                     required>
-            </div>
-            <div class="form-field">
-              <label class="form-label text text-sm mb-1"
-                     for="">Телефон</label>
-              <input class="form-input"
-                     type="tel"
-                     name="Контактный телефон"
-                     placeholder="+7 900 000 00 00"
-                     data-validate="phone"
-                     required>
-            </div>
-          </div>
-
-          <div class="feedback-form__bottom ">
-            <button class="btn btn-secondary"
-                    type="submit">отправить</button>
-
-            <div class="form-field">
-              <label class="form-checkbox">
-                <input type="checkbox"
-                       data-validate="confirm"
-                       required>
-                <span class="text-sm">
-                  Я согласен(на) с <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Политикой Конфиденциальности</a> и <a href="#"
-   target="_blank"
-   rel="nofollow noreferer noopener">Соглашением об обработке персональных данных</a>
-                </span>
-              </label>
-            </div>
-
-          </div>
-
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="hystmodal"
-     id="product-modal-1"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal modal--product">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <div class="product-modal">
-  <div class="product-modal__top">
-    <div class="product__img product__img--details">
-      <img src="img/cosmetics/products/1.jpg">
-    </div>
-  </div>
-  <div class="product-modal__bottom">
-    <h2 class="title-lg product-modal__title">Шампунь для волос серии THE HOTEL №1 30 мл. Art.780811 50 шт. в кор.</h2>
-
-    <div class="product-modal__info">
-      <p class="text-md">
-        Шампунь серии THE HOTEL разработан на основе ухаживающего комплекса KERAMARE&KERATRIX. Многокомпонентный состав продукта деликатно очищает, увлажняет и восстанавливает структуру волос и кожи головы.
-      </p>
-
-      <button class="btn btn-secondary"
-              data-hystmodal="#feedback-modal">получить прайс лист</button>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<div class="hystmodal"
-     id="product-modal-2"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal modal--product">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <div class="product-modal">
-  <div class="product-modal__top">
-    <div class="product__img product__img--details">
-      <img src="img/cosmetics/products/2.jpg">
-    </div>
-  </div>
-  <div class="product-modal__bottom">
-    <h2 class="title-lg product-modal__title">SAY YES Гель для душа Bermuda Island аромат манго и цветка ванили 250 мл. Art.780050 12 шт.в кор.</h2>
-
-    <div class="product-modal__info">
-      <p class="text-md">
-        Гель для душа на основе природных экстрактов наполняет энергией свежести, заботливо и бережно очищает кожу, снимает усталость. Активные ингредиенты состава — масло виноградной косточки и бетаин, ухаживают за кожей тела, смягчают и насыщают питательными компонентами.
-      </p>
-
-      <button class="btn btn-secondary"
-              data-hystmodal="#feedback-modal">получить прайс лист</button>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<div class="hystmodal"
-     id="product-modal-3"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal modal--product">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <div class="product-modal">
-  <div class="product-modal__top">
-    <div class="product__img product__img--details">
-      <img src="img/cosmetics/products/3.jpg">
-    </div>
-  </div>
-  <div class="product-modal__bottom">
-    <h2 class="title-lg product-modal__title">EVI Professional ANTI-YELLOW EFFECТ, CRYSTAL BLOND оттеночный кондиционер для нейтрализации желтизны волос 400 ml. Art.780593 10 шт.к</h2>
-
-    <div class="product-modal__info">
-      <p class="text-md">
-        Кондиционер «Серебристый» создан специально для окрашенных в светлые тона, светлых, мелированных и обесцвеченных волос. Средство содержит высокий уровень фиолетового пигмента, чтобы обеспечить максимальную нейтрализацию желтого оттенка и легкое тонирование волос.
-      </p>
-
-      <button class="btn btn-secondary"
-              data-hystmodal="#feedback-modal">получить прайс лист</button>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<div class="hystmodal"
-     id="product-modal-4"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal modal--product">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <div class="product-modal">
-  <div class="product-modal__top">
-    <div class="product__img product__img--details">
-      <img src="img/cosmetics/products/4.jpg">
-    </div>
-  </div>
-  <div class="product-modal__bottom">
-    <h2 class="title-lg product-modal__title">EVI Professional Универсальное средство для работы со СТЕМПИНГОМ и снятия всех видов лака 10 в 1 150 ml.art.328915 15 шт. в кор.</h2>
-
-    <div class="product-modal__info">
-      <p class="text-md">
-        Средство 10 в 1 — для работы с лаком, гель-лаком, био-гелем, искусственными ногтями, типсами, а так же для работы с аксессуарами для стемпинга ногтей: скраперов, пластин для стемпинга, трафаретов, синтетических кистей и инструментов мастера, за исключением предметов с липкой и прозрачной силиконовой поверхностью.
-      </p>
-
-      <button class="btn btn-secondary"
-              data-hystmodal="#feedback-modal">получить прайс лист</button>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<div class="hystmodal"
-     id="product-modal-5"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal modal--product">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <div class="product-modal">
-  <div class="product-modal__top">
-    <div class="product__img product__img--details">
-      <img src="img/cosmetics/products/5.jpg">
-    </div>
-  </div>
-  <div class="product-modal__bottom">
-    <h2 class="title-lg product-modal__title">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h2>
-
-    <div class="product-modal__info">
-      <p class="text-md">
-        Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей.
-        Подходит для работы с натуральными и искусственными ногтями.
-      </p>
-
-      <button class="btn btn-secondary"
-              data-hystmodal="#feedback-modal">получить прайс лист</button>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</div>
-<div class="hystmodal"
-     id="product-modal-6"
-     aria-hidden="true">
-  <div class="hystmodal__wrap">
-    <div class="hystmodal__window"
-         role="dialog"
-         aria-modal="true">
-      <div class="modal modal--product">
-        <button class="modal__close"
-                type="button"
-                aria-label="Закрыть окно"
-                data-hystclose>
-          <svg class="modal__close-icon"
-               width="30"
-               height="30"
-               aria-hidden="true">
-            <use xlink:href="img/sprite.svg#cross"></use>
-          </svg>
-        </button>
-        <div class="product-modal">
-  <div class="product-modal__top">
-    <div class="product__img product__img--details">
-      <img src="img/cosmetics/products/5.jpg">
-    </div>
-  </div>
-  <div class="product-modal__bottom">
-    <h2 class="title-lg product-modal__title">EVI Professional Обезжириватель ногтей, снятие липкого слоя 500 ml.art.005-021 12 шт. в кор.</h2>
-
-    <div class="product-modal__info">
-      <p class="text-md">
-        Обезжиривает ногтевую пластину, мягко удаляя влагу и пыль. Применяется перед нанесением искусственного покрытия (акрил, гель, шёлк) или декоративного лака. Использование средства способствует увеличению адгезии искусственного покрытия или декоративного лака. Предотвращает скалывание и отслаивание покрытия. Также используется как средство для снятия липкого слоя и для очистки кистей.
-        Подходит для работы с натуральными и искусственными ногтями.
-      </p>
-
-      <button class="btn btn-secondary"
-              data-hystmodal="#feedback-modal">получить прайс лист</button>
-    </div>
-  </div>
-</div>
-
-      </div>
-    </div>
-  </div>
-</div>
-			</div>
-			<script src="js/vendor-bundle.js"></script>
-<script src="js/main.js" type="module"></script>
-			</body>
-
-			</html>
+</html>
