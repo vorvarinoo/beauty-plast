@@ -1,18 +1,30 @@
-@include('head.html', {
-title: 'Страница не существует',
-})
+<!DOCTYPE html>
+<html lang="ru">
 
-<div class="page-404">
-  <div class="container">
-    <div class="page-404__cont">
-      <h1 class="title-xl page-404__title">Страница не&nbsp;существует</h1>
-      <div class="page-404__img">
-        <img class="img-cover"
-             src="img/404.png"
-             alt="404 ошибка.Страница не существует">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+  <title>Страница не найдена</title>
+  @include('html/head/index.html')
+</head>
+
+<body class="indent-reset site">
+  <main class="site__content site__content--offset">
+    <div class="page-404">
+      <div class="container">
+        <div class="page-404__cont">
+          <h1 class="title-xl page-404__title">Страница не&nbsp;существует</h1>
+          <div class="page-404__img">
+            <img class="img-cover"
+                 src="img/404.png"
+                 alt="404 ошибка.Страница не существует">
+          </div>
+          <a href="/page-main.html"
+             class="btn btn-secondary page-404__btn">вернуться на главную</a>
+        </div>
       </div>
-      <a href="/page-main.html"
-         class="btn btn-secondary page-404__btn">вернуться на главную</a>
-    </div>
-  </div>
-  @include('footer.html')
+  </main>
+</body>
+
+</html>

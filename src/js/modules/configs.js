@@ -56,9 +56,6 @@ const sliderConfig = {
       320: {
         slidesPerView: 4
       },
-      540: {
-        slidesPerView: 2
-      },
       992: {
         slidesPerView: 3
       },

@@ -51,6 +51,7 @@
     display: flex;
     flex-direction: column;
     transition: opacity var(--transition-speed-medium) ease-in-out;
+    height: 100%;
   }
 
   &__btn {
@@ -65,7 +66,13 @@
     color: var(--gray-30-color);
 
     &--up {
-      margin-bottom: 8px;
+      align-items: end;
+      padding-bottom: 4px;
+    }
+
+    &--down {
+      align-items: start;
+      padding-top: 4px;
     }
 
     &--disabled {

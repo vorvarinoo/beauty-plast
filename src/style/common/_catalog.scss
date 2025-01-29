@@ -81,6 +81,7 @@
   }
 
   & summary {
+    list-style: none;
     display: flex;
     align-items: center;
     column-gap: 12px;
@@ -89,6 +90,10 @@
     color: var(--block-color, var(--gray-50-color));
     cursor: pointer;
     transition: color var(--transition-speed-medium) ease-in-out;
+
+    &::-webkit-details-marker {
+      display: none;
+    }
 
     & svg {
       transition: transform var(--transition-speed-medium) ease-in-out;

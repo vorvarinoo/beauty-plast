@@ -7,25 +7,59 @@
 }
 
 .baguetteBox-button#close-button {
+
   background-color: var(--gray-15-color);
   width: 50px;
   height: 50px;
 
+  @media (hover: hover) {
+    &:hover {
+      --close-icon-scale: 1;
+
+      background-color: var(--blue-color);
+    }
+  }
+
+  @media (hover: none) {
+    &:active {
+      --close-icon-scale: 1;
+
+      background-color: var(--blue-color);
+    }
+  }
+
+  & svg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  & svg g {
+    stroke: var(--gray-50-color);
+    transform-origin: center;
+    transform: scale(var(--close-icon-scale, 0.8));
+    transition: transform var(--transition-speed-slow) ease-in-out;
+  }
+}
+
+
+#previous-button,
+#next-button {
+  background-color: var(--gray-15-color);
 
   @media (hover: hover) {
     &:hover {
       background-color: var(--blue-color);
     }
   }
-}
 
-.baguetteBox-button svg {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
+  @media (hover: none) {
+    &:active {
+      background-color: var(--blue-color);
+    }
+  }
 
-.baguetteBox-button svg g {
-  transform-origin: center;
-  transform: scale(0.8);
+  & svg polyline {
+    stroke: var(--gray-50-color);
+  }
 }

@@ -20,11 +20,15 @@ import {
   initRangeSteppers
 } from './modules/stepper.js';
 import {
-  initTabs
-} from './modules/tabs.js';
+  initProductGallery,
+  initProductDrawing
+} from './modules/productDrawing.js';
 import {
   initPopUpCertificat
 } from './modules/pop-up-certificat.js';
+import {
+  initTabs
+} from './modules/tabs.js';
 
 document.addEventListener( 'DOMContentLoaded', () => {
   initSiteSettings();
@@ -36,7 +40,9 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initHeaderMenu();
     initDropdown();
     initRangeSteppers();
-    initTabs();
+    initProductGallery();
+    initProductDrawing();
     initPopUpCertificat();
+    initTabs();
   } );
 } );

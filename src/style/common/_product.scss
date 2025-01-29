@@ -4,6 +4,10 @@
     margin-bottom: 48px;
     display: grid;
     row-gap: 16px;
+    word-wrap: break-word;
+    /* для старых браузеров */
+    overflow-wrap: break-word;
+    word-break: break-word;
 
     @include media-min ($xl) {
       margin-bottom: 64px;
@@ -53,9 +57,8 @@
 
   &__parametrs-list {
     & div {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       padding: 14px 0;
       border-bottom: 1px solid var(--gray-30-color);
 
@@ -87,6 +90,11 @@
 }
 
 .product-gallery {
+  margin-bottom: 32px;
+
+  @include media-min ($lg) {
+    margin-bottom: 0;
+  }
 
   &__slider {
     position: relative;
@@ -94,8 +102,16 @@
   }
 
   &__photo {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 100%;
     display: flex;
     justify-content: center;
+
+    & img {
+      object-fit: contain;
+    }
   }
 
   & .slider-controls {
@@ -105,11 +121,21 @@
     bottom: 0;
   }
 
-  &__thumb-slider {}
-
   &__thumb {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 23%;
     border: 1px solid var(--color-border-thumb, var(--gray-15-color));
     border-radius: 16px;
+
+    @include media-min ($lg) {
+      padding-bottom: 31%;
+    }
+
+    @include media-min ($xxl) {
+      padding-bottom: 21%;
+    }
 
     &.swiper-slide-thumb-active {
       --color-border-thumb: var(--gray-30-color)
@@ -117,6 +143,7 @@
 
     & img {
       display: flex;
+      object-fit: contain;
     }
   }
 }

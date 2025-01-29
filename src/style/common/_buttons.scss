@@ -9,6 +9,7 @@
     border-color var(--transition-speed-medium) ease-in-out,
     background-color var(--transition-speed-medium) ease-in-out;
   line-height: 1.4;
+  font-weight: 400;
 
   @include media-min ($xl) {
     font-size: 18px;
