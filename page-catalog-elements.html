@@ -184,7 +184,25 @@
                           <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
                         </svg>
                       </summary>
-                      <div class="filter-item__cont">Тест</div>
+                      <div class="filter-item__cont">
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Стандарт">
+                          <span>Стандарт</span>
+                        </label>
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Стандарт">
+                          <span>Стандарт</span>
+                        </label>
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Стандарт">
+                          <span>Стандарт</span>
+                        </label>
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Стандарт">
+                          <span>Стандарт</span>
+                        </label>
+
+                      </div>
                     </details>
                     <details class="filter-item">
                       <summary>
@@ -194,21 +212,21 @@
                         </svg>
                       </summary>
                       <div class="filter-item__cont">
-                        <label class="checkbox checkbox--filter">
+                        <label class="form-checkbox form-checkbox--filter">
                           <input type="checkbox" name="Тип" id="">
-                          <span>Сертификат</span>
+                          <span>Тип</span>
                         </label>
-                        <label class="checkbox checkbox--filter">
+                        <label class="form-checkbox form-checkbox--filter">
                           <input type="checkbox" name="Тип" id="">
-                          <span>Сертификат</span>
+                          <span>Тип</span>
                         </label>
-                        <label class="checkbox checkbox--filter">
+                        <label class="form-checkbox form-checkbox--filter">
                           <input type="checkbox" name="Тип" id="">
-                          <span>Сертификат</span>
+                          <span>Тип</span>
                         </label>
-                        <label class="checkbox checkbox--filter">
+                        <label class="form-checkbox form-checkbox--filter">
                           <input type="checkbox" name="Тип" id="">
-                          <span>Сертификат</span>
+                          <span>Тип</span>
                         </label>
 
                       </div>
@@ -221,8 +239,42 @@
                         </svg>
                       </summary>
                       <div class="filter-item__cont filter-item__cont--range">
-                        <input type="number" name="Объем" value="0" min="0" max="100000">
-                        <input type="number" name="Объем" value="1000" min="0" max="100000">
+                        <div class="stepper stepper--min">
+                          <label class="stepper__field">
+                            <input class="stepper__input" type="text" name="Минимальный объем" aria-label="Минимальный объем" value="30" autocomplete="off">
+                          </label>
+                          <div class="stepper__btns">
+                            <button class="stepper__btn stepper__btn--up" aria-label="Увеличить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-up"></use>
+                              </svg>
+                            </button>
+
+                            <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-down"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="stepper stepper--max">
+                          <label class="stepper__field">
+                            <input class="stepper__input" type="text" aria-label="Максимальный объем" name="Максимальный объем" value="1000" autocomplete="off">
+                          </label>
+                          <div class="stepper__btns">
+                            <button class="stepper__btn stepper__btn--up" aria-label="Увеличить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-up"></use>
+                              </svg>
+                            </button>
+
+                            <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-down"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
                       </div>
                     </details>
                     <details class="filter-item">
@@ -232,16 +284,71 @@
                           <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
                         </svg>
                       </summary>
-                      <div class="filter-item__cont">Тест</div>
+                      <div class="filter-item__cont filter-item__cont--range">
+                        <div class="stepper stepper--min">
+                          <label class="stepper__field">
+                            <input class="stepper__input" type="text" name="Минимальный размер горла" aria-label="Минимальный размер горла" value="30" autocomplete="off">
+                          </label>
+                          <div class="stepper__btns">
+                            <button class="stepper__btn stepper__btn--up" aria-label="Увеличить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-up"></use>
+                              </svg>
+                            </button>
+
+                            <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-down"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                        <div class="stepper stepper--max">
+                          <label class="stepper__field">
+                            <input class="stepper__input" type="text" aria-label="Максимальный размер горла" name="Максимальный размер горла" value="1000" autocomplete="off">
+                          </label>
+                          <div class="stepper__btns">
+                            <button class="stepper__btn stepper__btn--up" aria-label="Увеличить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-up"></use>
+                              </svg>
+                            </button>
+
+                            <button class="stepper__btn stepper__btn--down" aria-label="Уменьшить" type="button">
+                              <svg width="13" height="6" aria-hidden="true">
+                                <use xlink:href="img/sprite.svg#stepper-down"></use>
+                              </svg>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
                     </details>
                     <details class="filter-item">
                       <summary>
-                        <span>Метериал</span>
+                        <span>Материал</span>
                         <svg width="18" height="8" aria-hidden="true">
                           <use xlink:href="img/sprite.svg#arrow-dropdown"></use>
                         </svg>
                       </summary>
-                      <div class="filter-item__cont">Тест</div>
+                      <div class="filter-item__cont">
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Материал">
+                          <span>Материал</span>
+                        </label>
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Материал">
+                          <span>Материал</span>
+                        </label>
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Материал">
+                          <span>Материал</span>
+                        </label>
+                        <label class="form-checkbox form-checkbox--filter">
+                          <input type="checkbox" name="Материал">
+                          <span>Материал</span>
+                        </label>
+
+                      </div>
                     </details>
                     <div class="catalog-filter__btns">
                       <button class="btn btn-secondary" type="submit">показать</button>
