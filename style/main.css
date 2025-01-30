@@ -1957,15 +1957,11 @@ dd {
 }
 
 .page-404 {
-  height: 100%;
-  padding: 96px 0 116px;
+  display: flex;
+  align-items: center;
+  height: 100vh;
 
   background: linear-gradient(225deg, #acbfce 0%, #ffffff 49.76%, #acbfce 100%);
-}
-@media (min-width: 1200px) {
-  .page-404 {
-    padding: 124px 0 132px;
-  }
 }
 .page-404__cont {
   display: grid;
