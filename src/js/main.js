@@ -20,12 +20,8 @@ import {
   initRangeSteppers
 } from './modules/stepper.js';
 import {
-  initProductGallery,
-  initProductDrawing
-} from './modules/productDrawing.js';
-import {
-  initPopUpCertificat
-} from './modules/pop-up-certificat.js';
+  initBaguettebox
+} from './modules/baguettebox.js';
 import {
   initTabs
 } from './modules/tabs.js';
@@ -40,9 +36,7 @@ document.addEventListener( 'DOMContentLoaded', () => {
     initHeaderMenu();
     initDropdown();
     initRangeSteppers();
-    initProductGallery();
-    initProductDrawing();
-    initPopUpCertificat();
+    initBaguettebox();
     initTabs();
   } );
 } );

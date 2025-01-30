@@ -63,6 +63,7 @@
     & a {
       color: var(--link-color);
       font-size: inherit;
+      flex-shrink: 0;
       transition: color var(--transition-speed-medium) ease-in-out;
     }
   }

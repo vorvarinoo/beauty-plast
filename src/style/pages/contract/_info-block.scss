@@ -3,9 +3,9 @@
 
   &__list {
     @include list-reset;
+
     display: grid;
     width: 100%;
-
   }
 
   &__item {

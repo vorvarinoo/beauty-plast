@@ -139,12 +139,9 @@
     overflow-y: hidden;
     padding-right: 15px;
 
-    @include media-min ($md) {
+    @include media-min ($lg) {
       overflow: visible;
       padding-right: 0;
-    }
-
-    @include media-min ($lg) {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 30px;
@@ -155,14 +152,39 @@
     }
 
     & > li {
+      position: relative;
       margin-right: 30px;
 
       &:last-child {
         margin-right: 0;
       }
 
+      &:first-child {
+        &::before {
+          content: none;
+        }
+      }
+
       @include media-min ($lg) {
         margin-right: 0;
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -15px;
+        width: 1px;
+        height: 100%;
+        background-color: var(--gray-30-color);
+      }
+
+      &:nth-child(3n+1) {
+        @include media-min ($lg) {
+          &::before {
+            content: none;
+          }
+        }
       }
     }
   }
@@ -201,6 +223,13 @@
     }
 
     & > li {
+
+      &:first-child {
+        &::before {
+          content: none;
+        }
+      }
+
       @include media-min ($lg) {
         &:nth-child(2n+1) {
           &::before {
