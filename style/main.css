@@ -1646,6 +1646,14 @@ dd {
 
   border: none;
   outline: none;
+
+  -webkit-appearance: textfield;
+     -moz-appearance: textfield;
+          appearance: textfield;
+}
+.stepper__input::-webkit-outer-spin-button,
+.stepper__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
 }
 @media (min-width: 1200px) {
   .stepper__input {
@@ -1657,7 +1665,7 @@ dd {
   top: 50%;
   right: 8px;
 
-  display: flex;
+  display: none;
   flex-direction: column;
   height: 100%;
 
@@ -1668,6 +1676,13 @@ dd {
   transition: opacity var(--transition-speed-medium) ease-in-out;
 
   pointer-events: none;
+}
+@media (min-width: 992px) {
+  .stepper__btns {
+    display: flex;
+
+    pointer-events: all;
+  }
 }
 .stepper__btn {
   display: flex;
@@ -1692,12 +1707,6 @@ dd {
 }
 .stepper__btn--disabled {
   color: var(--gray-15-color);
-}
-@media (min-width: 992px) {
-  .stepper__btn svg {
-    width: 13px;
-    height: 6px;
-  }
 }
 
 .product-meta__descr {
