@@ -1647,13 +1647,14 @@ dd {
   border: none;
   outline: none;
 
-  -webkit-appearance: textfield;
-     -moz-appearance: textfield;
-          appearance: textfield;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 .stepper__input::-webkit-outer-spin-button,
 .stepper__input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+          appearance: none;
 }
 @media (min-width: 1200px) {
   .stepper__input {
