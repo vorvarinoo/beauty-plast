@@ -196,8 +196,10 @@
       }
 
       & .contract-card-block__icon {
-        margin-right: 0;
-        margin-bottom: 16px;
+        @include media-min ($lg) {
+          margin-right: 0;
+          margin-bottom: 16px;
+        }
       }
     }
   }
