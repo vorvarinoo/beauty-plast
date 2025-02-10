@@ -2,9 +2,12 @@
   height: var(--swiper-height, 100%);
 }
 
+/* stylelint-disable */
 #baguetteBox-overlay {
   background-color: rgba(255, 255, 255, 0.8) !important;
 }
+
+/* stylelint-enable */
 
 #close-button {
   background-color: var(--gray-15-color);

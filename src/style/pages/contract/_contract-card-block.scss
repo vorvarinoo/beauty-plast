@@ -78,24 +78,18 @@
 .production-plan {
   &__list {
     & > li {
-
       &:nth-child(3n+2) {
         @include media-min ($lg) {
 
           &::before,
           &::after {
             content: '';
-          }
-
-          &::before,
-          &::after {
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
             height: calc(100% - 32px);
             width: 1px;
             border-left: 1px solid var(--gray-30-color);
-            padding: 16px 0;
           }
 
           &::before {
@@ -113,12 +107,20 @@
 }
 
 .offer-customers {
+  @include media-max ($lg) {
+    padding-top: 0;
+  }
+
   &__list {
     @include media-min ($xxl) {
       grid-template-columns: repeat(4, 1fr);
     }
 
     & > li {
+      @include media-min ($lg) {
+        flex-direction: column;
+      }
+
       &:nth-child(3n+2) {
         @include media-min ($lg) {
 
@@ -131,7 +133,6 @@
             height: calc(100% - 32px);
             width: 1px;
             border-left: 1px solid var(--gray-30-color);
-            padding: 16px 0;
           }
 
           &::before {
@@ -164,7 +165,6 @@
             height: calc(100% - 32px);
             width: 1px;
             border-left: 1px solid var(--gray-30-color);
-            padding: 16px 0;
           }
 
           &::before {
@@ -192,8 +192,12 @@
           height: calc(100% - 32px);
           width: 1px;
           border-left: 1px solid var(--gray-30-color);
-          padding: 16px 0;
         }
+      }
+
+      & .contract-card-block__icon {
+        margin-right: 0;
+        margin-bottom: 16px;
       }
     }
   }

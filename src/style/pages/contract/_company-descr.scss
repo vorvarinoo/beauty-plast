@@ -2,21 +2,29 @@
   --main-title-xl-color: var(--gray-30-color);
   --main-text-lg-color: var(--gray-30-color);
 
+  border-top: 1px solid var(--gray-30-color);
   padding: 64px 0;
 
-  &--pt {
-    padding: 48px 0;
-
+  &--padding-top-lg {
     @include media-min ($xl) {
-      padding: 128px 0 64px;
+      padding-top: 128px;
     }
   }
 
   &__section {
     padding: 48px 0;
 
+
     @include media-min ($xl) {
       padding: 64px 0;
+    }
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      padding-bottom: 0;
     }
   }
 

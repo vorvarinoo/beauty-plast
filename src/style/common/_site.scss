@@ -49,7 +49,7 @@
 
     @media (hover: none) {
       &:active {
-        color: var(--blue-color);
+        --breadcrumbs-color: var(--blue-color);
       }
     }
   }

@@ -34,6 +34,12 @@
     font-size: 16px;
     color: var(--blue-color);
     min-width: 2ex;
+    appearance: none;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      appearance: none;
+    }
 
     @include media-min ($xl) {
       font-size: 18px;
@@ -41,16 +47,22 @@
   }
 
   &__btns {
-    opacity: 0;
+    display: none;
     pointer-events: none;
+    opacity: 0;
     position: absolute;
+    height: 100%;
     right: 8px;
     top: 50%;
     transform: translateY(-50%);
-    display: flex;
     flex-direction: column;
     transition: opacity var(--transition-speed-medium) ease-in-out;
-    height: 100%;
+
+
+    @include media-min ($lg) {
+      display: flex;
+      pointer-events: all;
+    }
   }
 
   &__btn {

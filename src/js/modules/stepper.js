@@ -38,7 +38,6 @@ export const initRangeSteppers = () => {
       };
 
       stepperInput.addEventListener( 'input', () => {
-        stepperInput.value = stepperInput.value.replace( /\D/g, '' );
         count = parseInt( stepperInput.value, 10 ) || 0;
         validateRange();
         updateDownButtonState();
